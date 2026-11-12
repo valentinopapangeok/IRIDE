@@ -80,8 +80,9 @@ def build_secret_mapping(
         ),
         "GPORTAL_USER": provider_env(config, "gportal", "GPORTAL_USER"),
         "GPORTAL_PRIVATE_KEY": private_key_text(config, config_path),
-        "GPORTAL_KEY_PASSPHRASE": provider_env(
-            config, "gportal", "GPORTAL_PASSWORD"
+        "GPORTAL_KEY_PASSPHRASE": (
+            provider_env(config, "gportal", "GPORTAL_KEY_PASSPHRASE")
+            or provider_env(config, "gportal", "GPORTAL_PASSWORD")
         ),
         "METEOHUB_USER": provider_env(config, "meteohub", "METEOHUB_USER"),
         "METEOHUB_PASSWORD": provider_env(config, "meteohub", "METEOHUB_PASSWORD"),

@@ -72,6 +72,9 @@ def download_sample(product, directory):
     try:
         sock=socket.create_connection((SFTP_HOST,22),timeout=30)
         transport=paramiko.Transport(sock);transport.banner_timeout=30;transport.auth_timeout=30
+        # G-Portal also presents an Ed25519 host key. Negotiate the RSA key whose
+        # fingerprint is pinned below instead of accepting an unverified new key.
+        transport.get_security_options().key_types=("rsa-sha2-512","rsa-sha2-256")
         transport.start_client(timeout=30)
         fingerprint='SHA256:'+base64.b64encode(hashlib.sha256(transport.get_remote_server_key().asbytes()).digest()).decode().rstrip('=')
         if fingerprint!=SFTP_FINGERPRINT:raise paramiko.SSHException('SFTP host fingerprint mismatch')

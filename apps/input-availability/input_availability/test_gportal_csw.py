@@ -33,6 +33,7 @@ class SFTPTests(unittest.TestCase):
   t=Mock();t.get_remote_server_key.return_value.asbytes.return_value=b'wrong-host-key'
   with tempfile.TemporaryDirectory() as d, patch.dict('os.environ',{'GPORTAL_USER':'test','GPORTAL_PRIVATE_KEY':'test'},clear=True), patch('paramiko.Ed25519Key.from_private_key',return_value=Mock()), patch('socket.create_connection'),patch('paramiko.Transport',return_value=t):
    with self.assertRaises(paramiko.SSHException):download_sample({'download_links':['standard/test.h5']},d)
+   self.assertEqual(t.get_security_options.return_value.key_types,("rsa-sha2-512","rsa-sha2-256"))
    t.auth_publickey.assert_not_called();t.close.assert_called_once()
 if __name__=='__main__':unittest.main()
 
