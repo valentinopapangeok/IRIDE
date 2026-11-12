@@ -167,7 +167,7 @@ def render_latest_table(rows: list[dict]) -> str:
             <td>{escape(row.get('product'))}</td>
             <td>{escape(row.get('input_name'))}</td>
             <td>{escape(row.get('status'))}</td>
-            <td>{escape(row.get('latest_date') or '-')}</td>
+            <td class="observation-date">{escape(row.get('latest_date') or '-')}</td>
             <td title="{escape(row.get('publication_source') or '')}">{escape(row.get('publication_date') or 'Not reported')}</td>
             <td>{escape(row.get('production_date') or 'Not reported')}</td>
             <td title="{escape(row.get('catalogue_date_source') or '')}">{escape(row.get('catalogue_date') or 'Not reported')}<br><small>{escape(row.get('catalogue_date_source') or '')}</small></td>
@@ -178,9 +178,9 @@ def render_latest_table(rows: list[dict]) -> str:
         """)
     return """
     <h2>Latest availability</h2>
-    <p class="hint">Expected input latency = product delivery timeliness minus 1 day (not a provider SLA). Monthly-only dates remain excluded from numeric latency. Publication dates refer to the selected latest input: CDSE publication or PAL portal archival time; hover for the source. Not reported means no publication timestamp is exposed by the adapter. Catalogue modification and download times are not publication dates.</p>
+    <p class="hint">The highlighted observation date is the date used to calculate latency. Expected input latency = product delivery timeliness minus 1 day (not a provider SLA). Monthly-only dates remain excluded from numeric latency. Publication dates refer to the selected latest input: CDSE publication or PAL portal archival time; hover for the source. Not reported means no publication timestamp is exposed by the adapter. Catalogue modification and download times are not publication dates.</p>
     <table>
-      <thead><tr><th>Product</th><th>Input</th><th>Status</th><th>Latest available</th><th>Publication date</th><th>Production date</th><th>Catalogue timestamp</th><th>Latency</th><th>Expected</th><th>Files</th></tr></thead>
+      <thead><tr><th>Product</th><th>Input</th><th>Status</th><th class="observation-date">Observation date</th><th>Publication date</th><th>Production date</th><th>Catalogue timestamp</th><th>Latency</th><th>Expected</th><th>Files</th></tr></thead>
       <tbody>
     """ + "\n".join(body) + "</tbody></table>"
 
@@ -365,6 +365,8 @@ h2 {{ margin-top:34px; }}
 table {{ width:100%; border-collapse:collapse; background:var(--panel); border-radius:12px; overflow:hidden; box-shadow:0 1px 2px rgba(15,23,42,.05); }}
 th,td {{ padding:10px 12px; text-align:left; border-bottom:1px solid #e6ebf2; font-size:14px; }}
 th {{ background:#eaf0f7; color:#334155; font-weight:650; }}
+th.observation-date {{ background:#dbeafe; color:#1e3a8a; box-shadow:inset 2px 0 #60a5fa,inset -2px 0 #60a5fa; }}
+td.observation-date {{ background:#eff6ff; color:#1e3a8a; font-weight:700; box-shadow:inset 2px 0 #bfdbfe,inset -2px 0 #bfdbfe; }}
 tr.ok td:first-child {{ border-left:5px solid var(--ok-border); }}
 tr.warn {{ background:var(--warn); }} tr.warn td:first-child {{ border-left:5px solid var(--warn-border); }}
 tr.bad {{ background:var(--bad); }} tr.bad td:first-child {{ border-left:5px solid var(--bad-border); }}

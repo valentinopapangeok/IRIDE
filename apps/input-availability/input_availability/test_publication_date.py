@@ -7,6 +7,8 @@ from latest_input_audit import FIELDS, run_cdse_query, Adapter
 class PublicationTests(unittest.TestCase):
     def test_old_results_remain_renderable(self):
         html = render_latest_table([{"product": "07", "input_name": "PAL", "latest_date": "2026-09-01"}])
+        self.assertIn("Observation date", html)
+        self.assertIn('class="observation-date">2026-09-01', html)
         self.assertIn("Publication date", html)
         self.assertIn("Not reported", html)
 
