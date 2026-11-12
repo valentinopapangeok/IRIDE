@@ -1,0 +1,36 @@
+{
+  "2026-06-27": {
+    "status_code": 202,
+    "response": {
+      "request_id": 4541262,
+      "task_id": "17aecf2e-2e0a-428c-b00b-fe2b1586e280"
+    },
+    "payload": {
+      "request_name": "mistral_radar_sri_dpc_20260627_full_day",
+      "reftime": {
+        "from": "2026-06-27T00:00:00.000Z",
+        "to": "2026-06-27T23:59:59.000Z"
+      },
+      "dataset_names": [
+        "radar_sri_dpc"
+      ]
+    }
+  },
+  "2026-06-28": {
+    "status_code": 202,
+    "response": {
+      "request_id": 4541263,
+      "task_id": "2949d632-7ccc-4707-a24d-f9119b8af3be"
+    },
+    "payload": {
+      "request_name": "mistral_radar_sri_dpc_20260628_full_day",
+      "reftime": {
+        "from": "2026-06-28T00:00:00.000Z",
+        "to": "2026-06-28T23:59:59.000Z"
+      },
+      "dataset_names": [
+        "radar_sri_dpc"
+      ]
+    }
+  }
+}

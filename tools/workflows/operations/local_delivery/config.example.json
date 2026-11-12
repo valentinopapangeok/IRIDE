@@ -1,0 +1,29 @@
+{
+  "delivery": {
+    "mode": "offline",
+    "collection_id": "OU-S5-02-04",
+    "marketplace_link_id": "hydro-meteorology-climate/se-s5-02/ou-s5-02-04",
+    "exploitation_tool_link": "https://replace-with-et-link.example/s5_02",
+    "target_name": "placeholder-delivery-target",
+    "endpoint": "https://replace-with-delivery-endpoint.example",
+    "bucket": "replace-with-bucket",
+    "upload_to": "svc",
+    "bucket_folder": "ar_delivery",
+    "prefix": "deliveries/IRIDE-S_S5-02-04",
+    "asset_base_href": "",
+    "credential_profile": "replace-with-profile-or-secret-name",
+    "spatial_resolution_value": 1000,
+    "spatial_resolution_uom": "m",
+    "thematic_accuracy_value": 20,
+    "thematic_accuracy_unit": "relative RMSE"
+  },
+  "style_assets": {
+    "qml_path": "/absolute/path/to/IRIDE-S_S5-02-04_V0.qml",
+    "sld_path": "/absolute/path/to/IRIDE-S_S5-02-04_V0.sld"
+  },
+  "credentials": {
+    "access_key_id": "replace-with-access-key-id",
+    "secret_access_key": "replace-with-secret-access-key",
+    "session_token": "optional-session-token"
+  }
+}

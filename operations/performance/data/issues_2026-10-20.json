@@ -1,0 +1,85 @@
+{
+  "observed_on": "2026-10-20",
+  "internal_workbook": "operational_performance/SVC_OPS_Plan_S5-02_internal.xlsx",
+  "issues": [
+    {
+      "id": "OPS-20261020-693",
+      "schedule": 693,
+      "procurement_plan": 694,
+      "activation": "ISS-domain_S5-297",
+      "products": [
+        "OU-S5-02-02",
+        "OU-S5-02-11"
+      ],
+      "reference_date": "2026-10-16",
+      "missing_input": {
+        "provider": "DCO-DATA-00810",
+        "dataset": "dc_gcomc_sgli_sst",
+        "icr_id": 2483,
+        "result_status": "MISSING_DATA",
+        "batch_id": 2390
+      },
+      "kpi_breaches": [],
+      "delivery": "Both products completed; WF/DL/ET OK.",
+      "evidence": [
+        "Screenshot 2026-10-20 at 09.44.56.png",
+        "Screenshot 2026-10-20 at 09.45.17.png",
+        "Screenshot 2026-10-20 at 09.48.33.png",
+        "Screenshot 2026-10-20 at 09.48.36.png"
+      ],
+      "kpi_breach": false
+    },
+    {
+      "id": "OPS-20261020-756",
+      "schedule": 756,
+      "procurement_plan": 757,
+      "activation": "ISS-domain_S5-300",
+      "products": [
+        "OU-S5-02-05"
+      ],
+      "reference_date": "2026-10-16",
+      "missing_input": {
+        "provider": "DCO-DATA-03333",
+        "dataset": "dc_viirs_vnp10a1f",
+        "icr_id": 2642,
+        "result_status": "MISSING_DATA",
+        "batch_id": 2394
+      },
+      "kpi_breaches": [],
+      "delivery": "Product completed; WF/DL/ET OK.",
+      "evidence": [
+        "Screenshot 2026-10-20 at 09.45.46.png",
+        "Screenshot 2026-10-20 at 09.45.53.png",
+        "Screenshot 2026-10-20 at 09.48.13.png",
+        "Screenshot 2026-10-20 at 09.48.17.png"
+      ],
+      "kpi_breach": false
+    }
+  ],
+  "observations_without_kpi_breach": [
+    {
+      "id": "OPS-20261020-818",
+      "schedule": 818,
+      "procurement_plan": 819,
+      "activation": "ISS-domain_S5-303",
+      "products": [
+        "OU-S5-02-09"
+      ],
+      "reference_date": "2026-10-16",
+      "missing_input": {
+        "provider": "DCO-DATA-00810",
+        "dataset": "dc_gcomc_sgli_aod",
+        "icr_id": 2765,
+        "result_status": "MISSING_DATA",
+        "batch_id": 2397
+      },
+      "kpi_breaches": [],
+      "delivery": "Product completed; WF/DL/ET OK.",
+      "evidence": [
+        "Screenshot 2026-10-20 at 09.46.26.png",
+        "Screenshot 2026-10-20 at 09.46.35.png",
+        "Screenshot 2026-10-20 at 09.46.42.png"
+      ]
+    }
+  ]
+}

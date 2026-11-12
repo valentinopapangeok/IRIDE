@@ -1,0 +1,138 @@
+{
+  "observed_on": "2026-10-23",
+  "internal_workbook": "operational_performance/SVC_OPS_Plan_S5-02_internal.xlsx",
+  "kpi_issue_rows_added": 0,
+  "input_availability_audit_repository": "https://github.com/valentinopapangeok/iride-input-availability",
+  "audit_runs": [
+    {
+      "run_id": 38824048897,
+      "run_at_utc": "2026-10-15T23:31:02Z",
+      "workflow_url": "https://github.com/valentinopapangeok/iride-input-availability/actions/runs/38824048897",
+      "observations": {
+        "01 Sentinel-3 LST": "latest 2026-10-14; found/downloaded",
+        "01 GCOM-C L3 LST": "latest 2026-10-14; found/downloaded",
+        "02 GCOM-C L3 SST": "latest 2026-10-13; found/downloaded",
+        "09 GCOM-C SGLI L2 Atmosphere ARNP": "latest 2026-10-14; found/downloaded"
+      }
+    },
+    {
+      "run_id": 38980202980,
+      "run_at_utc": "2026-10-16T23:12:53Z",
+      "workflow_url": "https://github.com/valentinopapangeok/iride-input-availability/actions/runs/38980202980",
+      "observations": {
+        "01 Sentinel-3 LST": "latest 2026-10-15; found/downloaded",
+        "01 GCOM-C L3 LST": "latest 2026-10-14; found/downloaded",
+        "04 H SAF H40B": "latest 2026-10-16 23:00 UTC; found/downloaded"
+      }
+    },
+    {
+      "run_id": 39076643191,
+      "run_at_utc": "2026-10-17T22:49:57Z",
+      "workflow_url": "https://github.com/valentinopapangeok/iride-input-availability/actions/runs/39076643191",
+      "observations": {
+        "01 Sentinel-3 LST": "latest 2026-10-16; found/downloaded",
+        "01 GCOM-C L3 LST": "latest 2026-10-14; found/downloaded",
+        "09 GCOM-C SGLI L2 Atmosphere ARNP": "latest 2026-10-15; found/downloaded"
+      }
+    },
+    {
+      "run_id": 39173433254,
+      "run_at_utc": "2026-10-18T22:42:54Z",
+      "workflow_url": "https://github.com/valentinopapangeok/iride-input-availability/actions/runs/39173433254",
+      "observations": {
+        "02 GCOM-C L3 SST": "latest 2026-10-14; found/downloaded",
+        "04 H SAF H40B": "latest 2026-10-18 22:30 UTC; found/downloaded",
+        "09 MODIS AOD": "latest 2026-10-16; found/downloaded",
+        "09 GCOM-C SGLI L2 Atmosphere ARNP": "latest 2026-10-15; found/downloaded"
+      }
+    },
+    {
+      "run_id": 39516007864,
+      "run_at_utc": "2026-10-20T23:35:24Z",
+      "workflow_url": "https://github.com/valentinopapangeok/iride-input-availability/actions/runs/39516007864",
+      "observations": {
+        "01 GCOM-C L3 LST": "not found; no files",
+        "02 GCOM-C L3 SST": "not found; no files",
+        "04 H SAF H40B": "latest 2026-10-20 23:20 UTC; found/downloaded",
+        "09 GCOM-C SGLI L2 Atmosphere ARNP": "not found; no files",
+        "09 MODIS AOD": "latest 2026-10-16; found/downloaded"
+      }
+    },
+    {
+      "run_id": 39696204593,
+      "run_at_utc": "2026-10-21T23:52:36Z",
+      "workflow_url": "https://github.com/valentinopapangeok/iride-input-availability/actions/runs/39696204593",
+      "observations": {
+        "04 H SAF H40B": "latest 2026-10-21 23:40 UTC; found/downloaded",
+        "09 GCOM-C SGLI L2 Atmosphere ARNP": "not found; no files",
+        "09 MODIS AOD": "latest 2026-10-16; found/downloaded"
+      }
+    },
+    {
+      "run_id": 39874336782,
+      "run_at_utc": "2026-10-22T23:50:01Z",
+      "workflow_url": "https://github.com/valentinopapangeok/iride-input-availability/actions/runs/39874336782",
+      "observations": {
+        "01 GCOM-C L3 LST": "not found; no files",
+        "02 GCOM-C L3 SST": "not found; no files",
+        "04 H SAF H40B": "latest 2026-10-22 23:30 UTC; found/downloaded",
+        "09 GCOM-C SGLI L2 Atmosphere ARNP": "not found; no files",
+        "09 MODIS AOD": "latest 2026-10-20; found/downloaded"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "OPS-20261023-661",
+      "activation": "ISS-domain_S5-296",
+      "procurement_plan": 662,
+      "schedule": 661,
+      "products": "SE-S5-02-01/10",
+      "reference_date": "2026-10-15",
+      "note": "Mandatory Sentinel-3 LST ICR 2322 returned MISSING_DATA on 17 Oct; audit run 16 Oct 23:24 UTC had already found/downloaded 15 Oct data, indicating a likely DCO retrieval failure. Optional GCOM-C LST ICR 2319 was also missing; audit through 17 Oct showed latest GCOM-C LST only 14 Oct, consistent with provider delay. Products 01/10 VOID; DL VOID package OK, ET N/A. OMC screenshots show Delivery Timeliness (Systematic) BREACH (Expired), 9d vs 8d, for both products on schedules 660, 661 and 662 (reference dates 14–16 Oct). The schedule cards show DL OK events before the displayed SLA+T2 deadlines; schedules 660 and 662 also show ET OK, while schedule 661 is VOID with ET N/A. The KPI dashboard lists product 01 twice per reference date, while schedule cards list products 01 and 10. Possible KPI event/product attribution or deadline inconsistency; cause not established. Trace: https://omc.iride.earth/#/monitoring/trace?requestId=ISS-domain_S5-296",
+      "kpi_breach": false,
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-01_10/OMC_KPI/Screenshot 2026-10-26 at 12.17.10.png",
+      "kpi_breaches": []
+    },
+    {
+      "id": "OPS-20261023-696",
+      "activation": "ISS-domain_S5-297",
+      "procurement_plan": 697,
+      "schedule": 696,
+      "products": "SE-S5-02-02/11",
+      "reference_date": "2026-10-19",
+      "note": "Optional GCOM-C SST ICR 2495 returned MISSING_DATA. Availability audits through 20 Oct found no GCOM-C SST files and last available date 14 Oct on 18 Oct; both products completed and delivered. OMC later showed separate systematic delivery-timeliness breaches for schedule 696; no causal link is established. 696: 5d vs 4d; cutoff 2026-10-24 23:59 UTC. Both product cards show DL/ET events before the cutoff: 02 DL 00:47:42, ET 01:40:21; 11 DL 01:54:28, ET 02:40:37 (23 Oct). The breach explanation says no delivery arrived by the cutoff. Contradiction; cause unconfirmed. OMC trace: https://omc.iride.earth/#/monitoring/trace?requestId=ISS-domain_S5-297.",
+      "kpi_breach": false,
+      "kpi_breaches": [],
+      "kpi_update_observed_on": "2026-10-26",
+      "kpi_evidence": "evidence/categorised/2026-10-26/OU-S5-02-02_11/OMC_KPI/Screenshot 2026-10-26 at 12.22.37.png",
+      "kpi_trace": "https://omc.iride.earth/#/monitoring/trace?requestId=ISS-domain_S5-297"
+    },
+    {
+      "id": "OPS-20261023-730",
+      "activation": "ISS-domain_S5-299",
+      "procurement_plan": 731,
+      "schedule": 730,
+      "products": "SE-S5-02-04",
+      "reference_date": "2026-10-21",
+      "note": "Optional H SAF H40B ICR 2589 returned MISSING_DATA on 23 Oct 02:45 UTC; audit run 21 Oct 23:52 UTC had found/downloaded H40B through 23:40 UTC on 21 Oct, indicating a likely DCO retrieval failure. Schedule Error; product VOID; DL VOID package OK, ET N/A. OMC timeline shows Delivery Timeliness (Systematic) BREACH (Expired), 3d vs 2d. The timeline also shows production time 18m58s OK, WF/VOID at 23 Oct 01:03:08, WF/KO at 01:03:09, and DL/OK at 01:03:58 with PRODUCTION_KO. The earlier schedule/procurement evidence records the product as VOID, DL package OK and ET N/A. This records the OMC status/KPI evidence; the cause is unconfirmed. Evidence: evidence/categorised/2026-10-26/OU-S5-02-04/OMC_KPI/Screenshot 2026-10-26 at 13.04.11.png. Trace: https://omc.iride.earth/#/monitoring/trace?requestId=ISS-domain_S5-299.",
+      "kpi_breach": false,
+      "kpi_breaches": [],
+      "kpi_update_observed_on": "2026-10-26",
+      "kpi_evidence": "evidence/categorised/2026-10-26/OU-S5-02-04/OMC_KPI/Screenshot 2026-10-26 at 13.04.11.png",
+      "kpi_trace": "https://omc.iride.earth/#/monitoring/trace?requestId=ISS-domain_S5-299"
+    },
+    {
+      "id": "OPS-20261023-821",
+      "activation": "ISS-domain_S5-303",
+      "procurement_plan": 822,
+      "schedule": 821,
+      "products": "SE-S5-02-09",
+      "reference_date": "2026-10-19",
+      "note": "Mandatory MODIS AOD/MCD19A2 ICR 2776 and optional GCOM-C AOD ICR 2777 returned MISSING_DATA. Audit found no GCOM-C AOD files on 20/22 Oct; MODIS AOD latest was 16 Oct on 20 Oct and 20 Oct on 22 Oct. Exact 19 Oct area/tile availability is not established. Product 09 VOID; DL VOID package OK, ET N/A.",
+      "kpi_breach": false,
+      "kpi_breaches": [],
+      "kpi_update_observed_on": "2026-10-26"
+    }
+  ]
+}

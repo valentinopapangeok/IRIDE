@@ -1,0 +1,686 @@
+{
+  "observed_on": "2026-10-26",
+  "internal_workbook": "operational_performance/SVC_OPS_Plan_S5-02_internal.xlsx",
+  "ops_issues": [
+    {
+      "id": "OPS-20261026-663",
+      "schedule": 663,
+      "activation": "ISS-domain_S5-296",
+      "products": "SE-S5-02-01/10",
+      "delivery": null,
+      "ref": "2026-10-17",
+      "start": null,
+      "end": "2026-10-25T01:00:09Z",
+      "note": "Schedule 663 (reference date 17 Oct) is Error; production start and product delivery details are unavailable. Plan 664 for the same activation and product scope aligns to 17 Oct and reports optional GCOM-C LST, ERA5-Land and MOD11A1 as MISSING_DATA; mandatory S3 LST and SRTM were collected. Cause of the schedule error is unconfirmed.",
+      "kpi_breach": false,
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-01_10/SOM_schedule/Screenshot 2026-10-26 at 08.59.12.png"
+    },
+    {
+      "id": "OPS-20261026-698",
+      "schedule": 698,
+      "activation": "ISS-domain_S5-297",
+      "products": "SE-S5-02-02/11",
+      "delivery": "1505 / 1506",
+      "ref": "2026-10-21",
+      "start": "2026-10-25T00:09:33Z",
+      "end": "2026-10-25T00:17:26Z",
+      "note": "Schedule 698 (reference date 21 Oct): products 02/11 VOID. Plan 699, matched by activation, products and reference date, reports mandatory S3 WST MISSING_DATA (ICR 2500) and optional GCOM-C SST MISSING_DATA (ICR 2503). DL delivered VOID packages OK; ET N/A is expected.",
+      "kpi_breach": false,
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-02_11/SOM_schedule/Screenshot 2026-10-26 at 09.00.51.png"
+    },
+    {
+      "id": "OPS-20261026-761",
+      "schedule": 761,
+      "activation": "ISS-domain_S5-300",
+      "products": "SE-S5-02-05",
+      "delivery": 1580,
+      "ref": "2026-10-21",
+      "start": "2026-10-25T00:05:24Z",
+      "end": "2026-10-25T00:06:22Z",
+      "note": "Schedule 761 (reference date 21 Oct): product 05 VOID. Plan 762, matched by activation, product and reference date, reports mandatory S3 OLCI MISSING_DATA (ICR 2651); optional VIIRS snow was collected. DL delivered VOID package OK; ET N/A is expected.",
+      "kpi_breach": false,
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-05/SOM_schedule/Screenshot 2026-10-26 at 09.01.43.png"
+    },
+    {
+      "id": "OPS-20261026-794",
+      "schedule": 794,
+      "activation": "ISS-domain_S5-301",
+      "products": "SE-S5-02-06",
+      "delivery": 1613,
+      "ref": "2026-10-23",
+      "start": null,
+      "end": "2026-10-25T01:00:09Z",
+      "note": "Schedule 794 (reference date 23 Oct): production Error and product workflow KO; DL/ET results are not reported. Plan 795, matched by activation, product and reference date, reports mandatory MTG Cloud Mask MISSING_DATA (ICR 2695).",
+      "kpi_breach": false,
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-06/SOM_schedule/Screenshot 2026-10-26 at 09.02.11.png"
+    },
+    {
+      "id": "OPS-20261026-662",
+      "schedule": 662,
+      "activation": "ISS-domain_S5-296",
+      "products": "SE-S5-02-01/10",
+      "delivery": "1433 / 1434",
+      "ref": "2026-10-16",
+      "start": "2026-10-24T02:01:09Z",
+      "end": "2026-10-24T03:36:39Z",
+      "note": "Optional GCOM-C LST (plan 663, ICR 2325) returned MISSING_DATA for product 01. Schedule 662 includes product 10 as well; both completed with DL and ET OK. OMC screenshots show Delivery Timeliness (Systematic) BREACH (Expired), 9d vs 8d, for both products on schedules 660, 661 and 662 (reference dates 14–16 Oct). The schedule cards show DL OK events before the displayed SLA+T2 deadlines; schedules 660 and 662 also show ET OK, while schedule 661 is VOID with ET N/A. The KPI dashboard lists product 01 twice per reference date, while schedule cards list products 01 and 10. Possible KPI event/product attribution or deadline inconsistency; cause not established. Trace: https://omc.iride.earth/#/monitoring/trace?requestId=ISS-domain_S5-296",
+      "kpi_breach": false,
+      "kpi_breaches": [],
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-01_10/OMC_KPI/Screenshot 2026-10-26 at 12.17.17.png"
+    },
+    {
+      "id": "OPS-20261026-697",
+      "schedule": 697,
+      "activation": "ISS-domain_S5-297",
+      "products": "SE-S5-02-02/11",
+      "delivery": "1503 / 1504",
+      "ref": "2026-10-20",
+      "start": "2026-10-24T02:09:02Z",
+      "end": "2026-10-24T03:22:32Z",
+      "note": "Optional GCOM-C SST (plan 698, ICR 2499) returned MISSING_DATA for products 02/11. Both products completed with DL and ET OK; OMC separately shows delivery-timeliness KPI breaches. 697: 5d vs 4d; cutoff 2026-10-25 23:59 UTC. Both product cards show DL/ET events before the cutoff: 02 DL 00:20:29, ET 00:40:50; 11 DL 01:23:33, ET 01:42:08 (24 Oct). The breach explanation says no delivery arrived by the cutoff. Contradiction; cause unconfirmed. OMC trace: https://omc.iride.earth/#/monitoring/trace?requestId=ISS-domain_S5-297.",
+      "kpi_breach": false,
+      "kpi_breaches": [],
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-02_11/SOM_schedule/Screenshot 2026-10-26 at 09.00.36.png",
+      "kpi_evidence": "evidence/categorised/2026-10-26/OU-S5-02-02_11/OMC_KPI/Screenshot 2026-10-26 at 12.22.45.png",
+      "kpi_trace": "https://omc.iride.earth/#/monitoring/trace?requestId=ISS-domain_S5-297"
+    },
+    {
+      "id": "OPS-20261026-699",
+      "schedule": 699,
+      "activation": "ISS-domain_S5-297",
+      "products": "SE-S5-02-02/11",
+      "delivery": "1507 / 1508",
+      "ref": "2026-10-22",
+      "start": "2026-10-26T00:05:13Z",
+      "end": "2026-10-26T01:26:35Z",
+      "note": "Optional GCOM-C SST (plan 700, ICR 2507) returned MISSING_DATA for products 02/11. Both products completed with DL and ET OK.",
+      "kpi_breach": false,
+      "kpi_breaches": [],
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-02_11/SOM_schedule/Screenshot 2026-10-26 at 09.01.04.png"
+    },
+    {
+      "id": "OPS-20261026-822",
+      "schedule": 822,
+      "activation": "ISS-domain_S5-303",
+      "products": "SE-S5-02-09",
+      "delivery": "1641",
+      "ref": "2026-10-20",
+      "start": "2026-10-24T02:01:15Z",
+      "end": "2026-10-24T02:03:00Z",
+      "note": "Optional GCOM-C aerosol (plan 823, ICR 2781) and optional S3 SY AOD (ICR 2782) returned MISSING_DATA. Product 09 completed with DL and ET OK; OMC separately shows a delivery-timeliness KPI breach.",
+      "kpi_breach": false,
+      "kpi_breaches": [],
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-09/SOM_schedule/Screenshot 2026-10-26 at 09.03.11.png"
+    },
+    {
+      "id": "OPS-20261026-823",
+      "schedule": 823,
+      "activation": "ISS-domain_S5-303",
+      "products": "SE-S5-02-09",
+      "delivery": "1642",
+      "ref": "2026-10-21",
+      "start": "2026-10-25T00:09:03Z",
+      "end": "2026-10-25T00:10:57Z",
+      "note": "Optional GCOM-C aerosol (plan 824, ICR 2785), S3 SY AOD (ICR 2786), and atmospheric greenhouse daily (ICR 2787) returned MISSING_DATA. Product 09 completed with DL and ET OK.",
+      "kpi_breach": false,
+      "kpi_breaches": [],
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-09/SOM_schedule/Screenshot 2026-10-26 at 09.03.24.png"
+    },
+    {
+      "id": "OPS-20261026-824",
+      "schedule": 824,
+      "activation": "ISS-domain_S5-303",
+      "products": "SE-S5-02-09",
+      "delivery": "1643",
+      "ref": "2026-10-22",
+      "start": "2026-10-26T01:05:13Z",
+      "end": "2026-10-26T01:06:39Z",
+      "note": "Optional GCOM-C aerosol (plan 825, ICR 2789) returned MISSING_DATA. Product 09 completed with DL and ET OK.",
+      "kpi_breach": false,
+      "kpi_breaches": [],
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-09/SOM_schedule/Screenshot 2026-10-26 at 09.03.36.png"
+    },
+    {
+      "id": "OPS-20261026-660",
+      "schedule": 660,
+      "activation": "ISS-domain_S5-296",
+      "products": "SE-S5-02-01/10",
+      "delivery": "1429 / 1430",
+      "ref": "2026-10-14",
+      "start": "2026-10-22T00:12:53Z",
+      "end": null,
+      "note": "OMC screenshots show Delivery Timeliness (Systematic) BREACH (Expired), 9d vs 8d, for both products on schedules 660, 661 and 662 (reference dates 14–16 Oct). The schedule cards show DL OK events before the displayed SLA+T2 deadlines; schedules 660 and 662 also show ET OK, while schedule 661 is VOID with ET N/A. The KPI dashboard lists product 01 twice per reference date, while schedule cards list products 01 and 10. Possible KPI event/product attribution or deadline inconsistency; cause not established. Trace: https://omc.iride.earth/#/monitoring/trace?requestId=ISS-domain_S5-296",
+      "kpi_breach": false,
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-01_10/OMC_KPI/Screenshot 2026-10-26 at 12.17.03.png",
+      "kpi_breaches": []
+    },
+    {
+      "id": "OPS-20261026-729",
+      "schedule": 729,
+      "activation": "ISS-domain_S5-299",
+      "products": "SE-S5-02-04",
+      "delivery": 1548,
+      "ref": "2026-10-20",
+      "note": "OMC timeline shows Delivery Timeliness (Systematic) BREACH (Expired), 3d vs 2d; the expanded card gives a planned reference end of 20 Oct 2026 23:59 and SLA+T2 cutoff of 23 Oct 2026 23:59. DL/ET events on 22 Oct (DL 01:20:13, ET 01:40:34) precede that cutoff, despite the explanation that no delivery arrived by it. Schedule-card mismatch; cause unconfirmed.",
+      "kpi_breach": false,
+      "kpi_breaches": [],
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-04/OMC_KPI/Screenshot 2026-10-26 at 13.04.08.png",
+      "trace": "https://omc.iride.earth/#/monitoring/trace?requestId=ISS-domain_S5-299"
+    },
+    {
+      "id": "OPS-20261026-731",
+      "schedule": 731,
+      "activation": "ISS-domain_S5-299",
+      "products": "SE-S5-02-04",
+      "delivery": 1550,
+      "ref": null,
+      "note": "OMC timeline shows Delivery Timeliness (Systematic) BREACH (Expired), 3d vs 2d; production time is 48m OK and the product card shows WF, ET and DL OK. The expanded cutoff and reference period are not visible in this capture, so no cutoff comparison is asserted. Cause unconfirmed.",
+      "kpi_breach": false,
+      "kpi_breaches": [],
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-04/OMC_KPI/Screenshot 2026-10-26 at 13.03.56.png",
+      "trace": "https://omc.iride.earth/#/monitoring/trace?requestId=ISS-domain_S5-299",
+      "reference_date_status": "Not visible in supplied schedule screenshot; left blank."
+    },
+    {
+      "id": "OPS-20261026-758",
+      "schedule": 758,
+      "activation": "ISS-domain_S5-300",
+      "products": "SE-S5-02-05",
+      "delivery": 1577,
+      "ref": "2026-10-18",
+      "note": "OMC shows Delivery Timeliness (Systematic) BREACH (Expired), 5d vs 4d. Product reference end 2026-10-18 23:59 UTC; displayed SLA+T2 cutoff 23 Oct 23:59 UTC. DL 22 Oct 00:15:49 UTC and ET 22 Oct 00:41:27 UTC precede the displayed cutoff, while the breach card says no delivery arrived by it. Production time is OK; WF/DL/ET are OK. Timeline/cutoff mismatch; cause unconfirmed.",
+      "kpi_breach": false,
+      "kpi_breaches": [],
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-05/OMC_KPI/Screenshot 2026-10-26 at 14.53.29.png",
+      "trace": "https://omc.iride.earth/#/monitoring/trace?requestId=ISS-domain_S5-300",
+      "reference_date_status": "Visible in the OMC schedule screenshot; recorded as the product reference date."
+    },
+    {
+      "id": "OPS-20261026-759",
+      "schedule": 759,
+      "activation": "ISS-domain_S5-300",
+      "products": "SE-S5-02-05",
+      "delivery": 1578,
+      "ref": "2026-10-19",
+      "note": "OMC shows Delivery Timeliness (Systematic) BREACH (Expired), 5d vs 4d. Product reference end 2026-10-19 23:59 UTC; displayed SLA+T2 cutoff 24 Oct 23:59 UTC. DL 23 Oct 00:33:59 UTC and ET 23 Oct 01:40:34 UTC precede the displayed cutoff, while the breach card says no delivery arrived by it. Production time is OK; WF/DL/ET are OK. Timeline/cutoff mismatch; cause unconfirmed.",
+      "kpi_breach": false,
+      "kpi_breaches": [],
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-05/OMC_KPI/Screenshot 2026-10-26 at 14.53.36.png",
+      "trace": "https://omc.iride.earth/#/monitoring/trace?requestId=ISS-domain_S5-300",
+      "reference_date_status": "Visible in the OMC schedule screenshot; recorded as the product reference date."
+    },
+    {
+      "id": "OPS-20261026-760",
+      "schedule": 760,
+      "activation": "ISS-domain_S5-300",
+      "products": "SE-S5-02-05",
+      "delivery": 1579,
+      "ref": "2026-10-20",
+      "note": "OMC shows Delivery Timeliness (Systematic) BREACH (Expired), 5d vs 4d. Product reference end 2026-10-20 23:59 UTC; displayed SLA+T2 cutoff 25 Oct 23:59 UTC. DL 24 Oct 00:08:34 UTC and ET 24 Oct 00:41:04 UTC precede the displayed cutoff, while the breach card says no delivery arrived by it. Production time is OK; WF/DL/ET are OK. Timeline/cutoff mismatch; cause unconfirmed.",
+      "kpi_breach": false,
+      "kpi_breaches": [],
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-05/OMC_KPI/Screenshot 2026-10-26 at 14.53.41.png",
+      "trace": "https://omc.iride.earth/#/monitoring/trace?requestId=ISS-domain_S5-300",
+      "reference_date_status": "Visible in the OMC schedule screenshot; recorded as the product reference date."
+    }
+  ],
+  "procurement_observations": [
+    {
+      "plan": 663,
+      "activation": "ISS-domain_S5-296",
+      "products": "OU-S5-02-01",
+      "reference_date": "2026-10-16",
+      "schedule": 662,
+      "rows": [
+        {
+          "provider": "DCO-DATA-00260",
+          "dataset": "dc_era5_temperaturesinglelevels_daily_nc",
+          "icr_id": 2324,
+          "requirement": "Optional",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        },
+        {
+          "provider": "DCO-DATA-00810",
+          "dataset": "dc_gcomc_sgli_lst",
+          "icr_id": 2325,
+          "requirement": "Optional",
+          "icr_status": "ICR completed with errors",
+          "result_status": "MISSING_DATA"
+        },
+        {
+          "provider": "DCO-DATA-00260",
+          "dataset": "dc_era5_temperatureland_daily_nc",
+          "icr_id": 2326,
+          "requirement": "Optional",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        },
+        {
+          "provider": "DCO-DATA-02100",
+          "dataset": "MOD11A1",
+          "icr_id": 2327,
+          "requirement": "Optional",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        },
+        {
+          "provider": "DCO-DATA-05000",
+          "dataset": "S3_SLSTR_L2LST",
+          "icr_id": 2328,
+          "requirement": "Mandatory",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        },
+        {
+          "provider": "DCO-DATA-CONTRIBUTORS",
+          "dataset": "dc_cont_srtm",
+          "icr_id": 2329,
+          "requirement": "Mandatory",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        }
+      ],
+      "mapping_note": "Matched to schedule 662 by ISS activation ISS-domain_S5-296, matching product scope, and the corresponding daily product reference date 2026-10-16; plan number was not used as the schedule key. The captured procurement panel is collapsed, so the date alignment is cross-checked against the daily schedule sequence.",
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-01_10/SOM_procurement/Screenshot 2026-10-26 at 08.58.18.png"
+    },
+    {
+      "plan": 664,
+      "activation": "ISS-domain_S5-296",
+      "products": "OU-S5-02-01",
+      "reference_date": "2026-10-17",
+      "schedule": 663,
+      "rows": [
+        {
+          "provider": "DCO-DATA-00260",
+          "dataset": "dc_era5_temperaturesinglelevels_daily_nc",
+          "icr_id": 2330,
+          "requirement": "Optional",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        },
+        {
+          "provider": "DCO-DATA-00810",
+          "dataset": "dc_gcomc_sgli_lst",
+          "icr_id": 2331,
+          "requirement": "Optional",
+          "icr_status": "ICR completed with errors",
+          "result_status": "MISSING_DATA"
+        },
+        {
+          "provider": "DCO-DATA-00260",
+          "dataset": "dc_era5_temperatureland_daily_nc",
+          "icr_id": 2332,
+          "requirement": "Optional",
+          "icr_status": "ICR completed with errors",
+          "result_status": "MISSING_DATA"
+        },
+        {
+          "provider": "DCO-DATA-02100",
+          "dataset": "MOD11A1",
+          "icr_id": 2333,
+          "requirement": "Optional",
+          "icr_status": "ICR completed with errors",
+          "result_status": "MISSING_DATA"
+        },
+        {
+          "provider": "DCO-DATA-05000",
+          "dataset": "S3_SLSTR_L2LST",
+          "icr_id": 2334,
+          "requirement": "Mandatory",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        },
+        {
+          "provider": "DCO-DATA-CONTRIBUTORS",
+          "dataset": "dc_cont_srtm",
+          "icr_id": 2335,
+          "requirement": "Mandatory",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        }
+      ],
+      "mapping_note": "Matched to schedule 663 by ISS activation ISS-domain_S5-296, matching product scope, and the corresponding daily product reference date 2026-10-17; plan number was not used as the schedule key. The captured procurement panel is collapsed, so the date alignment is cross-checked against the daily schedule sequence.",
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-01_10/SOM_procurement/Screenshot 2026-10-26 at 08.59.05.png"
+    },
+    {
+      "plan": 698,
+      "activation": "ISS-domain_S5-297",
+      "products": "OU-S5-02-02 / OU-S5-02-11",
+      "reference_date": "2026-10-20",
+      "schedule": 697,
+      "rows": [
+        {
+          "provider": "DCO-DATA-05000",
+          "dataset": "S3_SLSTR_L2WST",
+          "icr_id": 2496,
+          "requirement": "Mandatory",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        },
+        {
+          "provider": "DCO-DATA-02052",
+          "dataset": "SST_MED_SST_L4_NRT_OBSERVATIONS_010_004",
+          "icr_id": 2497,
+          "requirement": "Optional",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        },
+        {
+          "provider": "DCO-DATA-00880",
+          "dataset": "dc_ghr_sst",
+          "icr_id": 2498,
+          "requirement": "Optional",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        },
+        {
+          "provider": "DCO-DATA-00810",
+          "dataset": "dc_gcomc_sgli_sst",
+          "icr_id": 2499,
+          "requirement": "Optional",
+          "icr_status": "ICR completed with errors",
+          "result_status": "MISSING_DATA"
+        }
+      ],
+      "mapping_note": "Matched to schedule 697 by ISS activation ISS-domain_S5-297, matching product scope, and the corresponding daily product reference date 2026-10-20; plan number was not used as the schedule key. The captured procurement panel is collapsed, so the date alignment is cross-checked against the daily schedule sequence.",
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-02_11/SOM_procurement/Screenshot 2026-10-26 at 09.00.25.png"
+    },
+    {
+      "plan": 699,
+      "activation": "ISS-domain_S5-297",
+      "products": "OU-S5-02-02 / OU-S5-02-11",
+      "reference_date": "2026-10-21",
+      "schedule": 698,
+      "rows": [
+        {
+          "provider": "DCO-DATA-05000",
+          "dataset": "S3_SLSTR_L2WST",
+          "icr_id": 2500,
+          "requirement": "Mandatory",
+          "icr_status": "ICR completed with errors",
+          "result_status": "MISSING_DATA"
+        },
+        {
+          "provider": "DCO-DATA-02052",
+          "dataset": "SST_MED_SST_L4_NRT_OBSERVATIONS_010_004",
+          "icr_id": 2501,
+          "requirement": "Optional",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        },
+        {
+          "provider": "DCO-DATA-00880",
+          "dataset": "dc_ghr_sst",
+          "icr_id": 2502,
+          "requirement": "Optional",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        },
+        {
+          "provider": "DCO-DATA-00810",
+          "dataset": "dc_gcomc_sgli_sst",
+          "icr_id": 2503,
+          "requirement": "Optional",
+          "icr_status": "ICR completed with errors",
+          "result_status": "MISSING_DATA"
+        }
+      ],
+      "mapping_note": "Matched to schedule 698 by ISS activation ISS-domain_S5-297, matching product scope, and the corresponding daily product reference date 2026-10-21; plan number was not used as the schedule key. The captured procurement panel is collapsed, so the date alignment is cross-checked against the daily schedule sequence.",
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-02_11/SOM_procurement/Screenshot 2026-10-26 at 09.00.43.png"
+    },
+    {
+      "plan": 700,
+      "activation": "ISS-domain_S5-297",
+      "products": "OU-S5-02-02 / OU-S5-02-11",
+      "reference_date": "2026-10-22",
+      "schedule": 699,
+      "rows": [
+        {
+          "provider": "DCO-DATA-05000",
+          "dataset": "S3_SLSTR_L2WST",
+          "icr_id": 2504,
+          "requirement": "Mandatory",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        },
+        {
+          "provider": "DCO-DATA-02052",
+          "dataset": "SST_MED_SST_L4_NRT_OBSERVATIONS_010_004",
+          "icr_id": 2505,
+          "requirement": "Optional",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        },
+        {
+          "provider": "DCO-DATA-00880",
+          "dataset": "dc_ghr_sst",
+          "icr_id": 2506,
+          "requirement": "Optional",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        },
+        {
+          "provider": "DCO-DATA-00810",
+          "dataset": "dc_gcomc_sgli_sst",
+          "icr_id": 2507,
+          "requirement": "Optional",
+          "icr_status": "ICR completed with errors",
+          "result_status": "MISSING_DATA"
+        }
+      ],
+      "mapping_note": "Matched to schedule 699 by ISS activation ISS-domain_S5-297, matching product scope, and the corresponding daily product reference date 2026-10-22; plan number was not used as the schedule key. The captured procurement panel is collapsed, so the date alignment is cross-checked against the daily schedule sequence.",
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-02_11/SOM_procurement/Screenshot 2026-10-26 at 09.00.57.png"
+    },
+    {
+      "plan": 762,
+      "activation": "ISS-domain_S5-300",
+      "products": "OU-S5-02-05",
+      "reference_date": "2026-10-21",
+      "schedule": 761,
+      "rows": [
+        {
+          "provider": "DCO-DATA-05000",
+          "dataset": "S3_OLCI_L2LFR",
+          "icr_id": 2651,
+          "requirement": "Mandatory",
+          "icr_status": "ICR completed with errors",
+          "result_status": "MISSING_DATA"
+        },
+        {
+          "provider": "DCO-DATA-03333",
+          "dataset": "dc_viirs_vnp10a1f",
+          "icr_id": 2652,
+          "requirement": "Optional",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        }
+      ],
+      "mapping_note": "Matched to schedule 761 by ISS activation ISS-domain_S5-300, matching product scope, and the corresponding daily product reference date 2026-10-21; plan number was not used as the schedule key. The captured procurement panel is collapsed, so the date alignment is cross-checked against the daily schedule sequence.",
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-05/SOM_procurement/Screenshot 2026-10-26 at 09.01.37.png"
+    },
+    {
+      "plan": 795,
+      "activation": "ISS-domain_S5-301",
+      "products": "OU-S5-02-06",
+      "reference_date": "2026-10-23",
+      "schedule": 794,
+      "rows": [
+        {
+          "provider": "DCO-DATA-00850",
+          "dataset": "dc_mtg_cloud_mask",
+          "icr_id": 2695,
+          "requirement": "Mandatory",
+          "icr_status": "ICR completed with errors",
+          "result_status": "MISSING_DATA"
+        }
+      ],
+      "mapping_note": "Matched to schedule 794 by ISS activation ISS-domain_S5-301, matching product scope, and the corresponding daily product reference date 2026-10-23; plan number was not used as the schedule key. The captured procurement panel is collapsed, so the date alignment is cross-checked against the daily schedule sequence.",
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-06/SOM_procurement/Screenshot 2026-10-26 at 09.02.01.png"
+    },
+    {
+      "plan": 823,
+      "activation": "ISS-domain_S5-303",
+      "products": "OU-S5-02-09",
+      "reference_date": "2026-10-20",
+      "schedule": 822,
+      "rows": [
+        {
+          "provider": "DCO-DATA-02100",
+          "dataset": "MCD19A2",
+          "icr_id": 2780,
+          "requirement": "Mandatory",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        },
+        {
+          "provider": "DCO-DATA-00810",
+          "dataset": "dc_gcomc_sgli_aod",
+          "icr_id": 2781,
+          "requirement": "Optional",
+          "icr_status": "ICR completed with errors",
+          "result_status": "MISSING_DATA"
+        },
+        {
+          "provider": "DCO-DATA-05000",
+          "dataset": "S3_SY_AOD",
+          "icr_id": 2782,
+          "requirement": "Optional",
+          "icr_status": "ICR completed with errors",
+          "result_status": "MISSING_DATA"
+        },
+        {
+          "provider": "DCO-DATA-00235",
+          "dataset": "dc_atmospheric_greenhouse_daily",
+          "icr_id": 2783,
+          "requirement": "Optional",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        }
+      ],
+      "mapping_note": "Matched to schedule 822 by ISS activation ISS-domain_S5-303, matching product scope, and the corresponding daily product reference date 2026-10-20; plan number was not used as the schedule key. The captured procurement panel is collapsed, so the date alignment is cross-checked against the daily schedule sequence.",
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-09/SOM_procurement/Screenshot 2026-10-26 at 09.03.04.png"
+    },
+    {
+      "plan": 824,
+      "activation": "ISS-domain_S5-303",
+      "products": "OU-S5-02-09",
+      "reference_date": "2026-10-21",
+      "schedule": 823,
+      "rows": [
+        {
+          "provider": "DCO-DATA-02100",
+          "dataset": "MCD19A2",
+          "icr_id": 2784,
+          "requirement": "Mandatory",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        },
+        {
+          "provider": "DCO-DATA-00810",
+          "dataset": "dc_gcomc_sgli_aod",
+          "icr_id": 2785,
+          "requirement": "Optional",
+          "icr_status": "ICR completed with errors",
+          "result_status": "MISSING_DATA"
+        },
+        {
+          "provider": "DCO-DATA-05000",
+          "dataset": "S3_SY_AOD",
+          "icr_id": 2786,
+          "requirement": "Optional",
+          "icr_status": "ICR completed with errors",
+          "result_status": "MISSING_DATA"
+        },
+        {
+          "provider": "DCO-DATA-00235",
+          "dataset": "dc_atmospheric_greenhouse_daily",
+          "icr_id": 2787,
+          "requirement": "Optional",
+          "icr_status": "ICR completed with errors",
+          "result_status": "MISSING_DATA"
+        }
+      ],
+      "mapping_note": "Matched to schedule 823 by ISS activation ISS-domain_S5-303, matching product scope, and the corresponding daily product reference date 2026-10-21; plan number was not used as the schedule key. The captured procurement panel is collapsed, so the date alignment is cross-checked against the daily schedule sequence.",
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-09/SOM_procurement/Screenshot 2026-10-26 at 09.03.17.png"
+    },
+    {
+      "plan": 825,
+      "activation": "ISS-domain_S5-303",
+      "products": "OU-S5-02-09",
+      "reference_date": "2026-10-22",
+      "schedule": 824,
+      "rows": [
+        {
+          "provider": "DCO-DATA-02100",
+          "dataset": "MCD19A2",
+          "icr_id": 2788,
+          "requirement": "Mandatory",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        },
+        {
+          "provider": "DCO-DATA-00810",
+          "dataset": "dc_gcomc_sgli_aod",
+          "icr_id": 2789,
+          "requirement": "Optional",
+          "icr_status": "ICR completed with errors",
+          "result_status": "MISSING_DATA"
+        },
+        {
+          "provider": "DCO-DATA-05000",
+          "dataset": "S3_SY_AOD",
+          "icr_id": 2790,
+          "requirement": "Optional",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        },
+        {
+          "provider": "DCO-DATA-00235",
+          "dataset": "dc_atmospheric_greenhouse_daily",
+          "icr_id": 2791,
+          "requirement": "Optional",
+          "icr_status": "ICR completed",
+          "result_status": "OK"
+        }
+      ],
+      "mapping_note": "Matched to schedule 824 by ISS activation ISS-domain_S5-303, matching product scope, and the corresponding daily product reference date 2026-10-22; plan number was not used as the schedule key. The captured procurement panel is collapsed, so the date alignment is cross-checked against the daily schedule sequence.",
+      "evidence": "evidence/categorised/2026-10-26/OU-S5-02-09/SOM_procurement/Screenshot 2026-10-26 at 09.03.30.png"
+    }
+  ],
+  "input_availability_audit": {
+    "checked_at_utc": "2026-10-25T23:44:25Z",
+    "source_file": "latest_input_audit_results_2026-10-25_234425Z.csv",
+    "url": "https://valentinopapangeok.github.io/iride-input-availability/",
+    "period": {
+      "from": "2026-10-18",
+      "through": "2026-10-24"
+    },
+    "summary": {
+      "inputs": 25,
+      "found": 22,
+      "over_threshold": 3,
+      "missing": 3
+    },
+    "observations": {
+      "OU-S5-02-02/11 S3_SLSTR_L2WST": "present on each date 2026-10-18 through 2026-10-24",
+      "OU-S5-02-02/11 GCOM-C L3 SST": "provider check errored (JSONDecodeError, files=0) each date; provider presence is unverified",
+      "OU-S5-02-04 H SAF H40B": "present on each date 2026-10-18 through 2026-10-24",
+      "OU-S5-02-04 MISTRAL radar": "present on each date 2026-10-18 through 2026-10-24",
+      "OU-S5-02-05 Sentinel-3 OLCI snow": "present on each date 2026-10-18 through 2026-10-24",
+      "OU-S5-02-05 VIIRS snow": "present on each date 2026-10-18 through 2026-10-24",
+      "OU-S5-02-06 MTG Cloud Mask": "present on each date 2026-10-18 through 2026-10-24",
+      "OU-S5-02-09 GCOM-C SGLI L2 Atmosphere ARNP": "provider check errored (JSONDecodeError, files=0) each date; provider presence is unverified",
+      "OU-S5-02-09 MODIS AOD": "latest found date 2026-10-22; exact daily presence and AOI/tile for the issues are not established",
+      "OU-S5-02-09 S3 SYNERGY AOD": "present on each date 2026-10-18 through 2026-10-24",
+      "OU-S5-02-09 CAMS": "daily retrieval not checked (expensive query); latest listed date 2026-10-25"
+    }
+  },
+  "kpi_breaches": [],
+  "unreadable_screenshot": "Screenshot 2026-10-26 at 09.07.08.png",
+  "duplicate_captures": [],
+  "kpi_cleanup": {
+    "effective_from": "2026-10-20",
+    "reason": "User confirmed these KPI breaches were resolved after an OMC issue was fixed. KPI issue records and OPS-to-KPI links were removed from 20 Oct onward; OPS issue records and evidence are retained."
+  }
+}

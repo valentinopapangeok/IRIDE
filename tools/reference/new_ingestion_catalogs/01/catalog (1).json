@@ -1,0 +1,49 @@
+{
+  "type": "Catalog",
+  "id": "ISS-domain_S5-300/385/484",
+  "stac_version": "1.0.0",
+  "title": "484",
+  "description": "Specific inputs for this processing",
+  "links": [
+    {
+      "rel": "self",
+      "href": "./catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "root",
+      "href": "catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "dco-data-00260_dc_era5_temperaturesinglelevels_daily_nc/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "dco-data-00260_dc_era5_temperatureland_daily_nc/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "dco-data-02100_mod11a1/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "dco-data-05000_s3_slstr_l2wst/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "dco-data-00810_dc_gcomc_sgli_lst/catalog.json",
+      "type": "application/json"
+    }
+  ]
+}

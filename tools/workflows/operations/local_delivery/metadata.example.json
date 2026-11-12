@@ -1,0 +1,23 @@
+{
+  "id": "IRIDE-S_S5-02-04_20260521T0840_V0",
+  "collection": "IRIDE-S_S5-02-04_V0",
+  "datetime": "2026-05-21T08:40:00Z",
+  "title": "IRIDE-S S5-02-04 precipitation product",
+  "description": "Offline local delivery package for product 04.",
+  "product_code": "S5-02-04",
+  "product_version": "V0",
+  "properties": {
+    "platform": "IRIDE",
+    "instruments": ["MISTRAL", "H SAF"],
+    "product:type": "Raster (.geotiff)",
+    "format": "Raster",
+    "iss:activation_mode": "systematic",
+    "iss:temporal_resolution": "hourly",
+    "iss:stack": "single"
+  },
+  "asset": {
+    "title": "Product 04 GeoTIFF",
+    "roles": ["data"],
+    "media_type": "image/tiff; application=geotiff"
+  }
+}

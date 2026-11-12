@@ -1,0 +1,49 @@
+{
+  "type": "Catalog",
+  "id": "DCO-DATA-00810_dc_gcomc_sgli_sst",
+  "stac_version": "1.0.0",
+  "title": "DCO-DATA-00810_dc_gcomc_sgli_sst",
+  "description": "DCO-DATA-00810-dc_gcomc_sgli_sst",
+  "links": [
+    {
+      "rel": "self",
+      "href": "./catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "GC1SG1_20260417A01D_D0000_3MSG_LST_F_3000.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "GC1SG1_20260417A01D_X0000_3BSG_LST_F_3000.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "GC1SG1_20260417D01D_D0000_3MSG_LST_F_3000.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "GC1SG1_20260417D01D_X0000_3BSG_LST_F_3000.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "status.json",
+      "type": "application/json"
+    }
+  ]
+}

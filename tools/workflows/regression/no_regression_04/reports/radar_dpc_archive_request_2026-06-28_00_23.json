@@ -1,0 +1,39 @@
+{
+  "submitted": {
+    "status_code": 202,
+    "payload": {
+      "request_name": "no_regression_04_radar_dpc_20260628_0000_2300",
+      "reftime": {
+        "from": "2026-06-28T00:00:00.000Z",
+        "to": "2026-06-28T23:00:00.000Z"
+      },
+      "dataset_names": [
+        "radar_dpc"
+      ]
+    },
+    "response": {
+      "request_id": 4541209,
+      "task_id": "dd16c5ab-16cb-4b24-96d2-aef30a8b2c50"
+    }
+  },
+  "polls": [
+    {
+      "id": 4541209,
+      "name": "no_regression_04_radar_dpc_20260628_0000_2300",
+      "args": {
+        "reftime": {
+          "to": "2026-06-28T23:00:00.000000Z",
+          "from": "2026-06-28T00:00:00.000000Z"
+        },
+        "only_reliable": false,
+        "dataset_names": [
+          "radar_dpc"
+        ]
+      },
+      "submission_date": "2026-07-01T10:42:50.740594",
+      "status": "PENDING",
+      "task_id": "dd16c5ab-16cb-4b24-96d2-aef30a8b2c50",
+      "opendata": false
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+﻿"Activation ID";"Product";"KPI Code";"KPI Name";"Value";"SLA Target";"Status";"Start reference";"Output Ref. Start";"Output Ref. End";"Event Time"
+"ISS-domain_S5-303";"OU-S5-02-09";"KPI-01-03-01";"Service Timeliness - Production time";"48 h";"24 h";"BREACH Expired";"";"";"";"15/10/2026, 00:06:49"
+"ISS-domain_S5-303";"OU-S5-02-09";"KPI-01-03-01";"Service Timeliness - Production time";"48 h";"24 h";"BREACH Expired";"";"";"";"14/10/2026, 00:06:38"
+"ISS-domain_S5-297";"OU-S5-02-02";"KPI-01-03-01";"Service Timeliness - Production time";"48 h";"24 h";"BREACH Expired";"";"";"";"14/10/2026, 00:00:31"

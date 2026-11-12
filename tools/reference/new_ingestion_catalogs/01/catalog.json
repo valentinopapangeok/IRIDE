@@ -1,0 +1,34 @@
+{
+  "type": "Catalog",
+  "id": "DCO-DATA-00260_dc_era5_temperatureland_daily_nc",
+  "stac_version": "1.0.0",
+  "title": "DCO-DATA-00260_dc_era5_temperatureland_daily_nc",
+  "description": "DCO-DATA-00260-dc_era5_temperatureland_daily_nc",
+  "links": [
+    {
+      "rel": "self",
+      "href": "./catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "ERA5_LAND_20260417.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "status.json",
+      "type": "application/json"
+    }
+  ]
+}

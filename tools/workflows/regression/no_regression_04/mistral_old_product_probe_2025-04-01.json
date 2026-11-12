@@ -1,0 +1,50 @@
+[
+  {
+    "route": "old_tfs_route",
+    "base_url": "https://meteohub.mistralportal.it",
+    "dataset": "radar_dpc",
+    "listing_url": "https://meteohub.mistralportal.it/api/datasets/radar_dpc/opendata?q=q",
+    "status_code": 200,
+    "content_type": "text/html;charset=UTF-8",
+    "final_url": "https://meteohub.agenziaitaliameteo.it/ui/homepage",
+    "json_listing": false,
+    "listing_count": 0,
+    "target_date": "2025-04-01",
+    "matched": false,
+    "filename": "",
+    "downloaded_file": "",
+    "notes": "<!DOCTYPE html><html lang=\"en\" data-beasties-container><head>   <meta charset=\"utf-8\">   <title>MeteoHub</title>   <base href=\"/ui/\">   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">   <link rel=\"icon\" type=\"image/x-icon\" href=\"assets/favicon.ico\">   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\"> <style>:root{--fa-family-brands:\"Font Awesome 7 Brands\";--fa-font-brands:normal 400 1em/1 var(--fa-family-brands)}:root{--f"
+  },
+  {
+    "route": "old_dataset_new_host",
+    "base_url": "https://meteohub.agenziaitaliameteo.it",
+    "dataset": "radar_dpc",
+    "listing_url": "https://meteohub.agenziaitaliameteo.it/api/datasets/radar_dpc/opendata?q=q",
+    "status_code": 200,
+    "content_type": "application/json",
+    "final_url": "https://meteohub.agenziaitaliameteo.it/api/datasets/radar_dpc/opendata?q=q",
+    "json_listing": true,
+    "listing_count": 0,
+    "target_date": "2025-04-01",
+    "matched": false,
+    "filename": "",
+    "downloaded_file": "",
+    "notes": "empty JSON listing"
+  },
+  {
+    "route": "current_dataset_new_host",
+    "base_url": "https://meteohub.agenziaitaliameteo.it",
+    "dataset": "radar_sri_dpc",
+    "listing_url": "https://meteohub.agenziaitaliameteo.it/api/datasets/radar_sri_dpc/opendata?q=q",
+    "status_code": 200,
+    "content_type": "application/json",
+    "final_url": "https://meteohub.agenziaitaliameteo.it/api/datasets/radar_sri_dpc/opendata?q=q",
+    "json_listing": true,
+    "listing_count": 7,
+    "target_date": "2025-04-01",
+    "matched": false,
+    "filename": "",
+    "downloaded_file": "",
+    "notes": "available_range=2026-05-21..2026-05-27; latest_dates=['2026-05-21', '2026-05-22', '2026-05-23', '2026-05-24', '2026-05-25', '2026-05-26', '2026-05-27']"
+  }
+]

@@ -1,0 +1,111 @@
+name: Validate pushed S5 products
+
+on:
+  workflow_dispatch:
+    inputs:
+      manifest:
+        description: Path below operations/product-validation, or "all"
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  select:
+    runs-on: ubuntu-latest
+    outputs:
+      manifests: ${{ steps.changed.outputs.manifests }}
+    env:
+      SELECTED_MANIFEST: ${{ inputs.manifest }}
+    defaults:
+      run:
+        working-directory: operations/product-validation
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: false
+      - name: Select product packages
+        id: changed
+        run: |
+          if test "$SELECTED_MANIFEST" = all; then
+            git ls-files 'daily-inputs/**/manifest.json' > "$RUNNER_TEMP/changed_paths.txt"
+          elif test -n "$SELECTED_MANIFEST"; then
+            printf '%s\n' "$SELECTED_MANIFEST" > "$RUNNER_TEMP/changed_paths.txt"
+          else
+            : > "$RUNNER_TEMP/changed_paths.txt"
+          fi
+          python tools/list_changed_manifests.py "$RUNNER_TEMP/changed_paths.txt" >> "$GITHUB_OUTPUT"
+
+  validate:
+    needs: select
+    if: needs.select.outputs.manifests != '[]'
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        manifest: ${{ fromJSON(needs.select.outputs.manifests) }}
+    concurrency:
+      group: s5-${{ matrix.manifest }}
+      cancel-in-progress: false
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      MANIFEST: ${{ matrix.manifest }}
+    defaults:
+      run:
+        working-directory: operations/product-validation
+    steps:
+      - uses: actions/checkout@v4
+        env:
+          GIT_LFS_SKIP_SMUDGE: "1"
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: operations/product-validation/pyproject.toml
+      - name: Install scientific dependencies
+        run: python -m pip install -e ".[scientific]"
+      - name: Fetch selected product assets from Git LFS
+        run: |
+          git lfs version
+          ROOT="${MANIFEST%/manifest.json}"
+          git lfs pull \
+            --include "operations/product-validation/$ROOT/assets/*" \
+            --exclude ""
+      - name: Install provider credentials for this run
+        env:
+          DOWNLOADER_ENV: ${{ secrets.S5_DOWNLOADER_ENV }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          target = Path(os.environ["RUNNER_TEMP"]) / "downloaders.env"
+          target.write_text(os.environ.get("DOWNLOADER_ENV", ""), encoding="utf-8")
+          target.chmod(0o600)
+          PY
+      - name: Fetch references and validate package
+        run: |
+          mkdir -p "$RUNNER_TEMP/pending-request-state"
+          printf '%s\n' "$MANIFEST" > "$RUNNER_TEMP/changed_paths.txt"
+          python tools/run_pushed_inputs.py \
+            --changed-paths "$RUNNER_TEMP/changed_paths.txt" \
+            --downloader-credentials-file "$RUNNER_TEMP/downloaders.env" \
+            --request-state-dir "$RUNNER_TEMP/pending-request-state" \
+            --workdir "$RUNNER_TEMP/s5-pushed-validation" \
+            --public-summary "$RUNNER_TEMP/public-kpi/result.json"
+      - name: Retain aggregate KPI outcome
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kpi-${{ strategy.job-index }}
+          path: ${{ runner.temp }}/public-kpi/*.json
+          if-no-files-found: ignore
+      - name: Remove runtime data and credentials
+        if: always()
+        run: |
+          rm -rf "$RUNNER_TEMP/s5-pushed-validation"
+          rm -f "$RUNNER_TEMP/downloaders.env"

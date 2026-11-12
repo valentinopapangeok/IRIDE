@@ -1,0 +1,59 @@
+{
+  "type": "Catalog",
+  "id": "DCO-DATA-05000_S3_OLCI_L2LFR",
+  "stac_version": "1.0.0",
+  "title": "DCO-DATA-05000_S3_OLCI_L2LFR",
+  "description": "cop_dataspace-S3_OLCI_L2LFR",
+  "links": [
+    {
+      "rel": "self",
+      "href": "./catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3A_OL_2_LFR____20260428T090603_20260428T090903_20260428T111118_0179_138_378_2160_PS1_O_NR_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3A_OL_2_LFR____20260428T090603_20260428T090903_20260429T132022_0179_138_378_2160_PS1_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3A_OL_2_LFR____20260428T090903_20260428T091203_20260429T132128_0179_138_378_2340_PS1_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3B_OL_2_LFR____20260428T083025_20260428T083325_20260429T093525_0179_119_235_2340_ESA_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3B_OL_2_LFR____20260428T100824_20260428T101124_20260428T122123_0179_119_236_2160_ESA_O_NR_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3B_OL_2_LFR____20260428T100824_20260428T101124_20260429T110156_0179_119_236_2160_ESA_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3B_OL_2_LFR____20260428T101124_20260428T101424_20260429T110205_0179_119_236_2340_ESA_O_NT_003.json",
+      "type": "application/json"
+    }
+  ]
+}

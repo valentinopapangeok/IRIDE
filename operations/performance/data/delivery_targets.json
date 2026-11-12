@@ -1,0 +1,77 @@
+{
+  "source": "User specification supplied 2026-10-06",
+  "deadline_convention": "End of reference date plus timeliness days",
+  "deadline_timezone": "Europe/Rome",
+  "monthly_period_anchor": "Reference month",
+  "products": [
+    {
+      "product": "OU-S5-02-01",
+      "name": "LST",
+      "delivery_frequency": "Daily",
+      "timeliness_days": 8
+    },
+    {
+      "product": "OU-S5-02-02",
+      "name": "SST",
+      "delivery_frequency": "Daily",
+      "timeliness_days": 4
+    },
+    {
+      "product": "OU-S5-02-03",
+      "name": "Solar Radiation",
+      "delivery_frequency": "Daily",
+      "timeliness_days": 2
+    },
+    {
+      "product": "OU-S5-02-04",
+      "name": "Precipitation amount",
+      "delivery_frequency": "Daily",
+      "timeliness_days": 2
+    },
+    {
+      "product": "OU-S5-02-05",
+      "name": "Snow cover",
+      "delivery_frequency": "Daily",
+      "timeliness_days": 4
+    },
+    {
+      "product": "OU-S5-02-06",
+      "name": "Cloud Cover",
+      "delivery_frequency": "Daily",
+      "timeliness_days": 2
+    },
+    {
+      "product": "OU-S5-02-07",
+      "name": "Methane column",
+      "delivery_frequency": "Monthly",
+      "timeliness_days": 9,
+      "deadline_rule": "End of the 9th day of the following month, Europe/Rome"
+    },
+    {
+      "product": "OU-S5-02-08",
+      "name": "Carbon Dioxide column",
+      "delivery_frequency": "Monthly",
+      "timeliness_days": 9,
+      "deadline_rule": "End of the 9th day of the following month, Europe/Rome"
+    },
+    {
+      "product": "OU-S5-02-09",
+      "name": "Aerosols",
+      "delivery_frequency": "Daily",
+      "timeliness_days": 4
+    },
+    {
+      "product": "OU-S5-02-10",
+      "name": "LST Downscale",
+      "delivery_frequency": "Daily",
+      "timeliness_days": 8
+    },
+    {
+      "product": "OU-S5-02-11",
+      "name": "SST Downscale",
+      "delivery_frequency": "Daily",
+      "timeliness_days": 4
+    }
+  ],
+  "monthly_deadline": "End of the 9th day of the following month, Europe/Rome"
+}

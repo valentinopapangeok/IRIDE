@@ -1,0 +1,74 @@
+# ------------------------
+# Python virtual environments
+# ------------------------
+.venv/
+.venv
+env/
+venv/
+
+# ------------------------
+# Python bytecode
+# ------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ------------------------
+# Distribution / packaging
+# ------------------------
+build/
+dist/
+*.egg-info/
+*.egg
+
+# ------------------------
+# Test / coverage
+# ------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ------------------------
+# Jupyter notebooks
+# ------------------------
+.ipynb_checkpoints/
+
+# ------------------------
+# IDE / editor files
+# ------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ------------------------
+# Misc
+# ------------------------
+*.log
+*.tmp
+*.bak
+
+# ------------------------
+# Data folder
+# ------------------------
+workflows/aoi_expansion_04/data/*.grib
+data/
+
+# Runtime downloads and generated audit outputs
+workflows/input_availability/runtime_downloads/
+workflows/input_availability/audit_results/
+workflows/input_availability/site/
+
+# Local S3 helper config
+buckets/.env
+buckets/downloads/
+
+# Purpose-based layout (legacy patterns above remain for compatibility).
+workflows/operations/input_availability/config.json
+workflows/operations/input_availability/runtime_downloads*/
+workflows/operations/input_availability/audit_results/
+workflows/operations/input_availability/site/
+workflows/operations/input_availability/event_downloads/
+workflows/operations/buckets/.env
+workflows/operations/buckets/downloads/
+workflows/geospatial/aoi_expansion_04/data/*.grib

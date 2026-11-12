@@ -1,0 +1,20 @@
+{
+  "iss:classes": "5",
+  "iss:classes_values": "-15.00 °C = -15; 2.50 = 2.5; 20.00 = 20; 37.50 = 37.5; 55.00 = 55",
+  "iss:stack": "single",
+  "iss:spatial_resolution": {
+    "max": 1200,
+    "min": 800
+  },
+  "proj:code": "EPSG: 4326",
+  "iss:activation_mode": "systematic",
+  "iss:temporal_resolution": "daily",
+  "properties": {
+    "format": "Raster",
+    "production_datetime": "6 Solar Days",
+    "proj:code": "EPSG: 4326"
+  },
+  "product:type": "Raster (.geotiff)",
+  "accuracy:geometric_rmse": "NA",
+  "accuracy:measurement_relative": "20% relative RMSE"
+}

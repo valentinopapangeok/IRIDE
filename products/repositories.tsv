@@ -1,0 +1,14 @@
+directory	remote
+svc_S5-02	https://gitlab.iride.earth/iride-marketplace/service-segment-ptk/servicesegment-lot1/service-value-chains/s5-02/containers/svc_s5-02.git
+svc_s5-02-01	https://gitlab.iride.earth/iride-marketplace/service-segment-ptk/servicesegment-lot1/service-value-chains/s5-02/containers/svc_s5-02-01.git
+svc_s5-02-02	https://gitlab.iride.earth/iride-marketplace/service-segment-ptk/servicesegment-lot1/service-value-chains/s5-02/containers/svc_s5-02-02.git
+svc_s5-02-03	https://gitlab.iride.earth/iride-marketplace/service-segment-ptk/servicesegment-lot1/service-value-chains/s5-02/containers/svc_s5-02-03.git
+svc_s5-02-04	https://gitlab.iride.earth/iride-marketplace/service-segment-ptk/servicesegment-lot1/service-value-chains/s5-02/containers/svc_s5-02-04.git
+svc_s5-02-05	https://gitlab.iride.earth/iride-marketplace/service-segment-ptk/servicesegment-lot1/service-value-chains/s5-02/containers/svc_s5-02-05.git
+svc_s5-02-06	https://gitlab.iride.earth/iride-marketplace/service-segment-ptk/servicesegment-lot1/service-value-chains/s5-02/containers/svc_s5-02-06.git
+svc_s5-02-07	https://gitlab.iride.earth/iride-marketplace/service-segment-ptk/servicesegment-lot1/service-value-chains/s5-02/containers/svc_s5-02-07.git
+svc_s5-02-08	https://gitlab.iride.earth/iride-marketplace/service-segment-ptk/servicesegment-lot1/service-value-chains/s5-02/containers/svc_s5-02-08.git
+svc_s5-02-09	https://gitlab.iride.earth/iride-marketplace/service-segment-ptk/servicesegment-lot1/service-value-chains/s5-02/containers/svc_s5-02-09.git
+svc_s5-02-10	https://gitlab.iride.earth/iride-marketplace/service-segment-ptk/servicesegment-lot1/service-value-chains/s5-02/containers/svc_s5-02-10.git
+svc_s5-02-11	https://gitlab.iride.earth/iride-marketplace/service-segment-ptk/servicesegment-lot1/service-value-chains/s5-02/containers/svc_s5-02-11.git
+prefect-common	https://gitlab.iride.earth/iride-marketplace/service-segment-ptk/devops_templates/svc-prefect-template/containers/prefect-common.git

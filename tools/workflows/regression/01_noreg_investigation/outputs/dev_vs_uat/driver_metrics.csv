@@ -1,0 +1,9 @@
+metric,count_or_pct,uat_significant_pixels,dev_significant_pixels
+dev_and_uat_valid,231333,249,249
+uat_only_valid_vs_dev,37349,23259,0
+dev_only_valid_vs_uat,0,0,0
+v0_and_uat_overlap,267119,23508,249
+v0_and_dev_overlap,231307,249,249
+v0_and_uat_only_overlap,35812,23259,0
+uat_only_not_v0_valid,1537,0,0
+uat_vs_v0_restricted_to_dev_footprint_pct,99.89235085838301,231307,249

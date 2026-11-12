@@ -1,0 +1,145 @@
+{
+  "as_of": "2026-10-15",
+  "delivery_kpi_name": "Service Timeliness - Delivery Timeliness (Systematic)",
+  "production_kpi_name": "Service Timeliness - Production time",
+  "unit": "HOURS",
+  "definitions": [
+    {
+      "product": "OU-S5-02-01",
+      "product_name": "LST",
+      "delivery_kpi_code": "KPI-01-03-02-01",
+      "delivery_target_hours": 192,
+      "delivery_target_days_displayed": 8,
+      "production_kpi_code": "KPI-01-03-01",
+      "production_target_hours": 24,
+      "mgp_percent": 90,
+      "source_csv": "kpi-report-2026-10-15.csv",
+      "source_screenshot": "Screenshot 2026-10-15 at 08.43.48.png"
+    },
+    {
+      "product": "OU-S5-02-02",
+      "product_name": "SST",
+      "delivery_kpi_code": "KPI-01-03-02-01",
+      "delivery_target_hours": 96,
+      "delivery_target_days_displayed": 4,
+      "production_kpi_code": "KPI-01-03-01",
+      "production_target_hours": 24,
+      "mgp_percent": 90,
+      "source_csv": "kpi-report-2026-10-15 (1).csv",
+      "source_screenshot": "Screenshot 2026-10-15 at 08.43.53.png"
+    },
+    {
+      "product": "OU-S5-02-03",
+      "product_name": "Solar Radiation",
+      "delivery_kpi_code": "KPI-01-03-02-01",
+      "delivery_target_hours": 48,
+      "delivery_target_days_displayed": 2,
+      "production_kpi_code": "KPI-01-03-01",
+      "production_target_hours": 24,
+      "mgp_percent": 90,
+      "source_csv": "kpi-report-2026-10-15 (2).csv",
+      "source_screenshot": "Screenshot 2026-10-15 at 08.43.59.png"
+    },
+    {
+      "product": "OU-S5-02-04",
+      "product_name": "Precipitation amount",
+      "delivery_kpi_code": "KPI-01-03-02-01",
+      "delivery_target_hours": 48,
+      "delivery_target_days_displayed": 2,
+      "production_kpi_code": "KPI-01-03-01",
+      "production_target_hours": 24,
+      "mgp_percent": 90,
+      "source_csv": "kpi-report-2026-10-15 (3).csv",
+      "source_screenshot": "Screenshot 2026-10-15 at 08.44.05.png"
+    },
+    {
+      "product": "OU-S5-02-05",
+      "product_name": "Snow cover",
+      "delivery_kpi_code": "KPI-01-03-02-01",
+      "delivery_target_hours": 96,
+      "delivery_target_days_displayed": 4,
+      "production_kpi_code": "KPI-01-03-01",
+      "production_target_hours": 24,
+      "mgp_percent": 90,
+      "source_csv": "kpi-report-2026-10-15 (4).csv",
+      "source_screenshot": "Screenshot 2026-10-15 at 08.44.10.png"
+    },
+    {
+      "product": "OU-S5-02-06",
+      "product_name": "Cloud Cover",
+      "delivery_kpi_code": "KPI-01-03-02-01",
+      "delivery_target_hours": 48,
+      "delivery_target_days_displayed": 2,
+      "production_kpi_code": "KPI-01-03-01",
+      "production_target_hours": 24,
+      "mgp_percent": 90,
+      "source_csv": "kpi-report-2026-10-15 (5).csv",
+      "source_screenshot": "Screenshot 2026-10-15 at 08.44.16.png"
+    },
+    {
+      "product": "OU-S5-02-07",
+      "product_name": "Methane column",
+      "delivery_kpi_code": "KPI-01-03-02-01",
+      "delivery_target_hours": 216,
+      "delivery_target_days_displayed": 9,
+      "production_kpi_code": "KPI-01-03-01",
+      "production_target_hours": 24,
+      "mgp_percent": 90,
+      "source_csv": "kpi-report-2026-10-15 (6).csv",
+      "source_screenshot": "Screenshot 2026-10-15 at 08.44.22.png"
+    },
+    {
+      "product": "OU-S5-02-08",
+      "product_name": "Carbon Dioxide column",
+      "delivery_kpi_code": "KPI-01-03-02-01",
+      "delivery_target_hours": 216,
+      "delivery_target_days_displayed": 9,
+      "production_kpi_code": "KPI-01-03-01",
+      "production_target_hours": 24,
+      "mgp_percent": 90,
+      "source_csv": "kpi-report-2026-10-15 (7).csv",
+      "source_screenshot": "Screenshot 2026-10-15 at 08.44.27.png"
+    },
+    {
+      "product": "OU-S5-02-09",
+      "product_name": "Aerosols",
+      "delivery_kpi_code": "KPI-01-03-02-01",
+      "delivery_target_hours": 96,
+      "delivery_target_days_displayed": 4,
+      "production_kpi_code": "KPI-01-03-01",
+      "production_target_hours": 24,
+      "mgp_percent": 90,
+      "source_csv": "kpi-report-2026-10-15 (8).csv",
+      "source_screenshot": "Screenshot 2026-10-15 at 08.44.33.png"
+    },
+    {
+      "product": "OU-S5-02-10",
+      "product_name": "LST Downscale",
+      "delivery_kpi_code": "KPI-01-03-02-01",
+      "delivery_target_hours": 192,
+      "delivery_target_days_displayed": 8,
+      "production_kpi_code": "KPI-01-03-01",
+      "production_target_hours": 24,
+      "mgp_percent": 90,
+      "source_csv": "kpi-report-2026-10-15 (9).csv",
+      "source_screenshot": "Screenshot 2026-10-15 at 08.44.38.png"
+    },
+    {
+      "product": "OU-S5-02-11",
+      "product_name": "SST Downscale",
+      "delivery_kpi_code": "KPI-01-03-02-01",
+      "delivery_target_hours": 96,
+      "delivery_target_days_displayed": 4,
+      "production_kpi_code": "KPI-01-03-01",
+      "production_target_hours": 24,
+      "mgp_percent": 90,
+      "source_csv": "kpi-report-2026-10-15 (10).csv",
+      "source_screenshot": "Screenshot 2026-10-15 at 08.44.43.png"
+    }
+  ],
+  "notes": [
+    "Product assignment confirmed by 11 screenshots; matching CSV target values.",
+    "MGP aggregation method and timing start reference are not specified by these files.",
+    "The 9-day monthly KPI target does not itself define the operational calendar deadline."
+  ]
+}

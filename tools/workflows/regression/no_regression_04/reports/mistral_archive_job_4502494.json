@@ -1,0 +1,24 @@
+{
+  "request_id": 4502494,
+  "found": true,
+  "request": {
+    "id": 4502494,
+    "name": "rome_tornado_radar_20260603_0645_0730",
+    "args": {
+      "reftime": {
+        "to": "2026-06-03T07:30:00.000000Z",
+        "from": "2026-06-03T06:45:00.000000Z"
+      },
+      "only_reliable": false,
+      "dataset_names": [
+        "radar_dpc"
+      ]
+    },
+    "submission_date": "2026-06-26T08:59:57.553408",
+    "status": "PENDING",
+    "task_id": "8a55eb1c-1368-4ca4-bb6d-fa8e0e2623fd",
+    "opendata": false
+  },
+  "downloaded_file": "",
+  "downloaded_bytes": 0
+}

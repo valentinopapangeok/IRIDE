@@ -1,0 +1,15 @@
+metric,value
+dev_valid,231333
+uat_valid,268682
+overlap_valid,231333
+valid_only_dev,0
+valid_only_uat,37349
+overlap_equal_exact,231333
+overlap_absdiff_gt_0,0
+overlap_absdiff_gt_0_01,0
+overlap_absdiff_gt_1,0
+overlap_reldiff_gt_5pct,0
+mean_absdiff_overlap,0.0
+median_absdiff_overlap,0.0
+p95_absdiff_overlap,0.0
+max_absdiff_overlap,0.0

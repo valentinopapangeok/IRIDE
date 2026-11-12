@@ -1,0 +1,29 @@
+{
+  "type": "Catalog",
+  "id": "ISS-domain_S5-272/361",
+  "stac_version": "1.0.0",
+  "title": "361",
+  "description": "",
+  "links": [
+    {
+      "rel": "self",
+      "href": "./catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "root",
+      "href": "catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "435/catalog.json",
+      "type": "application/json"
+    }
+  ]
+}

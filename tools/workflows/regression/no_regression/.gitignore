@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# Local runtime environments.
+local_satpy_venv/
+tiff_diff_visualizer/.venv/
+
+# Local visualizer scratch/output files.
+tiff_diff_visualizer/input_tiffs/
+tiff_diff_visualizer/outputs/
+
+# Large local downloads from input test-date audits.
+input_testDates/runtime_downloads/

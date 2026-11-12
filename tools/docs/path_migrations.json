@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-02",
+  "compatibility": "Relative directory symlinks; canonical paths for new references. Commit destinations and aliases together.",
+  "paths": {
+    "workflows/bilateral_filter": "workflows/analysis/bilateral_filter",
+    "workflows/resolution_extraction": "workflows/analysis/resolution_extraction",
+    "workflows/resolution_comparison_07_08": "workflows/analysis/resolution_comparison_07_08",
+    "workflows/vulnerability_reports": "workflows/analysis/vulnerability_reports",
+    "workflows/ingestion_examples": "examples/ingestion",
+    "workflows/input_availability": "workflows/operations/input_availability",
+    "workflows/local_dco_download": "workflows/operations/local_dco_download",
+    "workflows/local_delivery": "workflows/operations/local_delivery",
+    "buckets": "workflows/operations/buckets",
+    "workflows/no_regression": "workflows/regression/no_regression",
+    "workflows/no_regression_04": "workflows/regression/no_regression_04",
+    "workflows/no_regression_october_viirs": "workflows/regression/no_regression_october_viirs",
+    "workflows/01_noreg_investigation": "workflows/regression/01_noreg_investigation",
+    "workflows/aoi_expansion_04": "workflows/geospatial/aoi_expansion_04"
+  }
+}

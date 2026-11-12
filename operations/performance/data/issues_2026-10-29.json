@@ -1,0 +1,108 @@
+{
+  "observed_on": "2026-10-29",
+  "internal_workbook": "SVC_OPS_Plan_S5-02_internal.xlsx",
+  "ops_issues": [
+    {
+      "id": "OPS-20261029-667",
+      "schedule": 667,
+      "activation": "ISS-domain_S5-296",
+      "products": "SE-S5-02-01",
+      "delivery": 1443,
+      "ref": "2026-10-21",
+      "start": "2026-10-29T00:11:46Z",
+      "end": "2026-10-29T01:41:47Z",
+      "plan": 668,
+      "icrs": [
+        2355,
+        2357
+      ],
+      "datasets": [
+        "dc_gcomc_sgli_lst",
+        "MOD11A1"
+      ],
+      "note": "Plan 668 shows error counters (0 green / 1 red) for optional GCOM-C SGLI LST and optional MOD11A1 for product 01. Expanded ICR result and input reference dates are not visible. Schedule 667 product 01 completed with WF/DL/ET OK. MOD11A1 cause unconfirmed. KPI Values screenshot is empty for 28–29 Oct; no KPI issue evidenced.",
+      "kpi_breach": false,
+      "evidence": "evidence/categorised/2026-10-29/OU-S5-02-01_10/SOM_schedule/Screenshot 2026-10-29 at 11.05.51.png",
+      "procurement_evidence": "evidence/categorised/2026-10-29/OU-S5-02-01/SOM_procurement/Screenshot 2026-10-29 at 11.05.42.png",
+      "kpi_evidence": "evidence/categorised/2026-10-29/OU-S5-02/OMC_KPI/Screenshot 2026-10-29 at 11.05.08.png",
+      "mapping_basis": "Same ISS activation and affected product; procurement reference dates are hidden, so exact input-date match is unconfirmed."
+    },
+    {
+      "id": "OPS-20261029-827",
+      "schedule": 827,
+      "activation": "ISS-domain_S5-303",
+      "products": "SE-S5-02-09",
+      "delivery": 1646,
+      "ref": "2026-10-25",
+      "start": "2026-10-29T00:09:34Z",
+      "end": "2026-10-29T00:11:21Z",
+      "plan": 828,
+      "icrs": [
+        2801
+      ],
+      "datasets": [
+        "dc_gcomc_sgli_aod"
+      ],
+      "note": "Plan 828 shows an error counter (0 green / 1 red) for optional GCOM-C SGLI AOD for product 09. Expanded ICR result and input reference date are not visible. Schedule 827 product 09 completed with WF/DL/ET OK. KPI Values screenshot is empty for 28–29 Oct; no KPI issue evidenced.",
+      "kpi_breach": false,
+      "evidence": "evidence/categorised/2026-10-29/OU-S5-02-09/SOM_schedule/Screenshot 2026-10-29 at 11.07.41.png",
+      "procurement_evidence": "evidence/categorised/2026-10-29/OU-S5-02-09/SOM_procurement/Screenshot 2026-10-29 at 11.07.33.png",
+      "kpi_evidence": "evidence/categorised/2026-10-29/OU-S5-02/OMC_KPI/Screenshot 2026-10-29 at 11.05.08.png",
+      "mapping_basis": "Same ISS activation and affected product; procurement reference date is hidden, so exact input-date match is unconfirmed."
+    }
+  ],
+  "procurement_observations": [
+    {
+      "plan": 668,
+      "activation": "ISS-domain_S5-296",
+      "products": "OU-S5-02-01",
+      "reference_date": null,
+      "schedule_candidate": 667,
+      "provider": "DCO-DATA-00810",
+      "datasets": [
+        {
+          "name": "dc_gcomc_sgli_lst",
+          "icr": 2355,
+          "requirement": "Optional"
+        },
+        {
+          "name": "MOD11A1",
+          "icr": 2357,
+          "requirement": "Optional"
+        }
+      ],
+      "selection": "Primary",
+      "green_counter": 0,
+      "red_counter": 1,
+      "icr_status": "ICR completed with errors",
+      "result_status": null,
+      "observed_on": "2026-10-29",
+      "evidence": "evidence/categorised/2026-10-29/OU-S5-02-01/SOM_procurement/Screenshot 2026-10-29 at 11.05.42.png",
+      "mapping_basis": "Activation and affected product match schedule 667/product 01; input details are collapsed, so input reference date and exact result are unconfirmed.",
+      "catalog_root_path": "s3://iss-prod-geo-dco/activations/ISS-domain_S5-296/catalog.json"
+    },
+    {
+      "plan": 828,
+      "activation": "ISS-domain_S5-303",
+      "products": "OU-S5-02-09",
+      "reference_date": null,
+      "schedule_candidate": 827,
+      "provider": "DCO-DATA-00810",
+      "dataset": "dc_gcomc_sgli_aod",
+      "icr": 2801,
+      "requirement": "Optional",
+      "selection": "Primary",
+      "green_counter": 0,
+      "red_counter": 1,
+      "icr_status": "ICR completed with errors",
+      "result_status": null,
+      "observed_on": "2026-10-29",
+      "evidence": "evidence/categorised/2026-10-29/OU-S5-02-09/SOM_procurement/Screenshot 2026-10-29 at 11.07.33.png",
+      "mapping_basis": "Activation and affected product match schedule 827/product 09; input details are collapsed, so input reference date and exact result are unconfirmed.",
+      "catalog_root_path": "s3://iss-prod-geo-dco/activations/ISS-domain_S5-303/catalog.json"
+    }
+  ],
+  "kpi_breaches": [],
+  "kpi_screenshot": "evidence/categorised/2026-10-29/OU-S5-02/OMC_KPI/Screenshot 2026-10-29 at 11.05.08.png",
+  "provider_portal_status": "User has reported GPORTAL down; no access or availability audit was attempted."
+}

@@ -1,0 +1,6 @@
+# Discovery noise only; keep originals and structured logs searchable.
+/backups/
+/templates/
+/evidence/categorised/
+/docs/history/
+*.inspect.ndjson

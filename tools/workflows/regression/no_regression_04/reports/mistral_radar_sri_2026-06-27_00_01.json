@@ -1,0 +1,16 @@
+{
+  "payload": {
+    "request_name": "mistral_radar_sri_dpc_20260627_0000_0100",
+    "reftime": {
+      "from": "2026-06-27T00:00:00.000Z",
+      "to": "2026-06-27T01:00:00.000Z"
+    },
+    "dataset_names": [
+      "radar_sri_dpc"
+    ]
+  },
+  "response": {
+    "request_id": 4541517,
+    "task_id": "4e46e8bc-0320-4e67-a71f-b93a5755892a"
+  }
+}

@@ -1,0 +1,59 @@
+name: Offline tests
+
+on:
+  push:
+    paths:
+      - "apps/**"
+      - "operations/product-validation/**"
+      - "tools/**"
+      - ".github/workflows/tests.yml"
+  pull_request:
+    paths:
+      - "apps/**"
+      - "operations/product-validation/**"
+      - "tools/**"
+      - ".github/workflows/tests.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  input-availability:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: apps/input-availability/requirements.txt
+      - name: Install dependencies
+        working-directory: apps/input-availability
+        run: python -m pip install -r requirements.txt
+      - name: Run offline tests
+        working-directory: apps/input-availability
+        run: python -m unittest discover -s input_availability -p "test_*.py" -v
+
+  product-validation:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ["3.11", "3.12"]
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        working-directory: operations/product-validation
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: operations/product-validation/pyproject.toml
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install -e ".[scientific,dev]"
+      - run: python -m pip check
+      - run: python tools/doctor.py
+      - run: python -m unittest discover -s tests -v
+      - run: python tools/smoke_test.py

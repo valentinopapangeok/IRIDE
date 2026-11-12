@@ -1,0 +1,110 @@
+{
+  "observed_on": "2026-10-30",
+  "internal_workbook": "SVC_OPS_Plan_S5-02_internal.xlsx",
+  "ops_issues": [
+    {
+      "id": "OPS-20261030-766",
+      "schedule": 766,
+      "activation": "ISS-domain_S5-300",
+      "products": "SE-S5-02-05",
+      "delivery": 1585,
+      "ref": "2026-10-26",
+      "start": "2026-10-30T00:04:07Z",
+      "end": "2026-10-30T00:09:02Z",
+      "plan": 767,
+      "icrs": [
+        2662
+      ],
+      "datasets": [
+        "dc_viirs_vnp10a1f"
+      ],
+      "note": "Plan 767 reports optional VIIRS VNP10A1F MISSING_DATA for product 05; schedule 766 completed normally (WF/DL/ET OK). User checked provider availability and confirmed the VIIRS data were absent at provider. No KPI issue; KPI Values screenshot is empty for 29–31 Oct.",
+      "kpi_breach": false,
+      "evidence": "evidence/categorised/2026-10-30/OU-S5-02-05/SOM_schedule/Screenshot 2026-10-30 at 09.41.17.png",
+      "procurement_evidence": "evidence/categorised/2026-10-30/OU-S5-02-05/SOM_procurement/Screenshot 2026-10-30 at 09.41.08.png",
+      "kpi_evidence": "evidence/categorised/2026-10-30/OU-S5-02/OMC_KPI/Screenshot 2026-10-30 at 09.42.25.png",
+      "mapping_basis": "Activation ISS-domain_S5-300 and product 05 match schedule 766; procurement input date 26 Oct matches the schedule reference date."
+    },
+    {
+      "id": "OPS-20261030-828",
+      "schedule": 828,
+      "activation": "ISS-domain_S5-303",
+      "products": "SE-S5-02-09",
+      "delivery": 1647,
+      "ref": "2026-10-26",
+      "start": "2026-10-30T00:01:47Z",
+      "end": "2026-10-30T00:31:48Z",
+      "plan": 829,
+      "icrs": [
+        2805
+      ],
+      "datasets": [
+        "dc_gcomc_sgli_aod"
+      ],
+      "note": "Plan 829 reports optional GCOM-C SGLI AOD MISSING_DATA for product 09; schedule 828 completed normally (WF/DL/ET OK). User checked provider availability and reports data were present, so DCO investigation is requested to determine why collection failed. Audit screenshot shows a GCOM-C product for product 09 downloaded 27 Oct, but exact collection-level match to AOD is unconfirmed. No KPI issue; KPI Values screenshot is empty for 29–31 Oct.",
+      "kpi_breach": false,
+      "evidence": "evidence/categorised/2026-10-30/OU-S5-02-09/SOM_schedule/Screenshot 2026-10-30 at 09.41.56.png",
+      "procurement_evidence": "evidence/categorised/2026-10-30/OU-S5-02-09/SOM_procurement/Screenshot 2026-10-30 at 09.41.49.png",
+      "availability_evidence": "evidence/categorised/2026-10-30/OU-S5-02-09/input_availability_audit/Screenshot 2026-10-30 at 09.42.06.png",
+      "kpi_evidence": "evidence/categorised/2026-10-30/OU-S5-02/OMC_KPI/Screenshot 2026-10-30 at 09.42.25.png",
+      "mapping_basis": "Activation ISS-domain_S5-303 and product 09 match schedule 828; procurement input date 26 Oct matches the schedule reference date."
+    }
+  ],
+  "procurement_observations": [
+    {
+      "plan": 767,
+      "activation": "ISS-domain_S5-300",
+      "products": "OU-S5-02-05",
+      "reference_date": "2026-10-26",
+      "schedule_candidate": 766,
+      "provider": "DCO-DATA-03333",
+      "dataset": "dc_viirs_vnp10a1f",
+      "icr": 2662,
+      "requirement": "Optional",
+      "selection": "Primary",
+      "green_counter": 0,
+      "red_counter": 1,
+      "icr_status": "ICR completed with errors",
+      "result_status": "MISSING_DATA",
+      "completed_at": "2026-10-30T00:03:57Z",
+      "batch_id": 2715,
+      "observed_on": "2026-10-30",
+      "evidence": "evidence/categorised/2026-10-30/OU-S5-02-05/SOM_procurement/Screenshot 2026-10-30 at 09.41.08.png",
+      "mapping_basis": "Expanded input details show 26 Oct, product 05, and MISSING_DATA; exact activation product matches schedule 766. User confirms provider absence."
+    },
+    {
+      "plan": 829,
+      "activation": "ISS-domain_S5-303",
+      "products": "OU-S5-02-09",
+      "reference_date": "2026-10-26",
+      "schedule_candidate": 828,
+      "provider": "DCO-DATA-00810",
+      "dataset": "dc_gcomc_sgli_aod",
+      "icr": 2805,
+      "requirement": "Optional",
+      "selection": "Primary",
+      "green_counter": 0,
+      "red_counter": 1,
+      "icr_status": "ICR completed with errors",
+      "result_status": "MISSING_DATA",
+      "completed_at": "2026-10-28T00:03:29Z",
+      "batch_id": 2718,
+      "observed_on": "2026-10-30",
+      "evidence": "evidence/categorised/2026-10-30/OU-S5-02-09/SOM_procurement/Screenshot 2026-10-30 at 09.41.49.png",
+      "mapping_basis": "Expanded input details show 26 Oct, product 09, and MISSING_DATA; exact activation product matches schedule 828. User reports provider data present; DCO retrieval cause unresolved."
+    }
+  ],
+  "availability_audit": [
+    {
+      "product": "OU-S5-02-09",
+      "dataset_label": "GCOM-C SGLI L2 Atmosphere ARNP",
+      "status": "downloaded",
+      "published_or_downloaded_date": "2026-10-27",
+      "source": "evidence/categorised/2026-10-30/OU-S5-02-09/input_availability_audit/Screenshot 2026-10-30 at 09.42.06.png",
+      "note": "Related GCOM-C availability is visible; exact collection match to dc_gcomc_sgli_aod request is not confirmed."
+    }
+  ],
+  "kpi_breaches": [],
+  "kpi_screenshot": "evidence/categorised/2026-10-30/OU-S5-02/OMC_KPI/Screenshot 2026-10-30 at 09.42.25.png",
+  "provider_portal_status": "VIIRS provider absence confirmed by user. GCOM-C data availability reported by user; DCO collection issue to investigate. No GPORTAL access attempted."
+}

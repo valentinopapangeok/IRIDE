@@ -1,0 +1,92 @@
+{
+  "source_type": "OMC KPI Values dashboard screenshot and corroborating SOM schedule/procurement screenshots; not a CSV export",
+  "events": [
+    {
+      "id": "KPI-20261016-752",
+      "schedule": 752,
+      "delivery": 1571,
+      "product": "OU-S5-02-05",
+      "kpi_code": "KPI-01-03-01",
+      "name": "Service Timeliness - Production time",
+      "displayed_value_hours": 48,
+      "target_hours": 24,
+      "status": "BREACH Expired",
+      "kpi_start_shown": "2026-10-14 00:01:09",
+      "kpi_deadline_shown": "2026-10-16 00:01:09",
+      "input_recorded_as_start": {
+        "icr": 2633,
+        "dataset": "S3_OLCI_L2LFR",
+        "status": "COLLECTED",
+        "local_time": "2026-10-14 02:01:09"
+      },
+      "later_input": {
+        "icr": 2634,
+        "dataset": "dc_viirs_vnp10a1f",
+        "status": "MISSING_DATA",
+        "local_time": "2026-10-16 02:09:14"
+      },
+      "workflow_start_utc": "2026-10-16 00:09:19",
+      "systematic_delivery_kpi": "3d 17m 53s OK",
+      "reported_diagnosis": "OMC used the earlier green input as last-received-input start; user says it should use the later missing-input event immediately before workflow start. Supported by timestamp alignment; implementation not independently verified.",
+      "related_ops_issue_id": "OPS-20261016-752",
+      "evidence": [
+        "Screenshot 2026-10-16 at 09.30.58.png",
+        "Screenshot 2026-10-16 at 09.36.46.png",
+        "Screenshot 2026-10-16 at 09.17.02.png"
+      ]
+    },
+    {
+      "id": "KPI-20261016-01-PT",
+      "schedule": 654,
+      "activation": "ISS-domain_S5-296",
+      "product": "OU-S5-02-01",
+      "kpi_code": "KPI-01-03-01",
+      "displayed_value": "2d",
+      "target": "1d",
+      "status": "BREACH Expired",
+      "event_time_utc": "2026-10-16 00:00:33",
+      "schedule_evidence": "Only PRODUCTIONS_PLANNED is shown; deliveries 1417/1418 are IN_PROGRESS awaiting events.",
+      "match_basis": "User identifies schedule 654 for the product 01 breach; activation and product also match.",
+      "related_ops_issue_id": "OPS-20261016-654",
+      "evidence": [
+        "Screenshot 2026-10-16 at 09.47.59.png",
+        "Screenshot 2026-10-16 at 09.49.13.png"
+      ]
+    },
+    {
+      "id": "KPI-20261016-01-DT",
+      "activation": "ISS-domain_S5-296",
+      "schedule": null,
+      "product": "OU-S5-02-01",
+      "kpi_code": "KPI-01-03-02-01",
+      "displayed_value": "9d",
+      "target": "8d",
+      "status": "BREACH Expired",
+      "output_reference_start_utc": "2026-10-06 00:00:00",
+      "output_reference_end_utc": "2026-10-06 23:59:00",
+      "event_time_utc": "2026-10-15 23:59:00",
+      "match_basis": "Direct dashboard row; no schedule match evidenced.",
+      "related_ops_issue_id": null,
+      "evidence": [
+        "Screenshot 2026-10-16 at 09.47.59.png"
+      ]
+    },
+    {
+      "id": "KPI-20261015-003",
+      "schedule": 687,
+      "activation": "ISS-domain_S5-297",
+      "product": "OU-S5-02-02",
+      "kpi_code": "KPI-01-03-01",
+      "displayed_value": "2d",
+      "target": "1d",
+      "status": "BREACH Expired",
+      "event_time_utc": "2026-10-14 00:00:31",
+      "user_schedule_mapping": true,
+      "conflict": "KPI Values shows breach; schedule 687 card shows production-time KPI 13m 37s OK.",
+      "evidence": [
+        "Screenshot 2026-10-16 at 09.47.59.png",
+        "Screenshot 2026-10-16 at 09.50.07.png"
+      ]
+    }
+  ]
+}

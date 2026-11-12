@@ -1,0 +1,65 @@
+{
+  "observed_on": "2026-10-22",
+  "internal_workbook": "operational_performance/SVC_OPS_Plan_S5-02_internal.xlsx",
+  "kpi_issue_rows_added": 0,
+  "issues": [
+    {
+      "id": "OPS-20261022-695",
+      "schedule": 695,
+      "procurement_plan": 696,
+      "activation": "ISS-domain_S5-297",
+      "products": [
+        "OU-S5-02-02",
+        "OU-S5-02-11"
+      ],
+      "reference_date": "2026-10-18",
+      "missing_optional_input": {
+        "dataset": "dc_gcomc_sgli_sst",
+        "icr_id": 2491,
+        "result_status": "MISSING_DATA",
+        "batch_id": 2442
+      },
+      "deliveries": [
+        1499,
+        1500
+      ],
+      "kpi_breach": false,
+      "kpi_breaches": [],
+      "kpi_update_observed_on": "2026-10-26",
+      "note": "695: 5d vs 4d; cutoff 2026-10-23 23:59 UTC. Both product cards show DL/ET events before the cutoff: 02 DL 00:27:06, ET 00:41:14; 11 DL 01:28:18, ET 01:40:47 (22 Oct). The breach explanation says no delivery arrived by the cutoff. Contradiction; cause unconfirmed. OMC trace: https://omc.iride.earth/#/monitoring/trace?requestId=ISS-domain_S5-297.",
+      "kpi_evidence": "evidence/categorised/2026-10-26/OU-S5-02-02_11/OMC_KPI/Screenshot 2026-10-26 at 12.22.30.png",
+      "kpi_trace": "https://omc.iride.earth/#/monitoring/trace?requestId=ISS-domain_S5-297"
+    },
+    {
+      "id": "OPS-20261022-820",
+      "schedule": 820,
+      "procurement_plan": 821,
+      "activation": "ISS-domain_S5-303",
+      "products": [
+        "OU-S5-02-09"
+      ],
+      "reference_date": "2026-10-18",
+      "missing_inputs": [
+        {
+          "dataset": "MCD19A2",
+          "requirement": "Mandatory",
+          "icr_id": 2772,
+          "result_status": "MISSING_DATA",
+          "batch_id": 2448
+        },
+        {
+          "dataset": "dc_gcomc_sgli_aod",
+          "requirement": "Optional",
+          "icr_id": 2773,
+          "result_status": "MISSING_DATA",
+          "batch_id": 2449
+        }
+      ],
+      "delivery": 1639,
+      "product_state": "Void",
+      "kpi_breach": false,
+      "kpi_breaches": [],
+      "kpi_update_observed_on": "2026-10-26"
+    }
+  ]
+}

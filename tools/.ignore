@@ -1,0 +1,19 @@
+# Search defaults only; datasets remain available by explicit path.
+.venv*/
+/local_satpy_venv/
+/workflows/**/runtime_downloads*/
+/workflows/**/downloads/
+/workflows/**/event_downloads/
+/workflows/**/audit_results/
+/workflows/**/site/
+/workflows/regression/no_regression/V0_tiffs/
+/workflows/regression/no_regression/V1_tiffs/
+/workflows/regression/no_regression/validation_samples/
+/workflows/regression/no_regression_october_viirs/prod/
+/workflows/regression/no_regression_october_viirs/uat/
+/workflows/regression/01_noreg_investigation/inputs/
+/workflows/regression/01_noreg_investigation/outputs/
+/workflows/regression/01_noreg_investigation/legacy_v0_code/
+/workflows/geospatial/aoi_expansion_04/Old/
+/workflows/analysis/vulnerability_reports/reports/
+/workflows/operations/buckets/downloads/

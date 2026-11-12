@@ -1,0 +1,67 @@
+{
+  "observed_on": "2026-10-22",
+  "recovery_activation": "ISS-domain_S5-431",
+  "source": "User-supplied SOM schedule screenshots",
+  "runs": [
+    {
+      "issue": "OPS-20261017-753",
+      "product": "OU-S5-02-05",
+      "reference_date": "2026-10-13",
+      "schedule": 1170,
+      "delivery_id": 2274,
+      "start_utc": "2026-10-22T14:26:52Z",
+      "end_utc": "2026-10-22T14:32:21Z",
+      "schedule_status": "Completed",
+      "product_state": "OK",
+      "datalake_package": "N/A",
+      "exploitation_tool_products": "OK",
+      "evidence": "evidence/categorised/2026-10-22/OU-S5-02-05/SOM_schedule_recovery/Screenshot 2026-10-22 at 16.44.25.png"
+    },
+    {
+      "issue": "OPS-20261019-754",
+      "product": "OU-S5-02-05",
+      "reference_date": "2026-10-14",
+      "schedule": 1171,
+      "delivery_id": 2275,
+      "start_utc": "2026-10-22T14:26:44Z",
+      "end_utc": "2026-10-22T14:33:12Z",
+      "schedule_status": "Completed",
+      "product_state": "OK",
+      "datalake_package": "OK",
+      "exploitation_tool_products": "OK",
+      "evidence": "evidence/categorised/2026-10-22/OU-S5-02-05/SOM_schedule_recovery/Screenshot 2026-10-22 at 16.44.32.png"
+    },
+    {
+      "issue": "OPS-20261019-755",
+      "product": "OU-S5-02-05",
+      "reference_date": "2026-10-15",
+      "schedule": 1172,
+      "delivery_id": 2276,
+      "start_utc": "2026-10-22T14:26:43Z",
+      "end_utc": "2026-10-22T14:32:10Z",
+      "schedule_status": "Completed",
+      "product_state": "OK",
+      "datalake_package": "OK",
+      "exploitation_tool_products": "OK",
+      "evidence": "evidence/categorised/2026-10-22/OU-S5-02-05/SOM_schedule_recovery/Screenshot 2026-10-22 at 16.44.39.png"
+    },
+    {
+      "issue": "OPS-20261020-756",
+      "product": "OU-S5-02-05",
+      "reference_date": "2026-10-16",
+      "schedule": 1173,
+      "delivery_id": 2277,
+      "start_utc": "2026-10-22T14:26:43Z",
+      "end_utc": "2026-10-22T14:32:30Z",
+      "schedule_status": "Completed",
+      "product_state": "OK",
+      "datalake_package": "OK",
+      "exploitation_tool_products": "OK",
+      "evidence": "evidence/categorised/2026-10-22/OU-S5-02-05/SOM_schedule_recovery/Screenshot 2026-10-22 at 16.44.45.png"
+    }
+  ],
+  "limitations": [
+    "No procurement plan or input-availability audit evidence was provided with these recovery screenshots.",
+    "Final delivery-channel timestamps are not shown; delivery timeliness was not assessed."
+  ]
+}

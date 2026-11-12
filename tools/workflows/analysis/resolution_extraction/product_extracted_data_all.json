@@ -1,0 +1,486 @@
+[
+  {
+    "id": "IRIDE-S_S5-02-01_20260428_V0",
+    "product_code": "S5-02-01",
+    "title": "S5-02-01: Land Surface Temperature, Italy, 28/04/2026",
+    "abstract": "Land surface temperature mapping over Italy with daily temporal resolution.The thematic accuracy metric (relative RMSE) of the product is lower than 20% and the positional accuracy is greater than 90%",
+    "iss:classes": "5",
+    "iss:classes_values": "-15.00 °C = -15; 2.50 = 2.5; 20.00 = 20; 37.50 = 37.5; 55.00 = 55",
+    "iss:stack": "single",
+    "iss:spatial_resolution": {
+      "min": 1000,
+      "max": 1000,
+      "source": "xml_metadata"
+    },
+    "tiff:qgis_resolution_degrees": {
+      "x": 0.011131580833,
+      "y": 0.011131580833
+    },
+    "tiff:resolution_m": {
+      "x": {
+        "min": 845.203,
+        "max": 1010.077
+      },
+      "y": {
+        "min": 1235.044,
+        "max": 1237.527
+      },
+      "overall": {
+        "min": 845.203,
+        "max": 1237.527
+      },
+      "overall_rounded_100m": {
+        "min": 800,
+        "max": 1200
+      }
+    },
+    "proj:code": "EPSG:4326",
+    "iss:activation_mode": "systematic",
+    "iss:temporal_resolution": "daily",
+    "properties": {
+      "format": "Raster",
+      "production_datetime": "6 Solar Days",
+      "proj:code": "EPSG:4326"
+    },
+    "product:type": "Raster (.geotiff)",
+    "accuracy:geometric_rmse": "NA",
+    "accuracy:measurement_relative": "20% relative RMSE",
+    "source_files": {
+      "tif": "IRIDE-S_S5-02-01_20260428_V0.tif",
+      "xml": "IRIDE-S_S5-02-01_20260428_V0.xml",
+      "json": "IRIDE-S_S5-02-01_20260428_V0.json",
+      "qml": [
+        "IRIDE-S_S5-02-01_V0.qml"
+      ]
+    }
+  },
+  {
+    "id": "IRIDE-S_S5-02-02_20260428_V0",
+    "product_code": "S5-02-02",
+    "title": "S5-02-02: Sea Surface Temperature, central Mediterranean sea, 28/04/2026",
+    "abstract": "Sea surface temperature mapping over central Mediterranean sea with daily temporal resolution.The thematic accuracy metric (relative RMSE) of the product is lower than 20% and the positional accuracy is greater than 80%",
+    "iss:classes": "6",
+    "iss:classes_values": "0.00 °C = 0; 10,00 = 10; 17,50 = 17.5; 25,00 = 25; 32,50 = 32.5; 40,00 = 40",
+    "iss:stack": "single",
+    "iss:spatial_resolution": {
+      "min": 1000,
+      "max": 1000,
+      "source": "xml_metadata"
+    },
+    "tiff:qgis_resolution_degrees": {
+      "x": 0.011131580833,
+      "y": 0.011131580833
+    },
+    "tiff:resolution_m": {
+      "x": {
+        "min": 865.243,
+        "max": 1054.572
+      },
+      "y": {
+        "min": 1234.299,
+        "max": 1237.248
+      },
+      "overall": {
+        "min": 865.243,
+        "max": 1237.248
+      },
+      "overall_rounded_100m": {
+        "min": 900,
+        "max": 1200
+      }
+    },
+    "proj:code": "EPSG:4326",
+    "iss:activation_mode": "systematic",
+    "iss:temporal_resolution": "daily",
+    "properties": {
+      "format": "Raster",
+      "production_datetime": "1 Solar Day",
+      "proj:code": "EPSG:4326"
+    },
+    "product:type": "Raster (.geotiff)",
+    "accuracy:geometric_rmse": "NA",
+    "accuracy:measurement_relative": "20% relative RMSE",
+    "source_files": {
+      "tif": "IRIDE-S_S5-02-02_20260428_V0.tif",
+      "xml": "IRIDE-S_S5-02-02_20260428_V0.xml",
+      "json": "IRIDE-S_S5-02-02_20260428_V0.json",
+      "qml": [
+        "IRIDE-S_S5-02-02_V0.qml"
+      ]
+    }
+  },
+  {
+    "id": "IRIDE-S_S5-02-05_20260428_V0",
+    "product_code": "S5-02-05",
+    "title": "S5-02-05: Snow Cover, Italy, 28/04/2026",
+    "abstract": "Snow Cover mapping over Italy with daily temporal resolution.The thematic accuracy metric (F1 Score) of the product is greater than 80% and the positional accuracy is greater than 80%",
+    "iss:classes": "2",
+    "iss:classes_values": "no snow = 0; snow = 1",
+    "iss:stack": "single",
+    "iss:spatial_resolution": {
+      "min": 300,
+      "max": 300,
+      "source": "xml_metadata"
+    },
+    "tiff:qgis_resolution_degrees": {
+      "x": 0.0025,
+      "y": 0.0025
+    },
+    "tiff:resolution_m": {
+      "x": {
+        "min": 189.816,
+        "max": 226.841
+      },
+      "y": {
+        "min": 277.374,
+        "max": 277.932
+      },
+      "overall": {
+        "min": 189.816,
+        "max": 277.932
+      },
+      "overall_rounded_100m": {
+        "min": 200,
+        "max": 300
+      }
+    },
+    "proj:code": "EPSG:4326",
+    "iss:activation_mode": "systematic",
+    "iss:temporal_resolution": "daily",
+    "properties": {
+      "format": "Raster",
+      "production_datetime": "6 Solar Days",
+      "proj:code": "EPSG:4326"
+    },
+    "product:type": "Raster (.geotiff)",
+    "accuracy:geometric_rmse": "NA",
+    "accuracy:measurement_relative": "80% F1 Score",
+    "source_files": {
+      "tif": "IRIDE-S_S5-02-05_20260428_V0.tif",
+      "xml": "IRIDE-S_S5-02-05_20260428_V0.xml",
+      "json": "IRIDE-S_S5-02-05_20260428_V0.json",
+      "qml": [
+        "IRIDE-S_S5-02-05_V0.qml"
+      ]
+    }
+  },
+  {
+    "id": "IRIDE-S_S5-02-07_202603_V0",
+    "product_code": "S5-02-07",
+    "title": "S5-02-07: Methane column, Italy, 01/03/2026T00:00",
+    "abstract": "Methane column mapping over Italy with monthly temporal resolution. The thematic accuracy metric (relative RMSE) of the product is less than 20% and the positional accuracy is greater than 90%",
+    "iss:classes": "10",
+    "iss:classes_values": "1800.00 ppb = 1800; 1822.22 = 1822.22; 1844.44 = 1844.44; 1866.67 = 1866.67; 1888.89 = 1888.89; 1911.11 = 1911.11; 1933.33 = 1933.33; 1955.56 = 1955.56; 1977.78 = 1977.78; 2000.00 = 2000",
+    "iss:stack": "single",
+    "iss:spatial_resolution": {
+      "min": 3500,
+      "max": 3500,
+      "source": "xml_metadata"
+    },
+    "tiff:qgis_resolution_degrees": {
+      "x": 0.02694933525,
+      "y": 0.02694933525
+    },
+    "tiff:resolution_m": {
+      "x": {
+        "min": 2047.04,
+        "max": 2444.88
+      },
+      "y": {
+        "min": 2990.026,
+        "max": 2996.016
+      },
+      "overall": {
+        "min": 2047.04,
+        "max": 2996.016
+      },
+      "overall_rounded_100m": {
+        "min": 2000,
+        "max": 3000
+      }
+    },
+    "proj:code": "EPSG:4326",
+    "iss:activation_mode": "systematic",
+    "iss:temporal_resolution": "monthly",
+    "properties": {
+      "format": "Raster",
+      "production_datetime": "Time needed for availability of input data: min <=1 day, max 7 days, depending on the availability of Sentinel-5P PAL data",
+      "proj:code": "EPSG:4326"
+    },
+    "product:type": "Raster (.geotiff)",
+    "accuracy:geometric_rmse": "NA",
+    "accuracy:measurement_relative": "20% relative RMSE",
+    "source_files": {
+      "tif": "IRIDE-S_S5-02-07_202603_V0.tif",
+      "xml": "IRIDE-S_S5-02-07_202603_V0.xml",
+      "json": "IRIDE-S_S5-02-07_202603_V0.json",
+      "qml": [
+        "IRIDE-S_S5-02-07_V0.qml"
+      ]
+    }
+  },
+  {
+    "id": "IRIDE-S_S5-02-08_202602_V0",
+    "product_code": "S5-02-08",
+    "title": "S5-02-08: Carbon dioxide column, Italy, 2026-02-01T00:00:00",
+    "abstract": "Carbon dioxide column mapping over Italy with monthly temporal resolution. The thematic accuracy metric (relative RMSE) of the product is less than 20% and the positional accuracy is greater than 90%",
+    "iss:classes": "10",
+    "iss:classes_values": "415.00 ppm = 415; 416.67 = 416.67; 418.33 = 418.33; 420.00 = 420; 421.67 = 421.67; 423.33 = 423.33; 425 = 425; 426.67 = 426.67; 428.33 = 428.33; 430.00 = 430",
+    "iss:stack": "single",
+    "iss:spatial_resolution": {
+      "min": 3500,
+      "max": 3500,
+      "source": "xml_metadata"
+    },
+    "tiff:qgis_resolution_degrees": {
+      "x": 0.02694933525,
+      "y": 0.02694933525
+    },
+    "tiff:resolution_m": {
+      "x": {
+        "min": 2045.815,
+        "max": 2445.543
+      },
+      "y": {
+        "min": 2990.015,
+        "max": 2996.033
+      },
+      "overall": {
+        "min": 2045.815,
+        "max": 2996.033
+      },
+      "overall_rounded_100m": {
+        "min": 2000,
+        "max": 3000
+      }
+    },
+    "proj:code": "EPSG:4326",
+    "iss:activation_mode": "systematic",
+    "iss:temporal_resolution": "monthly",
+    "properties": {
+      "format": "Raster",
+      "production_datetime": "Time needed for availability of input data: min <=1 day, max 7 days, depending on the availability of OCO2 and OCO3 data",
+      "proj:code": "EPSG:4326"
+    },
+    "product:type": "Raster (.geotiff)",
+    "accuracy:geometric_rmse": "NA",
+    "accuracy:measurement_relative": "20% relative RMSE",
+    "source_files": {
+      "tif": "IRIDE-S_S5-02-08_202602_V0.tif",
+      "xml": "IRIDE-S_S5-02-08_202602_V0.xml",
+      "json": "IRIDE-S_S5-02-08_202602_V0.json",
+      "qml": [
+        "IRIDE-S_S5-02-08_V0.qml"
+      ]
+    }
+  },
+  {
+    "id": "IRIDE-S_S5-02-09_20260428_V0",
+    "product_code": "S5-02-09",
+    "title": "S5-02-09: AOD values, Italy, 28/04/2026",
+    "abstract": "AOD mapping over Italy, using a data fusion algorithm, with daily temporal resolution. The thematic accuracy metric (relative RMSE) of the product is lower than 30% and the positional accuracy is greater than 80%.",
+    "iss:classes": "5",
+    "iss:classes_values": "0.001 = 0.001; 0.251 = 0.25075; 0.500 = 0.5005; 0.750 = 0.75025; 1.000 = 1",
+    "iss:stack": "single",
+    "iss:spatial_resolution": {
+      "min": 1000,
+      "max": 1000,
+      "source": "xml_metadata"
+    },
+    "tiff:qgis_resolution_degrees": {
+      "x": 0.01,
+      "y": 0.01
+    },
+    "tiff:resolution_m": {
+      "x": {
+        "min": 759.211,
+        "max": 907.35
+      },
+      "y": {
+        "min": 1109.497,
+        "max": 1111.727
+      },
+      "overall": {
+        "min": 759.211,
+        "max": 1111.727
+      },
+      "overall_rounded_100m": {
+        "min": 800,
+        "max": 1100
+      }
+    },
+    "proj:code": "EPSG:4326",
+    "iss:activation_mode": "systematic",
+    "iss:temporal_resolution": "daily",
+    "properties": {
+      "format": "Raster",
+      "production_datetime": "1 Solar Day",
+      "proj:code": "EPSG:4326"
+    },
+    "product:type": "Raster (.geotiff)",
+    "accuracy:geometric_rmse": "NA",
+    "accuracy:measurement_relative": "30% relative RMSE",
+    "source_files": {
+      "tif": "IRIDE-S_S5-02-09_20260428_V0.tif",
+      "xml": "IRIDE-S_S5-02-09_20260428_V0.xml",
+      "json": "IRIDE-S_S5-02-09_20260428_V0.json",
+      "qml": [
+        "IRIDE-S_S5-02-09_V0.qml"
+      ]
+    }
+  },
+  {
+    "id": "IRIDE-S_S5-02-10_20260428_V0",
+    "product_code": "S5-02-10",
+    "title": "S5-02-10: Land Surface Temperature downscale,Italy, 28/04/2026",
+    "abstract": "Land surface temperature downscale mapping over Italy with daily temporal resolution; an appended quality flag layer describes the quality of the pixels.The thematic accuracy metric (relative RMSE) of the product is lower than 20% and the positional accuracy is greater than 90%",
+    "iss:classes": "5",
+    "iss:classes_values": "-15.00 °C = -15; 2.50 = 2.5; 20.00 = 20; 37.50 = 37.5; 55.00 = 55",
+    "iss:stack": "multi",
+    "iss:spatial_resolution": {
+      "min": 300,
+      "max": 300,
+      "source": "xml_metadata"
+    },
+    "tiff:qgis_resolution_degrees": {
+      "x": 0.0025,
+      "y": 0.0025
+    },
+    "tiff:resolution_m": {
+      "x": {
+        "min": 189.85,
+        "max": 226.84
+      },
+      "y": {
+        "min": 277.374,
+        "max": 277.931
+      },
+      "overall": {
+        "min": 189.85,
+        "max": 277.931
+      },
+      "overall_rounded_100m": {
+        "min": 200,
+        "max": 300
+      }
+    },
+    "proj:code": "EPSG:4326",
+    "iss:activation_mode": "systematic",
+    "iss:temporal_resolution": "daily",
+    "properties": {
+      "format": "Raster",
+      "production_datetime": "6 Solar Days",
+      "proj:code": "EPSG:4326"
+    },
+    "product:type": "Raster (.geotiff)",
+    "accuracy:geometric_rmse": "NA",
+    "accuracy:measurement_relative": "20% relative RMSE",
+    "source_files": {
+      "tif": "IRIDE-S_S5-02-10_20260428_V0.tif",
+      "xml": "IRIDE-S_S5-02-10_20260428_V0.xml",
+      "json": "IRIDE-S_S5-02-10_20260428_V0.json",
+      "qml": [
+        "IRIDE-S_S5-02-10_V0.qml",
+        "IRIDE-S_S5-02-10_V0_QualityFlag.qml"
+      ]
+    },
+    "iss:quality_flags": [
+      {
+        "file": "IRIDE-S_S5-02-10_V0_QualityFlag.qml",
+        "classes": 2,
+        "classes_values": "High quality = 0; Low quality = 1",
+        "entries": [
+          {
+            "value": "0",
+            "label": "High quality",
+            "color": "#ffffff",
+            "alpha": "128"
+          },
+          {
+            "value": "1",
+            "label": "Low quality",
+            "color": "#000000",
+            "alpha": "128"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "IRIDE-S_S5-02-11_20260428_V0",
+    "product_code": "S5-02-11",
+    "title": "S5-02-11: Sea Surface Temperature downscale,central Mediterranean sea, 28/04/2026",
+    "abstract": "Sea surface temperature downscale mapping over central Mediterranean sea with daily temporal resolution; an appended quality flag layer describes the quality of the pixels. The thematic accuracy metric (relative RMSE) of the product is lower than 20% and the positional accuracy is greater than 80%.",
+    "iss:classes": "5",
+    "iss:classes_values": "10,00 °C = 10; 17,50 = 17.5; 25,00 = 25; 32,50 = 32.5; 40,00 = 40",
+    "iss:stack": "multi",
+    "iss:spatial_resolution": {
+      "min": 300,
+      "max": 300,
+      "source": "xml_metadata"
+    },
+    "tiff:qgis_resolution_degrees": {
+      "x": 0.0025,
+      "y": 0.0025
+    },
+    "tiff:resolution_m": {
+      "x": {
+        "min": 195.277,
+        "max": 236.829
+      },
+      "y": {
+        "min": 277.207,
+        "max": 277.856
+      },
+      "overall": {
+        "min": 195.277,
+        "max": 277.856
+      },
+      "overall_rounded_100m": {
+        "min": 200,
+        "max": 300
+      }
+    },
+    "proj:code": "EPSG:4326",
+    "iss:activation_mode": "systematic",
+    "iss:temporal_resolution": "daily",
+    "properties": {
+      "format": "Raster",
+      "production_datetime": "1 Solar Day",
+      "proj:code": "EPSG:4326"
+    },
+    "product:type": "Raster (.geotiff)",
+    "accuracy:geometric_rmse": "NA",
+    "accuracy:measurement_relative": "20% relative RMSE",
+    "source_files": {
+      "tif": "IRIDE-S_S5-02-11_20260428_V0.tif",
+      "xml": "IRIDE-S_S5-02-11_20260428_V0.xml",
+      "json": "IRIDE-S_S5-02-11_20260428_V0.json",
+      "qml": [
+        "IRIDE-S_S5-02-11_V0.qml",
+        "IRIDE-S_S5-02-11_V0_QualityFlag.qml"
+      ]
+    },
+    "iss:quality_flags": [
+      {
+        "file": "IRIDE-S_S5-02-11_V0_QualityFlag.qml",
+        "classes": 2,
+        "classes_values": "High quality = 0; Low quality = 1",
+        "entries": [
+          {
+            "value": "0",
+            "label": "High quality",
+            "color": "#ffffff",
+            "alpha": "128"
+          },
+          {
+            "value": "1",
+            "label": "Low quality",
+            "color": "#000000",
+            "alpha": "128"
+          }
+        ]
+      }
+    ]
+  }
+]

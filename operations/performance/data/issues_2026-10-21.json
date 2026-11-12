@@ -1,0 +1,61 @@
+{
+  "observed_on": "2026-10-21",
+  "internal_workbook": "operational_performance/SVC_OPS_Plan_S5-02_internal.xlsx",
+  "kpi_issue_rows_added": 0,
+  "issues": [
+    {
+      "id": "OPS-20261021-694",
+      "schedule": 694,
+      "plan": 695,
+      "activation": "ISS-domain_S5-297",
+      "products": [
+        "OU-S5-02-02",
+        "OU-S5-02-11"
+      ],
+      "reference_date": "2026-10-17",
+      "missing_optional_inputs": [
+        "SST_MED_SST_L4_NRT_OBSERVATIONS_010_004",
+        "dc_gcomc_sgli_sst"
+      ],
+      "kpi_breach": false,
+      "deliveries": [
+        1497,
+        1498
+      ]
+    },
+    {
+      "id": "OPS-20261021-757",
+      "schedule": 757,
+      "plan": 758,
+      "activation": "ISS-domain_S5-300",
+      "products": [
+        "OU-S5-02-05"
+      ],
+      "reference_date": "2026-10-17",
+      "missing_optional_inputs": [
+        "dc_viirs_vnp10a1f"
+      ],
+      "kpi_breach": false,
+      "deliveries": [
+        1576
+      ]
+    },
+    {
+      "id": "OPS-20261021-819",
+      "schedule": 819,
+      "plan": 820,
+      "activation": "ISS-domain_S5-303",
+      "products": [
+        "OU-S5-02-09"
+      ],
+      "reference_date": "2026-10-17",
+      "missing_inputs": [
+        "MCD19A2 (mandatory)",
+        "dc_gcomc_sgli_aod (optional)"
+      ],
+      "kpi_breach": false,
+      "delivery": 1638,
+      "state": "Void"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "product": "OU-S5-02-01",
+    "file": "screenshots/Screenshot 2026-10-15 at 08.43.48.png",
+    "sha256": "eaca78bd27f185cde783102ac854cce978fbd1707a9b990670e501c56975f79c",
+    "bytes": 96649
+  },
+  {
+    "product": "OU-S5-02-02",
+    "file": "screenshots/Screenshot 2026-10-15 at 08.43.53.png",
+    "sha256": "86988d23951efe648da69a690836b8686a3c5485ad6eb38041b6374be0b0f80b",
+    "bytes": 92715
+  },
+  {
+    "product": "OU-S5-02-03",
+    "file": "screenshots/Screenshot 2026-10-15 at 08.43.59.png",
+    "sha256": "0ed92f4d792fec5bf5cf5c31cfc9a6e3ad6c9bfd2023e8b2904a3d9162586e78",
+    "bytes": 97228
+  },
+  {
+    "product": "OU-S5-02-04",
+    "file": "screenshots/Screenshot 2026-10-15 at 08.44.05.png",
+    "sha256": "0b9464eba42d58978bd12ceaad5a8567498b5578e5f46122c477ce433510c5ef",
+    "bytes": 89367
+  },
+  {
+    "product": "OU-S5-02-05",
+    "file": "screenshots/Screenshot 2026-10-15 at 08.44.10.png",
+    "sha256": "2d35c174c02d249493d0281468aa741612db88ffa9c0f986fcb1deb8dff4d55a",
+    "bytes": 98920
+  },
+  {
+    "product": "OU-S5-02-06",
+    "file": "screenshots/Screenshot 2026-10-15 at 08.44.16.png",
+    "sha256": "8c1f37ca3016093f1b240cd6237b579935e256635da9b2510c7573168ec5ebe7",
+    "bytes": 95224
+  },
+  {
+    "product": "OU-S5-02-07",
+    "file": "screenshots/Screenshot 2026-10-15 at 08.44.22.png",
+    "sha256": "5919784860751f954a890809b989e21733b7658c3deebef14fe8143b41f81b3c",
+    "bytes": 87459
+  },
+  {
+    "product": "OU-S5-02-08",
+    "file": "screenshots/Screenshot 2026-10-15 at 08.44.27.png",
+    "sha256": "24dc6c64773a93488df665fa9b5ab81dc095e78903f95070ee49ad87e2b5ffec",
+    "bytes": 87839
+  },
+  {
+    "product": "OU-S5-02-09",
+    "file": "screenshots/Screenshot 2026-10-15 at 08.44.33.png",
+    "sha256": "a539aaf2f7316972551e4a3baca1d312679d4302714da54d0b3591e1144460ce",
+    "bytes": 85776
+  },
+  {
+    "product": "OU-S5-02-10",
+    "file": "screenshots/Screenshot 2026-10-15 at 08.44.38.png",
+    "sha256": "4a019a23fe6d0225b2145447d53153d4f03b110d2b5b102ed80ccc2ebb17027d",
+    "bytes": 96516
+  },
+  {
+    "product": "OU-S5-02-11",
+    "file": "screenshots/Screenshot 2026-10-15 at 08.44.43.png",
+    "sha256": "49114bb53fa74f31ac5522375093573bcb0097f9d98af5339f8d5a96ad007001",
+    "bytes": 97894
+  }
+]

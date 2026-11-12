@@ -1,0 +1,12 @@
+{
+  "input_path": "s3://iss-dev-geo-dco/activations/ISS-domain_S5-1006/catalog.json",
+  "filter_date": "2026-06-01",
+  "psg_id": "1003",
+  "ps_id": "3527",
+  "endpoint": "https://s3-servicesegment.iride.earth",
+  "access_key_id": "replace-with-access-key-id",
+  "secret_access_key": "replace-with-secret-access-key",
+  "output_dir": "/Volumes/Extreme/IRIDE/MKPL/Utils/workflows/local_dco_download/downloads",
+  "validate": true,
+  "limit": 1
+}

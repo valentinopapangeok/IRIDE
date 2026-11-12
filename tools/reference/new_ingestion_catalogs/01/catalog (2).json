@@ -1,0 +1,49 @@
+{
+  "type": "Catalog",
+  "id": "DCO-DATA-02100_MOD11A1",
+  "stac_version": "1.0.0",
+  "title": "DCO-DATA-02100_MOD11A1",
+  "description": "DCO-DATA-02100-MOD11A1",
+  "links": [
+    {
+      "rel": "self",
+      "href": "./catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "MOD11A1.A2026107.h18v04.061.2026110170754.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "MOD11A1.A2026107.h18v05.061.2026110165907.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "MOD11A1.A2026107.h19v04.061.2026110165852.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "MOD11A1.A2026107.h19v05.061.2026110165909.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "status.json",
+      "type": "application/json"
+    }
+  ]
+}

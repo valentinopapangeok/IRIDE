@@ -1,0 +1,9 @@
+product,computed_min_m_rounded,computed_max_m_rounded,metadata_resolution_m,match_note
+IRIDE-S_S5-02-01_20260428_V0,800,1200,1000,within computed rounded range
+IRIDE-S_S5-02-02_20260428_V0,900,1200,1000,within computed rounded range
+IRIDE-S_S5-02-05_20260428_V0,200,300,300,within computed rounded range
+IRIDE-S_S5-02-07_202603_V0,2000,3000,3500,metadata above computed rounded range
+IRIDE-S_S5-02-08_202602_V0,2000,3000,3500,metadata above computed rounded range
+IRIDE-S_S5-02-09_20260428_V0,800,1100,1000,within computed rounded range
+IRIDE-S_S5-02-10_20260428_V0,200,300,300,within computed rounded range
+IRIDE-S_S5-02-11_20260428_V0,200,300,300,within computed rounded range

@@ -1,0 +1,60 @@
+{
+  "observed_on": "2026-10-15",
+  "source_system": "SOM schedules and procurement, with Prefect log for schedule 688",
+  "ids_are_internal": true,
+  "issues": [
+    {
+      "id": "OPS-20261015-688",
+      "schedule": 688,
+      "activation": "ISS-domain_S5-297",
+      "products": [
+        "OU-S5-02-02",
+        "OU-S5-02-11"
+      ],
+      "reference_date": "2026-10-11",
+      "schedule_status": "Error",
+      "product_02_workflow": "Void",
+      "product_02_dl": "OK",
+      "product_02_et": "N/A",
+      "product_11_status": "not visible in collapsed panel",
+      "procurement_plan": 689,
+      "procurement_icrs": [
+        2460,
+        2461,
+        2462,
+        2463
+      ],
+      "procurement_result": "all four ICRs shown completed; no missing input established",
+      "error": "STACTypeError during SST data ingestion: referenced JSON lacks required type field",
+      "unknown": "exact malformed JSON path and origin",
+      "evidence": [
+        "Screenshot 2026-10-15 at 10.53.26.png",
+        "Screenshot 2026-10-15 at 10.53.32.png",
+        "schedule688_stac_error_log.txt"
+      ]
+    },
+    {
+      "id": "OPS-20261015-813",
+      "schedule": 813,
+      "activation": "ISS-domain_S5-303",
+      "products": [
+        "OU-S5-02-09"
+      ],
+      "reference_date": "2026-10-11",
+      "product_workflow": "Void",
+      "dl": "OK",
+      "et": "N/A",
+      "procurement_plan": 814,
+      "mandatory_input": {
+        "dataset": "MCD19A2",
+        "icr_id": 2744,
+        "result_status": "MISSING_DATA"
+      },
+      "unknown": "exact provider-side publication state",
+      "evidence": [
+        "Screenshot 2026-10-15 at 09.03.08.png",
+        "Screenshot 2026-10-15 at 09.17.11.png"
+      ]
+    }
+  ]
+}

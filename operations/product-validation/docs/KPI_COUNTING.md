@@ -1,0 +1,14 @@
+# Operational KPI counting
+
+The user-defined reporting unit is a qualifying UTC date, not a pixel, station observation or date–sub-AOI duplicate. The policy is configured in `operational_kpi_policy` and the normal PyCharm `main.py` run generates date-level and monthly outputs automatically.
+
+- Daily products, including hourly products: **five distinct qualifying dates per month**, fifteen per quarter. Across each month's dates, at least one qualifying contribution must come from each of North, Center and South. Dates may contribute to several regions but count once to the product total. Meeting the count without the geographic spread does not meet the monthly objective.
+- Hourly products 03/04/06: at least **one evaluated passing hour** qualifies a date in the relevant sub-AOI. Each hour retains its own metric, paired support and threshold. No errors, percentages or confusion counts are pooled between hours to decide a date. No additional hourly quota is introduced here.
+- Monthly products 07/08: **one qualifying month per month**, three per quarter, subject to the existing GOSAT coverage gate (at least 20% Italy coverage). Only available supported AOI can be assessed; geographic spread across all three sub-AOIs is not required.
+- Daily thermal, snow and AOD regional accuracy uses all eligible pairs in the date/sub-AOI, including failures. Snow F1 remains undefined when both classes contain no snow. AOD passing-station subsets remain conditional diagnostics and do not replace all-eligible regional accuracy.
+
+The primary monthly report counts the union of qualifying sub-AOI dates. Whole-AOI sampled scores are shown separately; reference support does not imply verification of every Italy pixel. Undefined, partial-coverage, QA-excluded, pending-reference and error results are not failures and do not qualify. Revisions and product versions are deduplicated before counting. Daily products count five different dates, not five observations of one date.
+
+`report/kpi_dates.csv` and `report/kpi_dates.json` retain per-date/per-area outcomes and evaluated/passing hour counts. `report/kpi_monthly_summary.json` records qualifying dates, regional denominators, missing/undefined/partial support, count and distribution checks. Hourly and station detail remain available separately.
+
+Thematic threshold success, adopted methodology, declared positional accuracy, legacy reference-sample bookkeeping and overall contractual acceptance are separate. Product 03's ERA5 reference-only conversion is explicitly adopted by the user on 21 October 2026. Its within-hour constant-DNI approximation and sensitivity evidence remain documented. Other products retain their existing processing/method status; report aggregation does not silently approve unresolved scientific assumptions. Quarterly reporting must show the three monthly results, without moving excess dates from one month into another.

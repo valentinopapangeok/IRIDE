@@ -1,0 +1,9 @@
+{
+  "observed_on": "2026-10-26",
+  "events": [],
+  "cleanup": {
+    "effective_from": "2026-10-20",
+    "removed_issue_count": 21,
+    "reason": "KPI breaches from 20 Oct onward were resolved after an OMC issue was fixed; related OPS issues remain recorded."
+  }
+}

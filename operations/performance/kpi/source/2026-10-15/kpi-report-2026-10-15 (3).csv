@@ -1,0 +1,3 @@
+"KPI Code","KPI Name","Unit","SLA Target","MGP"
+"KPI-01-03-02-01","Service Timeliness - Delivery Timeliness (Systematic)","HOURS","48","90%"
+"KPI-01-03-01","Service Timeliness - Production time","HOURS","24","90%"

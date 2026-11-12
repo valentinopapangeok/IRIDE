@@ -1,0 +1,43 @@
+# Secrets and local configuration
+**/config.json
+!**/config.example.json
+!**/config.schema.json
+**/*.env
+!**/*.env.example
+**/credentials/
+**/.netrc
+**/*.pem
+**/*.key
+
+# Python and IDE state
+**/.venv*/
+**/venv/
+**/legacy_env/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/*.py[cod]
+**/*.egg-info/
+**/.coverage
+**/.idea/
+**/.vscode/
+**/.DS_Store
+
+# Runtime data and generated state
+**/audit_results/
+**/runtime_downloads/
+**/downloads/
+**/validation/cache/
+**/validation/results/
+**/validation_data/
+**/gportal_migration/results/
+**/push_staging/
+**/*.db
+**/*.sqlite*
+
+# Independent product repositories cloned locally
+/svc_S5-02/
+/svc_s5-02-*/
+/prefect-common/
+/.migration-checkpoint.md

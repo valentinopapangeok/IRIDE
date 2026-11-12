@@ -1,0 +1,175 @@
+Worker 'KubernetesWorker 347db2a3-9228-48d9-9da5-67cad95ff388' submitting flow run '2e228f14-066a-4d27-a85e-4f960ba2f291'
+02:07:35 AM
+prefect.flow_runs.worker
+Creating Kubernetes job...
+02:07:35 AM
+prefect.flow_runs.worker
+Flow run 'svc-s5-02-flow__svc-s5-02-02-flow__20261015000733' submitted to infrastructure
+02:07:35 AM
+prefect.flow_runs.worker
+Starting flow run process...
+02:08:26 AM
+prefect.flow_runs.runner
+Running 1 deployment pull step(s)
+02:08:28 AM
+prefect.flow_runs
+Executing deployment step: set_working_directory
+02:08:28 AM
+prefect.flow_runs
+Deployment step 'set_working_directory' completed successfully
+02:08:28 AM
+prefect.flow_runs
+All deployment steps completed successfully
+02:08:28 AM
+prefect.flow_runs
+Beginning flow run 'svc-s5-02-flow__svc-s5-02-02-flow__20261015000733' for flow 'svc-s5-02-02-flow'
+02:08:36 AM
+prefect.flow_runs
+Listing objects in bucket workspaces/2e228f14-066a-4d27-a85e-4f960ba2f291/logs/LOGS_OU-S5-02-02.csv.
+02:08:36 AM
+initialize_module_blocks_logs_task-1a8
+prefect.task_runs
+Copying object from bucket s5-02-prod with key templates/TEMPLATE_OU-S5-02-02.csv to bucket s5-02-prod with key workspaces/2e228f14-066a-4d27-a85e-4f960ba2f291/logs/LOGS_OU-S5-02-02.csv
+02:08:36 AM
+initialize_module_blocks_logs_task-1a8
+prefect.task_runs
+Finished in state Completed()
+02:08:36 AM
+initialize_module_blocks_logs_task-1a8
+prefect.task_runs
+Template path: templates/TEMPLATE_OU-S5-02-02.csv
+02:08:36 AM
+prefect.flow_runs
+Logs path: logs/LOGS_OU-S5-02-02.csv
+02:08:36 AM
+prefect.flow_runs
+Processing date from params: 2026-10-11T00:00:00
+02:08:36 AM
+prefect.flow_runs
+inputs_path from args: ['s3://iss-prod-geo-dco/activations/ISS-domain_S5-297/catalog.json']
+02:08:36 AM
+prefect.flow_runs
+Input path from args: s3://iss-prod-geo-dco/activations/ISS-domain_S5-297/catalog.json
+02:08:36 AM
+prefect.flow_runs
+DCO scope from params: PSG 632, PS 688
+02:08:36 AM
+prefect.flow_runs
+Extracted issa_activation_identifier: ISS-domain_S5-297
+02:08:36 AM
+prefect.flow_runs
+[S5-02-02] - Starting workflow for date: 2026-10-11T00:00:00
+02:08:36 AM
+prefect.flow_runs
+1 - [S5-02-MG01-MB01] calling data ingestion (from Data Collector)
+02:08:36 AM
+prefect.flow_runs
+[S5-02-02]  Workflow failed to run: JSON (id = unknown) does not represent a STACObject instance. 'type' attribute is not set
+02:08:40 AM
+prefect.flow_runs
+Complete URL - exploitation tool link: https://m-ent.iride.earth/AppEngine/?appId=3000c85b-9f99-43b0-8583-2b036a34cdac&tenant=iride_s5_02&layers=S5-02-02
+02:08:40 AM
+prefect.flow_runs
+Finished in state Completed()
+02:08:42 AM
+void_metadata_generation-fd1
+prefect.task_runs
+Env variable WORKFLOW_PROCESSING_VERSION was not set: setting the 'processing:version' STAC property to '1.0' by default.
+02:08:42 AM
+prefect.flow_runs
+Zip file saved to '/tmp/tmplu5zgk_h/VOID_IRIDE-S_S5-02-02_20261011_V1.zip'
+02:08:42 AM
+prefect.flow_runs
+Delivering '/tmp/tmplu5zgk_h/VOID_IRIDE-S_S5-02-02_20261011_V1.zip' to DataLake
+02:08:42 AM
+prefect.flow_runs
+SVC is enabled to also upload to predelivery
+02:08:42 AM
+prefect.flow_runs
+Delivering '/tmp/tmplu5zgk_h/VOID_IRIDE-S_S5-02-02_20261011_V1.zip' to predelivery/VOID_IRIDE-S_S5-02-02_20261011_V1.zip in bucket s5-02-bucket
+02:08:42 AM
+prefect.flow_runs
+Delivery notification to SOM sent for production schedule '688' and product/s ['S5-02-02'] with status 'VOID' and delivery UUID '7b57bec8-e355-4aab-9f00-e104f8725a53'.
+02:08:42 AM
+prefect.flow_runs
+Void metadata generated successfully
+02:08:42 AM
+prefect.flow_runs
+[RUN-METRICS] CPU_MAX_PROCESS_CORES_USED=1.000, GPU_MAX_MEMORY_USED_GB=0.000 GB 
+02:08:42 AM
+prefect.flow_runs
+Encountered exception during execution: STACTypeError("JSON (id = unknown) does not represent a STACObject instance. 'type' attribute is not set")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/prefect/flow_engine.py", line 1596, in run_context
+    yield self
+  File "/usr/local/lib/python3.11/site-packages/prefect/flow_engine.py", line 1658, in run_flow_async
+    await engine.call_flow_fn()
+  File "/usr/local/lib/python3.11/site-packages/prefect/flow_engine.py", line 1610, in call_flow_fn
+    result = await call_with_parameters(self.flow.fn, self.parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/src/flow_s5_02_02.py", line 235, in main_flow
+    token, input_download_summary = await data_ingestion(
+                                    ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/prefect/flow_engine.py", line 1660, in run_flow_async
+    return engine.state if return_type == "state" else await engine.result()
+                                                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/prefect/flow_engine.py", line 1143, in result
+    raise self._raised
+  File "/usr/local/lib/python3.11/site-packages/prefect/flow_engine.py", line 1596, in run_context
+    yield self
+  File "/usr/local/lib/python3.11/site-packages/prefect/flow_engine.py", line 1658, in run_flow_async
+    await engine.call_flow_fn()
+  File "/usr/local/lib/python3.11/site-packages/prefect/flow_engine.py", line 1610, in call_flow_fn
+    result = await call_with_parameters(self.flow.fn, self.parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/src/steps/ingestion/data_ingestion.py", line 37, in data_ingestion
+    download = await download_stac(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/prefect/task_engine.py", line 1706, in run_task_async
+    return engine.state if return_type == "state" else await engine.result()
+                                                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/prefect/task_engine.py", line 1237, in result
+    raise self._raised
+  File "/usr/local/lib/python3.11/site-packages/prefect/task_engine.py", line 1625, in run_context
+    yield self
+  File "/usr/local/lib/python3.11/site-packages/prefect/task_engine.py", line 1704, in run_task_async
+    await engine.call_task_fn(txn)
+  File "/usr/local/lib/python3.11/site-packages/prefect/task_engine.py", line 1642, in call_task_fn
+    result = await call_with_parameters(self.task.fn, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/src/steps/ingestion/download_stac.py", line 314, in download_stac
+    scope_assets = get_input(**query_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/prefect_common/dco_bs3.py", line 834, in get_input
+    return reader.get_input(psg_id, ps_id, start_datetime, end_datetime)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/prefect_common/dco_bs3.py", line 584, in get_input
+    inputs = self._flatten_container_refs(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/prefect_common/dco_bs3.py", line 553, in _flatten_container_refs
+    for _, item in self._container_item_refs(container_bucket_path):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/prefect_common/dco_bs3.py", line 424, in _container_item_refs
+    item_obj = self.read_stac(item_bucket_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/prefect_common/dco_bs3.py", line 326, in read_stac
+    return ps.read_dict(self.read_json(normalized), href=normalized)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pystac/__init__.py", line 245, in read_dict
+    return stac_io.stac_object_from_dict(d, href, root)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pystac/stac_io.py", line 161, in stac_object_from_dict
+    info = identify_stac_object(d)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pystac/serialization/identify.py", line 282, in identify_stac_object
+    raise pystac.STACTypeError(json_dict, pystac.STACObject, extra_message)
+pystac.errors.STACTypeError: JSON (id = unknown) does not represent a STACObject instance. 'type' attribute is not set
+02:08:42 AM
+prefect.flow_runs
+Finished in state Failed("Flow run encountered an exception: STACTypeError: JSON (id = unknown) does not represent a STACObject instance. 'type' attribute is not set")
+02:08:43 AM
+prefect.flow_runs
+Process for flow run 'svc-s5-02-flow__svc-s5-02-02-flow__20261015000733' exited with status code: 1; Process exited with a general error.
+02:08:44 AM
+prefect.flow_runs.runner
+Check the flow run logs for an unhandled exception or assertion error.

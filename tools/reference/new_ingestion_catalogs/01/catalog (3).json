@@ -1,0 +1,154 @@
+{
+  "type": "Catalog",
+  "id": "DCO-DATA-05000_S3_SLSTR_L2WST",
+  "stac_version": "1.0.0",
+  "title": "DCO-DATA-05000_S3_SLSTR_L2WST",
+  "description": "cop_dataspace-S3_SLSTR_L2WST",
+  "links": [
+    {
+      "rel": "self",
+      "href": "./catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3A_SL_2_WST____20260416T232453_20260417T010552_20260418T051702_6059_138_215______MAR_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3A_SL_2_WST____20260417T010552_20260417T024651_20260418T063917_6059_138_216______MAR_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3A_SL_2_WST____20260417T024651_20260417T042750_20260418T083942_6059_138_217______MAR_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3A_SL_2_WST____20260417T042750_20260417T060850_20260418T100500_6059_138_218______MAR_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3A_SL_2_WST____20260417T060850_20260417T074949_20260418T113037_6059_138_219______MAR_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3A_SL_2_WST____20260417T074949_20260417T093048_20260418T132640_6059_138_220______MAR_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3A_SL_2_WST____20260417T085106_20260417T085406_20260417T105654_0180_138_221_2160_MAR_O_NR_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3A_SL_2_WST____20260417T085406_20260417T085706_20260417T105643_0179_138_221_2340_MAR_O_NR_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3A_SL_2_WST____20260417T093048_20260417T111147_20260418T150752_6059_138_221______MAR_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3A_SL_2_WST____20260417T103205_20260417T103505_20260417T123605_0180_138_222_2160_MAR_O_NR_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3A_SL_2_WST____20260417T193644_20260417T211743_20260419T005712_6059_138_227______MAR_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3A_SL_2_WST____20260417T201101_20260417T201401_20260417T223018_0179_138_228_0540_MAR_O_NR_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3A_SL_2_WST____20260417T201401_20260417T201701_20260417T223444_0180_138_228_0720_MAR_O_NR_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3A_SL_2_WST____20260417T211743_20260417T225842_20260419T021626_6059_138_228______MAR_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3B_SL_2_WST____20260416T224611_20260417T002710_20260418T050201_6059_119_072______MAR_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3B_SL_2_WST____20260417T002710_20260417T020809_20260418T064244_6059_119_073______MAR_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3B_SL_2_WST____20260417T020809_20260417T034908_20260418T084321_6059_119_074______MAR_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3B_SL_2_WST____20260417T034908_20260417T053008_20260418T101127_6059_119_075______MAR_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3B_SL_2_WST____20260417T053008_20260417T071107_20260418T112152_6059_119_076______MAR_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3B_SL_2_WST____20260417T071107_20260417T085206_20260418T131547_6059_119_077______MAR_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3B_SL_2_WST____20260417T085206_20260417T103305_20260418T145832_6059_119_078______MAR_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3B_SL_2_WST____20260417T095323_20260417T095623_20260417T115249_0179_119_079_2160_MAR_O_NR_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3B_SL_2_WST____20260417T095623_20260417T095923_20260417T115249_0179_119_079_2340_MAR_O_NR_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3B_SL_2_WST____20260417T203901_20260417T222000_20260419T021228_6059_119_085______MAR_O_NT_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3B_SL_2_WST____20260417T211318_20260417T211618_20260417T233018_0179_119_086_0540_MAR_O_NR_003.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "S3B_SL_2_WST____20260417T211618_20260417T211918_20260417T233349_0179_119_086_0720_MAR_O_NR_003.json",
+      "type": "application/json"
+    }
+  ]
+}

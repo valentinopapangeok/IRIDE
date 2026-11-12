@@ -1,0 +1,129 @@
+{
+  "submitted": {
+    "status_code": 202,
+    "payload": {
+      "request_name": "no_regression_04_radar_dpc_20260603_0600_0800",
+      "reftime": {
+        "from": "2026-06-03T06:00:00.000Z",
+        "to": "2026-06-03T08:00:00.000Z"
+      },
+      "dataset_names": [
+        "radar_dpc"
+      ]
+    },
+    "response": {
+      "request_id": 4502492,
+      "task_id": "478483de-d2cb-4524-b783-20a146249c01"
+    }
+  },
+  "polls": [
+    {
+      "id": 4502492,
+      "name": "no_regression_04_radar_dpc_20260603_0600_0800",
+      "args": {
+        "reftime": {
+          "to": "2026-06-03T08:00:00.000000Z",
+          "from": "2026-06-03T06:00:00.000000Z"
+        },
+        "only_reliable": false,
+        "dataset_names": [
+          "radar_dpc"
+        ]
+      },
+      "submission_date": "2026-06-26T08:58:44.916386",
+      "status": "PENDING",
+      "task_id": "478483de-d2cb-4524-b783-20a146249c01",
+      "opendata": false
+    },
+    {
+      "id": 4502492,
+      "name": "no_regression_04_radar_dpc_20260603_0600_0800",
+      "args": {
+        "reftime": {
+          "to": "2026-06-03T08:00:00.000000Z",
+          "from": "2026-06-03T06:00:00.000000Z"
+        },
+        "only_reliable": false,
+        "dataset_names": [
+          "radar_dpc"
+        ]
+      },
+      "submission_date": "2026-06-26T08:58:44.916386",
+      "status": "PENDING",
+      "task_id": "478483de-d2cb-4524-b783-20a146249c01",
+      "opendata": false
+    },
+    {
+      "id": 4502492,
+      "name": "no_regression_04_radar_dpc_20260603_0600_0800",
+      "args": {
+        "reftime": {
+          "to": "2026-06-03T08:00:00.000000Z",
+          "from": "2026-06-03T06:00:00.000000Z"
+        },
+        "only_reliable": false,
+        "dataset_names": [
+          "radar_dpc"
+        ]
+      },
+      "submission_date": "2026-06-26T08:58:44.916386",
+      "status": "PENDING",
+      "task_id": "478483de-d2cb-4524-b783-20a146249c01",
+      "opendata": false
+    },
+    {
+      "id": 4502492,
+      "name": "no_regression_04_radar_dpc_20260603_0600_0800",
+      "args": {
+        "reftime": {
+          "to": "2026-06-03T08:00:00.000000Z",
+          "from": "2026-06-03T06:00:00.000000Z"
+        },
+        "only_reliable": false,
+        "dataset_names": [
+          "radar_dpc"
+        ]
+      },
+      "submission_date": "2026-06-26T08:58:44.916386",
+      "status": "PENDING",
+      "task_id": "478483de-d2cb-4524-b783-20a146249c01",
+      "opendata": false
+    },
+    {
+      "id": 4502492,
+      "name": "no_regression_04_radar_dpc_20260603_0600_0800",
+      "args": {
+        "reftime": {
+          "to": "2026-06-03T08:00:00.000000Z",
+          "from": "2026-06-03T06:00:00.000000Z"
+        },
+        "only_reliable": false,
+        "dataset_names": [
+          "radar_dpc"
+        ]
+      },
+      "submission_date": "2026-06-26T08:58:44.916386",
+      "status": "PENDING",
+      "task_id": "478483de-d2cb-4524-b783-20a146249c01",
+      "opendata": false
+    },
+    {
+      "id": 4502492,
+      "name": "no_regression_04_radar_dpc_20260603_0600_0800",
+      "args": {
+        "reftime": {
+          "to": "2026-06-03T08:00:00.000000Z",
+          "from": "2026-06-03T06:00:00.000000Z"
+        },
+        "only_reliable": false,
+        "dataset_names": [
+          "radar_dpc"
+        ]
+      },
+      "submission_date": "2026-06-26T08:58:44.916386",
+      "status": "PENDING",
+      "task_id": "478483de-d2cb-4524-b783-20a146249c01",
+      "opendata": false
+    }
+  ]
+}

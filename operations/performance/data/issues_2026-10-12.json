@@ -1,0 +1,200 @@
+[
+  {
+    "id": "OPS-20261012-623",
+    "schedule": 623,
+    "activation": "ISS-domain_S5-295",
+    "products": "03",
+    "reference_date": "2026-10-08",
+    "note": "Blocking: failed normal delivery to DL (KO). Product workflow OK and ET OK. Delivery failure cause and recovery unverified.",
+    "source": "11.58.18"
+  },
+  {
+    "id": "OPS-20261012-624",
+    "schedule": 624,
+    "activation": "ISS-domain_S5-295",
+    "products": "03",
+    "reference_date": "2026-10-09",
+    "note": "Blocking: missing mandatory dc_cmsaf confirmed for 9 October (plan 625, ICR 2211, MISSING_DATA, batch 2064). Workflow Error/Void. Blocking: expected VOID delivery to DL KO. ET N/A is expected.",
+    "source": "11.59.20"
+  },
+  {
+    "id": "OPS-20261012-625",
+    "schedule": 625,
+    "activation": "ISS-domain_S5-295",
+    "products": "03",
+    "reference_date": "2026-10-10",
+    "note": "Blocking: failed normal delivery to DL (KO). Product workflow OK and ET OK. Delivery failure cause and recovery unverified.",
+    "source": "11.59.35"
+  },
+  {
+    "id": "OPS-20261012-649",
+    "schedule": 649,
+    "activation": "ISS-domain_S5-296",
+    "products": "01/10",
+    "reference_date": "2026-10-03",
+    "note": "Blocking: failed normal delivery to DL (KO). Product workflow OK and ET OK. Delivery failure cause and recovery unverified. Both LST and LST Downscale affected.",
+    "source": "12.00.30"
+  },
+  {
+    "id": "OPS-20261012-650",
+    "schedule": 650,
+    "activation": "ISS-domain_S5-296",
+    "products": "01/10",
+    "reference_date": "2026-10-04",
+    "note": "Blocking: failed normal delivery to DL (KO). Product workflow OK and ET OK. Delivery failure cause and recovery unverified. Both LST and LST Downscale affected.",
+    "source": "12.00.49"
+  },
+  {
+    "id": "OPS-20261012-683",
+    "schedule": 683,
+    "activation": "ISS-domain_S5-297",
+    "products": "02/11",
+    "reference_date": "2026-10-06",
+    "note": "Blocking: failed normal delivery to DL (KO). Product workflow OK and ET OK. Delivery failure cause and recovery unverified. Both SST and SST Downscale affected.",
+    "source": "12.01.24"
+  },
+  {
+    "id": "OPS-20261012-684",
+    "schedule": 684,
+    "activation": "ISS-domain_S5-297",
+    "products": "02/11",
+    "reference_date": "2026-10-07",
+    "note": "Blocking: failed normal delivery to DL (KO). Product workflow OK and ET OK. Delivery failure cause and recovery unverified. Both SST and SST Downscale affected.",
+    "source": "12.01.45"
+  },
+  {
+    "id": "OPS-20261012-685",
+    "schedule": 685,
+    "activation": "ISS-domain_S5-297",
+    "products": "02/11",
+    "reference_date": "2026-10-08",
+    "note": "Blocking: SST input ingestion failed with STACTypeError: a referenced JSON lacks the STAC type field. Log identifies activation 297, schedule 685 and reference 8 October; exact malformed JSON path unknown. SST Downscale did not run because SST did not run (user confirmed dependency). SST Void; expected VOID DL KO, ET N/A is expected. Downscale delivery status not shown. Non-blocking input issue: optional SST_MED input MISSING_DATA (plan 686, ICR 2449, batch 2007). Mandatory S3 ICR completed. No proof that the optional absence caused the STAC error.",
+    "source": "12.02.10"
+  },
+  {
+    "id": "OPS-20261012-717",
+    "schedule": 717,
+    "activation": "ISS-domain_S5-299",
+    "products": "04",
+    "reference_date": "2026-10-08",
+    "note": "Blocking: failed normal delivery to DL (KO). Product workflow OK and ET OK. Delivery failure cause and recovery unverified.",
+    "source": "12.06.03"
+  },
+  {
+    "id": "OPS-20261012-718",
+    "schedule": 718,
+    "activation": "ISS-domain_S5-299",
+    "products": "04",
+    "reference_date": "2026-10-09",
+    "note": "Blocking: failed normal delivery to DL (KO). Product workflow OK and ET OK. Delivery failure cause and recovery unverified.",
+    "source": "12.06.30"
+  },
+  {
+    "id": "OPS-20261012-719",
+    "schedule": 719,
+    "activation": "ISS-domain_S5-299",
+    "products": "04",
+    "reference_date": "2026-10-10",
+    "note": "Blocking: failed normal delivery to DL (KO). Product workflow OK and ET OK. Delivery failure cause and recovery unverified.",
+    "source": "12.07.33"
+  },
+  {
+    "id": "OPS-20261012-746",
+    "schedule": 746,
+    "activation": "ISS-domain_S5-300",
+    "products": "05",
+    "reference_date": "2026-10-06",
+    "note": "Blocking: failed normal delivery to DL (KO). Product workflow OK and ET OK. Delivery failure cause and recovery unverified.",
+    "source": "12.08.06"
+  },
+  {
+    "id": "OPS-20261012-747",
+    "schedule": 747,
+    "activation": "ISS-domain_S5-300",
+    "products": "05",
+    "reference_date": "2026-10-07",
+    "note": "Blocking: failed normal delivery to DL (KO). Product workflow OK and ET OK. Delivery failure cause and recovery unverified.",
+    "source": "12.08.21"
+  },
+  {
+    "id": "OPS-20261012-748",
+    "schedule": 748,
+    "activation": "ISS-domain_S5-300",
+    "products": "05",
+    "reference_date": "2026-10-08",
+    "note": "Blocking: failed normal delivery to DL (KO). Product workflow OK and ET OK. Delivery failure cause and recovery unverified.",
+    "source": "12.08.34"
+  },
+  {
+    "id": "OPS-20261012-779",
+    "schedule": 779,
+    "activation": "ISS-domain_S5-301",
+    "products": "06",
+    "reference_date": "2026-10-08",
+    "note": "Pending production: Scheduled, no workflow or production timestamps. Mandatory cloud input ICR 2680 sent/PENDING, batch 2014, input date 8 October shown in plan 780. Deadline end 10 October Europe/Rome passed. Investigate delay; pending input is not confirmed missing data or failed delivery.",
+    "source": "12.10.07"
+  },
+  {
+    "id": "OPS-20261012-780",
+    "schedule": 780,
+    "activation": "ISS-domain_S5-301",
+    "products": "06",
+    "reference_date": "2026-10-09",
+    "note": "Blocking: failed normal delivery to DL (KO). Product workflow OK and ET OK. Delivery failure cause and recovery unverified.",
+    "source": "12.10.21"
+  },
+  {
+    "id": "OPS-20261012-781",
+    "schedule": 781,
+    "activation": "ISS-domain_S5-301",
+    "products": "06",
+    "reference_date": "2026-10-10",
+    "note": "Blocking: failed normal delivery to DL (KO). Product workflow OK and ET OK. Delivery failure cause and recovery unverified.",
+    "source": "12.10.43"
+  },
+  {
+    "id": "OPS-20261012-808",
+    "schedule": 808,
+    "activation": "ISS-domain_S5-303",
+    "products": "09",
+    "reference_date": "2026-10-06",
+    "note": "Blocking: failed normal delivery to DL (KO). Product workflow OK and ET OK. Delivery failure cause and recovery unverified.",
+    "source": "12.12.41"
+  },
+  {
+    "id": "OPS-20261012-809",
+    "schedule": 809,
+    "activation": "ISS-domain_S5-303",
+    "products": "09",
+    "reference_date": "2026-10-07",
+    "note": "Blocking: failed normal delivery to DL (KO). Product workflow OK and ET OK. Delivery failure cause and recovery unverified.",
+    "source": "12.13.03"
+  },
+  {
+    "id": "OPS-20261012-810",
+    "schedule": 810,
+    "activation": "ISS-domain_S5-303",
+    "products": "09",
+    "reference_date": "2026-10-08",
+    "note": "Pending production: Scheduled, no workflow or production timestamps. Deadline end 12 October Europe/Rome, not yet elapsed at capture. Activation-level plan 811 shows mandatory MCD19A2 completed; optional GCOM-C ICR 2733 sent and atmospheric ICR 2735 completed with errors. Exact optional-error result not shown: absence/cause unconfirmed. Optional issues should not block normal production by themselves. Investigate why production has not started; no delivery failure inferred.",
+    "source": "12.13.39"
+  },
+  {
+    "id": "OPS-20261012-679",
+    "schedule": 679,
+    "activation": "ISS-domain_S5-297",
+    "products": "02/11",
+    "reference_date": "2026-10-02",
+    "note": "Pending follow-up from 7 October: Scheduled and no production timestamps in supplied observation. Deadline end 6 October Europe/Rome passed. No later evidence supplied for this schedule; later schedules do not establish its recovery. No delivery failure cause inferred.",
+    "source": null
+  },
+  {
+    "id": "OPS-20261012-804",
+    "schedule": 804,
+    "activation": "ISS-domain_S5-303",
+    "products": "09",
+    "reference_date": "2026-10-02",
+    "note": "Pending follow-up from 7 October: Scheduled and no production timestamps in supplied observation. Deadline end 6 October Europe/Rome passed. No later evidence supplied for this schedule; later schedules do not establish its recovery. No delivery failure cause inferred.",
+    "source": null
+  }
+]

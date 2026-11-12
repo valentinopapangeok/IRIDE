@@ -1,0 +1,20 @@
+{
+  "iss:classes": "10",
+  "iss:classes_values": "415.00 ppm = 415; 416.67 = 416.67; 418.33 = 418.33; 420.00 = 420; 421.67 = 421.67; 423.33 = 423.33; 425 = 425; 426.67 = 426.67; 428.33 = 428.33; 430.00 = 430",
+  "iss:stack": "single",
+  "iss:spatial_resolution": {
+    "max": 3000,
+    "min": 2000
+  },
+  "proj:code": "EPSG: 4326",
+  "iss:activation_mode": "systematic",
+  "iss:temporal_resolution": "monthly",
+  "properties": {
+    "format": "Raster",
+    "production_datetime": "Time needed for availability of input data: min <=1 day, max 7 days, depending on the availability of OCO2 and OCO3 data",
+    "proj:code": "EPSG: 4326"
+  },
+  "product:type": "Raster (.geotiff)",
+  "accuracy:geometric_rmse": "NA",
+  "accuracy:measurement_relative": "20% relative RMSE"
+}

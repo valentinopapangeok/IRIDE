@@ -1,0 +1,144 @@
+{
+  "observed_on": "2026-11-02",
+  "audit_run_id": 41371179763,
+  "audit_run_at_utc": "2026-11-02T01:12:51Z",
+  "weekly_run_at_utc": "2026-11-02T01:20:44Z",
+  "scope": "Assessment of seven OPS observations. Workbook unchanged during this investigation.",
+  "historical_evidence": [
+    {
+      "run_id": 40246048130,
+      "url": "https://github.com/valentinopapangeok/iride-input-availability/actions/runs/40246048130",
+      "lines": [
+        "2026-10-25T23:53:57.0897703Z      01 | Sentinel-3 LST                     | yes   | yes       |   37.28 | 2026-10-24                |     1 | …34309_20261025T232306_0179_126_095_5220_ESA_O_NT_005.SEN3",
+        "2026-10-25T23:53:57.0909244Z      05 | VIIRS snow                         | yes   | yes       |    3.36 | 2026-10-24                |     1 | …_viirs_snow/VNP10A1F.A2026297.h19v05.002.2026298085914.h5",
+        "2026-10-25T23:53:57.0915824Z      09 | Sentinel-3 SYNERGY AOD             | yes   | yes       |    7.19 | 2026-10-24                |     1 | …32814_20261025T200508_2657_126_095______ESA_O_NT_003.SEN3",
+        "2026-10-25T23:53:57.0916224Z      09 | GCOM-C SGLI L2 Atmosphere ARNP     | no    | no        |    0.89 | -                         |     0 | -",
+        "2026-10-25T23:53:57.0916823Z      09 | MODIS AOD                          | yes   | yes       |    4.84 | 2026-10-22                |     4 | …a_modis_aod/MCD19A2.A2026295.h18v05.061.2026297181221.hdf",
+        "2026-10-25T23:53:57.0917659Z      10 | Sentinel-3 LST                     | yes   | yes       |   37.28 | 2026-10-24                |     1 | …34309_20261025T232306_0179_126_095_5220_ESA_O_NT_005.SEN3",
+        "2026-10-25T23:53:57.0918815Z Results written to /home/runner/work/iride-input-availability/iride-input-availability/input_availability/audit_results/2026-10-25/latest_input_audit_results_2026-10-25_234425Z.csv"
+      ]
+    },
+    {
+      "run_id": 40919870989,
+      "url": "https://github.com/valentinopapangeok/iride-input-availability/actions/runs/40919870989",
+      "lines": [
+        "2026-10-29T17:28:00.0478545Z      01 | Sentinel-3 LST                     | yes   | yes       |   12.70 | 2026-10-28                |     1 | …70626_20261029T165407_0119_126_148_5940_ESA_O_NT_005.SEN3",
+        "2026-10-29T17:28:00.0496386Z      05 | VIIRS snow                         | yes   | yes       |    9.81 | 2026-10-25                |     1 | …_viirs_snow/VNP10A1F.A2026298.h18v05.002.2026299085526.h5",
+        "2026-10-29T17:28:00.0507790Z      09 | Sentinel-3 SYNERGY AOD             | yes   | yes       |   10.50 | 2026-10-28                |     1 | …82156_20261029T160424_2658_126_149______ESA_O_NT_003.SEN3",
+        "2026-10-29T17:28:00.0508843Z      09 | GCOM-C SGLI L2 Atmosphere ARNP     | yes   | yes       |   65.40 | 2026-10-27                |     8 | …d/2026-10-27/GC1SG1_20261027A01D_T0418_L2SG_ARNPK_3004.h5",
+        "2026-10-29T17:28:00.0509865Z      09 | MODIS AOD                          | yes   | yes       |   14.48 | 2026-10-27                |     4 | …a_modis_aod/MCD19A2.A2026300.h19v04.061.2026301180743.hdf",
+        "2026-10-29T17:28:00.0511541Z      10 | Sentinel-3 LST                     | yes   | yes       |   12.70 | 2026-10-28                |     1 | …70626_20261029T165407_0119_126_148_5940_ESA_O_NT_005.SEN3",
+        "2026-10-29T17:28:00.0513858Z Results written to /home/runner/work/iride-input-availability/iride-input-availability/input_availability/audit_results/2026-10-29/latest_input_audit_results_2026-10-29_171819Z.csv"
+      ]
+    },
+    {
+      "run_id": 40986221391,
+      "url": "https://github.com/valentinopapangeok/iride-input-availability/actions/runs/40986221391",
+      "lines": [
+        "2026-10-30T01:42:09.2785475Z      01 | Sentinel-3 LST                     | yes   | yes       |   14.85 | 2026-10-28                |     1 | …53122_20261030T000654_0119_126_153_5940_ESA_O_NT_005.SEN3",
+        "2026-10-30T01:42:09.2797595Z      05 | VIIRS snow                         | yes   | yes       |    3.86 | 2026-10-25                |     1 | …_viirs_snow/VNP10A1F.A2026298.h18v05.002.2026299085526.h5",
+        "2026-10-30T01:42:09.2806002Z      09 | Sentinel-3 SYNERGY AOD             | yes   | yes       |   13.64 | 2026-10-28                |     1 | …64654_20261029T232459_2658_126_154______ESA_O_NT_003.SEN3",
+        "2026-10-30T01:42:09.2807038Z      09 | GCOM-C SGLI L2 Atmosphere ARNP     | yes   | yes       |   72.86 | 2026-10-27                |     8 | …d/2026-10-27/GC1SG1_20261027A01D_T0418_L2SG_ARNPK_3004.h5",
+        "2026-10-30T01:42:09.2807829Z      09 | MODIS AOD                          | yes   | yes       |    7.85 | 2026-10-27                |     4 | …a_modis_aod/MCD19A2.A2026300.h19v04.061.2026301180743.hdf",
+        "2026-10-30T01:42:09.2809101Z      10 | Sentinel-3 LST                     | yes   | yes       |   14.85 | 2026-10-28                |     1 | …53122_20261030T000654_0119_126_153_5940_ESA_O_NT_005.SEN3",
+        "2026-10-30T01:42:09.2810841Z Results written to /home/runner/work/iride-input-availability/iride-input-availability/input_availability/audit_results/2026-10-30/latest_input_audit_results_2026-10-30_013110Z.csv"
+      ]
+    },
+    {
+      "run_id": 41094265163,
+      "url": "https://github.com/valentinopapangeok/iride-input-availability/actions/runs/41094265163",
+      "lines": [
+        "2026-10-30T17:12:04.4176688Z      01 | Sentinel-3 LST                     | yes   | yes       |    9.78 | 2026-10-29                |     1 | …64015_20261030T143155_0119_126_162_5940_ESA_O_NT_005.SEN3",
+        "2026-10-30T17:12:04.4184567Z      05 | VIIRS snow                         | yes   | yes       |    3.69 | 2026-10-26                |     1 | …_viirs_snow/VNP10A1F.A2026299.h19v05.002.2026303111748.h5",
+        "2026-10-30T17:12:04.4190397Z      09 | Sentinel-3 SYNERGY AOD             | yes   | yes       |   14.58 | 2026-10-29                |     1 | …75551_20261030T145006_2658_126_163______ESA_O_NT_003.SEN3",
+        "2026-10-30T17:12:04.4190807Z      09 | GCOM-C SGLI L2 Atmosphere ARNP     | no    | no        |   90.44 | -                         |     0 | -",
+        "2026-10-30T17:12:04.4191275Z      09 | MODIS AOD                          | yes   | yes       |    4.95 | 2026-10-27                |     4 | …a_modis_aod/MCD19A2.A2026300.h19v04.061.2026301180743.hdf",
+        "2026-10-30T17:12:04.4192117Z      10 | Sentinel-3 LST                     | yes   | yes       |    9.78 | 2026-10-29                |     1 | …64015_20261030T143155_0119_126_162_5940_ESA_O_NT_005.SEN3",
+        "2026-10-30T17:12:04.4193290Z Results written to /home/runner/work/iride-input-availability/iride-input-availability/input_availability/audit_results/2026-10-30/latest_input_audit_results_2026-10-30_165621Z.csv"
+      ]
+    },
+    {
+      "run_id": 41155070185,
+      "url": "https://github.com/valentinopapangeok/iride-input-availability/actions/runs/41155070185",
+      "lines": [
+        "2026-10-31T01:34:10.9328229Z      01 | Sentinel-3 LST                     | yes   | yes       |   13.12 | 2026-10-29                |     1 | …45711_20261031T005109_0179_126_167_5400_ESA_O_NT_005.SEN3",
+        "2026-10-31T01:34:10.9349609Z      05 | VIIRS snow                         | yes   | no        |   10.34 | 2026-10-26                |     1 | -",
+        "2026-10-31T01:34:10.9363772Z      09 | Sentinel-3 SYNERGY AOD             | yes   | yes       |    9.25 | 2026-10-29                |     1 | …62049_20261031T003328_2658_126_168______ESA_O_NT_003.SEN3",
+        "2026-10-31T01:34:10.9365640Z      09 | GCOM-C SGLI L2 Atmosphere ARNP     | yes   | yes       |   10.75 | 2026-10-29                |     8 | …d/2026-10-29/GC1SG1_20261029A01D_T0418_L2SG_ARNPK_3004.h5",
+        "2026-10-31T01:34:10.9366824Z      09 | MODIS AOD                          | yes   | no        |   11.07 | 2026-10-29                |     1 | -",
+        "2026-10-31T01:34:10.9369134Z      10 | Sentinel-3 LST                     | yes   | yes       |   13.12 | 2026-10-29                |     1 | …45711_20261031T005109_0179_126_167_5400_ESA_O_NT_005.SEN3",
+        "2026-10-31T01:34:10.9372788Z Results written to /home/runner/work/iride-input-availability/iride-input-availability/input_availability/audit_results/2026-10-31/latest_input_audit_results_2026-10-31_012349Z.csv"
+      ]
+    },
+    {
+      "run_id": 41217190788,
+      "url": "https://github.com/valentinopapangeok/iride-input-availability/actions/runs/41217190788",
+      "lines": [
+        "2026-10-31T16:08:38.8395999Z      01 | Sentinel-3 LST                     | yes   | yes       |    8.42 | 2026-10-30                |     1 | …43405_20261031T152243_0179_126_175_5940_ESA_O_NT_005.SEN3",
+        "2026-10-31T16:08:38.8404228Z      05 | VIIRS snow                         | yes   | yes       |    3.50 | 2026-10-26                |     1 | …_viirs_snow/VNP10A1F.A2026299.h19v05.002.2026303111748.h5",
+        "2026-10-31T16:08:38.8410167Z      09 | Sentinel-3 SYNERGY AOD             | yes   | yes       |   13.39 | 2026-10-30                |     1 | …40747_20261031T125728_2658_126_175______ESA_O_NT_003.SEN3",
+        "2026-10-31T16:08:38.8410725Z      09 | GCOM-C SGLI L2 Atmosphere ARNP     | yes   | yes       |   20.36 | 2026-10-30                |     4 | …d/2026-10-30/GC1SG1_20261030D01D_T0518_L2SG_ARNPK_3004.h5",
+        "2026-10-31T16:08:38.8411268Z      09 | MODIS AOD                          | yes   | yes       |    4.78 | 2026-10-29                |     4 | …a_modis_aod/MCD19A2.A2026302.h19v05.061.2026304010127.hdf",
+        "2026-10-31T16:08:38.8412251Z      10 | Sentinel-3 LST                     | yes   | yes       |    8.42 | 2026-10-30                |     1 | …43405_20261031T152243_0179_126_175_5940_ESA_O_NT_005.SEN3",
+        "2026-10-31T16:08:38.8413354Z Results written to /home/runner/work/iride-input-availability/iride-input-availability/input_availability/audit_results/2026-10-31/latest_input_audit_results_2026-10-31_155642Z.csv"
+      ]
+    }
+  ],
+  "assessments": [
+    {
+      "schedule": 670,
+      "input": "S3_SLSTR_L2LST",
+      "reference_date": "2026-10-24",
+      "assessment": "Likely DCO collection problem",
+      "evidence": "Audit 25 Oct 23:44:25 UTC downloaded exact 24 Oct Sentinel-3 LST, before 1 Nov production.",
+      "limits": "Sample-level availability does not establish complete coverage or the exact failed request. Plan input date/result and ICR time not visible."
+    },
+    {
+      "schedules": [
+        767,
+        768,
+        769
+      ],
+      "input": "VNP10A1F",
+      "reference_dates": [
+        "2026-10-27",
+        "2026-10-28",
+        "2026-10-29"
+      ],
+      "assessment": "Provider delay / absence supported",
+      "evidence": "Today's audit latest=26 Oct; weekly 27-29 Oct marked missing inferred_from_latest. Independent NASA CMR query returned zero entries over audit Italy bbox for the whole 27-29 Oct interval.",
+      "limits": "Provider state at exact ICR time remains unavailable; exact plan dates unconfirmed. Query limited to VNP10A1F and audit bbox; replacement VIIRS products excluded."
+    },
+    {
+      "schedule": 829,
+      "input": "MCD19A2",
+      "reference_date": "2026-10-27",
+      "assessment": "Likely DCO collection problem",
+      "evidence": "Audit 29 Oct 17:18:19 UTC downloaded four exact 27 Oct MODIS AOD granules, before 31 Oct production.",
+      "limits": "Exact missing DCO tiles / ICR completion time not visible; plan-date match unconfirmed."
+    },
+    {
+      "schedule": 829,
+      "input": "S3_SY_AOD",
+      "reference_date": "2026-10-27",
+      "assessment": "DCO investigation candidate; historical availability not fully established",
+      "evidence": "Today's exact-date weekly probe finds S3A_SY_2_AOD____20261027T102324_20261027T110741_20261029T055006_2657_145_279______PS1_O_NT_003.SEN3. Processing timestamp predates production.",
+      "limits": "Processing timestamp is not publication/availability proof. Historical latest-date logs do not prove exact 27 Oct sample presence at ICR time."
+    },
+    {
+      "schedule": 830,
+      "input": "dc_gcomc_sgli_aod",
+      "reference_date": "2026-10-28",
+      "assessment": "Unresolved at collection time; DCO investigation candidate",
+      "evidence": "Today's weekly ARNP query finds eight products for exact 28 Oct. GCOM-C latest audit had an error on 30 Oct; 31 Oct downloaded 29/30 Oct samples, not exact 28 Oct.",
+      "limits": "ARNP collection equivalence to DCO request and exact 28 Oct availability before ICR not established. Today's presence cannot prove historical presence."
+    },
+    {
+      "schedule": 740,
+      "reference_date": "2026-10-31",
+      "assessment": "No provider absence demonstrated; running cause unresolved",
+      "evidence": "Today's exact-date audit finds seven radar files and 145 H40B results for 31 Oct.",
+      "limits": "No failed procurement input shown. Catalogue presence does not establish DCO retrieval or processing completion."
+    }
+  ]
+}

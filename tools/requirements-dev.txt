@@ -1,0 +1,7 @@
+deptry
+pipreqs
+yarg
+requirements-parser
+pytest
+black
+flake8

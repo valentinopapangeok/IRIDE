@@ -1,0 +1,2 @@
+product,date,v1_date,mode,status,no_regression_pct,v0_valid_pixels,v1_valid_pixels,overlap_valid_pixels,significant_pixels
+S5-02-01,20220116,20220116,continuous,FAIL,91.20,267702,268682,267119,23508

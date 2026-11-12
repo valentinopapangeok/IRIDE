@@ -1,0 +1,44 @@
+{
+  "type": "Catalog",
+  "id": "DCO-DATA-03333_VJ121A1N",
+  "stac_version": "1.0.0",
+  "title": "DCO-DATA-03333_VJ121A1N",
+  "description": "DCO-DATA-03333-VJ121A1N",
+  "links": [
+    {
+      "rel": "self",
+      "href": "./catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "VJ121A1N.A2026118.h18v04.002.2026119161837.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "VJ121A1N.A2026118.h18v05.002.2026119161821.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "VJ121A1N.A2026118.h19v04.002.2026119161819.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "VJ121A1N.A2026118.h19v05.002.2026119161839.json",
+      "type": "application/json"
+    }
+  ]
+}
