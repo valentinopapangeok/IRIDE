@@ -2,10 +2,10 @@ name: Input availability dashboard
 
 on:
   workflow_dispatch:
-  # Enable only after the migrated manual run matches the existing dashboard.
-  # schedule:
-  #   - cron: "0 12,23 * * *"
-  #     timezone: "Europe/Rome"
+  schedule:
+    # Daily at noon and 23:00 Italian time; handles daylight-saving changes.
+    - cron: "0 12,23 * * *"
+      timezone: "Europe/Rome"
 
 permissions:
   contents: read
