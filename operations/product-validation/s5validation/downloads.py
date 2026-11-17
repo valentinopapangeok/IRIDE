@@ -273,14 +273,15 @@ def campaign_files(client,bucket,product,start,end,prefix='ar_delivery/',depth=0
     return found
 
 
-def inventory_campaign(client,config,product=None,start_bound=None,end_bound=None):
+def inventory_campaign(client,config,product=None,start_bound=None,end_bound=None,products=None):
     start=datetime.fromisoformat(config['campaign']['start'].replace('Z','+00:00'))
     end=datetime.fromisoformat(config['campaign']['end'].replace('Z','+00:00'))
     if start_bound is not None:start=max(start,start_bound)
     if end_bound is not None:end=min(end,end_bound)
     if start>=end:return [],[]
     found=[];errors=[]
-    for name in ([product] if product else config['products']):
+    names = list(products) if products is not None else ([product] if product else config['products'])
+    for name in names:
         try:
             items=campaign_files(client,f'ou-{name.lower()}-prod',name,start,end)
             # A timestamp may occur in multiple partitions. Select deterministically.

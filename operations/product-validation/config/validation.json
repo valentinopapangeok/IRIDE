@@ -34,6 +34,129 @@
       "decision_date": "2026-10-19"
     }
   },
+  "positional_accuracy": {
+    "S5-02-01": {
+      "enabled": true,
+      "download": true,
+      "catalog_path": null,
+      "psg_id": null,
+      "ps_id": null,
+      "endpoint_url": null,
+      "note": "Set DCO catalog_path/PS identifiers in an external local config or IRIDE_DCO_* environment variables. Mandatory Sentinel-3 inputs are cached under the workdir and never affect thematic acceptance."
+    },
+    "S5-02-02": {
+      "enabled": true,
+      "download": true,
+      "source_kind": "WST",
+      "catalog_path": null,
+      "psg_id": null,
+      "ps_id": null,
+      "endpoint_url": null,
+      "note": "Official SST positional KPI using the mandatory SLSTR WST contributor archives; DCO settings remain external."
+    },
+    "S5-02-03": {
+      "enabled": true,
+      "download": true,
+      "source_kind": "CMSAF_DNI",
+      "catalog_path": null,
+      "psg_id": null,
+      "ps_id": null,
+      "endpoint_url": null,
+      "note": "Official hourly spatial-lineage KPI using the mandatory daily CMSAF/SARAH-3 DNI NetCDF; ERA5 remains thematic reference data."
+    },
+    "S5-02-04": {
+      "enabled": true,
+      "download": true,
+      "source_kind": "HSAF_MISTRAL",
+      "tolerance_m": 4000,
+      "catalog_path": null,
+      "psg_id": null,
+      "ps_id": null,
+      "endpoint_url": null,
+      "note": "Official hourly source-to-final last-write geometry KPI using mandatory HSAF H40B and available MISTRAL source coordinates; 4000 m is the declared product resolution."
+    },
+    "S5-02-05": {
+      "enabled": true,
+      "download": true,
+      "source_kind": "OLCI_LFR",
+      "tolerance_m": 300,
+      "catalog_path": null,
+      "psg_id": null,
+      "ps_id": null,
+      "endpoint_url": null,
+      "note": "Autonomous official mandatory OLCI grid-geometry stage. Optional VIIRS value replacement occurs on the OLCI grid and does not alter positional geometry."
+    },
+    "S5-02-06": {
+      "enabled": true,
+      "download": true,
+      "tolerance_m": 3000,
+      "catalog_path": null,
+      "psg_id": null,
+      "ps_id": null,
+      "endpoint_url": null,
+      "note": "Official hourly source-to-final geometry KPI using mandatory MTG/FCI Cloud Mask GRIB2. Satpy cloud_state and ecCodes cloud_mask are decoder names for the same mandatory field; 3000 m is the declared product resolution and 90% is the conformity target."
+    },
+    "S5-02-07": {
+      "enabled": true,
+      "download": true,
+      "source_kind": "SENTINEL5P_PAL",
+      "tolerance_m": 3500,
+      "target_conformity_pct": 80,
+      "catalog_path": null,
+      "psg_id": null,
+      "ps_id": null,
+      "endpoint_url": null,
+      "note": "Official monthly PAL source-grid to final-grid geometry KPI. GOSAT remains thematic reference data; 3500 m is the declared PAL product resolution and 80% follows the extracted validation plan target."
+    },
+    "S5-02-08": {
+      "enabled": true,
+      "download": true,
+      "source_kind": "OCO2_OCO3_HISTOGRAM",
+      "tolerance_m": 3500,
+      "target_conformity_pct": 80,
+      "catalog_path": null,
+      "psg_id": null,
+      "ps_id": null,
+      "endpoint_url": null,
+      "note": "Official monthly OCO2/OCO3 mandatory-source histogram-bin to final-grid geometry KPI. GOSAT remains thematic reference data; 3500 m is the declared product resolution and 80% follows the extracted validation plan target."
+    },
+    "S5-02-09": {
+      "enabled": true,
+      "download": true,
+      "source_kind": "MODIS_MCD19A2_061",
+      "tolerance_m": 1000,
+      "target_conformity_pct": 80,
+      "catalog_path": null,
+      "psg_id": null,
+      "ps_id": null,
+      "endpoint_url": null,
+      "note": "Official daily mandatory MODIS MCD19A2.061 native-centre to final-grid geometry KPI. AERONET remains thematic reference data; 1000 m is the declared MODIS/product resolution and 80% follows the extracted validation plan target."
+    },
+    "S5-02-10": {
+      "enabled": true,
+      "download": true,
+      "source_kind": "SENTINEL3_SL2_LST",
+      "tolerance_m": 1000,
+      "target_conformity_pct": 90,
+      "catalog_path": null,
+      "psg_id": null,
+      "ps_id": null,
+      "endpoint_url": null,
+      "note": "Official daily mandatory Sentinel-3 SL_2_LST native-geolocation to final 300 m footprint KPI; Landsat remains thematic reference data and super-resolution value lineage is separate."
+    },
+    "S5-02-11": {
+      "enabled": true,
+      "download": true,
+      "source_kind": "SENTINEL3_SL2_WST",
+      "tolerance_m": 1000,
+      "target_conformity_pct": 80,
+      "catalog_path": null,
+      "psg_id": null,
+      "ps_id": null,
+      "endpoint_url": null,
+      "note": "Official daily mandatory Sentinel-3 SL_2_WST native-geolocation to final 300 m footprint KPI; Landsat remains thematic reference data and super-resolution value lineage is separate."
+    }
+  },
   "delivery": {
     "mode": "manifest",
     "manifest": "validation/deliveries.json",

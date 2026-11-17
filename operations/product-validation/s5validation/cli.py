@@ -4,6 +4,7 @@ import argparse
 import json
 import sys
 import webbrowser
+from datetime import date, timedelta
 from pathlib import Path
 from s5validation.pipeline import run
 from s5validation.registry import Registry
@@ -26,6 +27,9 @@ def main(argv=None,default_base=None):
     modes.add_argument('--landsat-search',action='store_true',help='Search Landsat without downloading reference assets')
     modes.add_argument('--inventory-only',action='store_true',help='Inspect latest production deliveries without downloading')
     parser.add_argument('--product',help='Restrict to one product, e.g. S5-02-09')
+    parser.add_argument('--products',nargs='+',help='Products to validate; canonical run input together with --start-date and --end-date')
+    parser.add_argument('--start-date',help='Inclusive campaign date YYYY-MM-DD')
+    parser.add_argument('--end-date',help='Inclusive campaign date YYYY-MM-DD')
     parser.add_argument('--max-deliveries',type=int,help='Maximum campaign deliveries selected for --run; deterministic product/time order')
     parser.add_argument('--acquired-from',help='Inclusive acquisition timestamp filter for --run; UTC offset required')
     parser.add_argument('--acquired-before',help='Exclusive acquisition timestamp filter for --run; UTC offset required')
@@ -35,6 +39,24 @@ def main(argv=None,default_base=None):
     parser.add_argument('--skip-matching-deliveries',action='store_true',help='Skip downloading S5 products on available Landsat dates')
     parser.add_argument('--downloader-credentials-file',type=Path,help='External provider downloaders.env; optional for public Landsat')
     args = parser.parse_args(argv)
+    if args.product and args.products:
+        parser.error('use --products or the legacy --product, not both')
+    selected_products = args.products or ([args.product] if args.product else None)
+    if args.start_date or args.end_date:
+        if any((args.status, args.report, args.download_latest, args.landsat, args.landsat_search, args.inventory_only)):
+            parser.error('--start-date/--end-date are run inputs and cannot be combined with another mode')
+        if not args.start_date or not args.end_date:
+            parser.error('--start-date and --end-date must be supplied together')
+        try:
+            start_date=date.fromisoformat(args.start_date)
+            end_date=date.fromisoformat(args.end_date)
+        except ValueError:
+            parser.error('start/end dates require YYYY-MM-DD')
+        if start_date > end_date:
+            parser.error('--end-date must not precede --start-date')
+        args.acquired_from=f'{start_date.isoformat()}T00:00:00+00:00'
+        args.acquired_before=f'{(end_date+timedelta(days=1)).isoformat()}T00:00:00+00:00'
+        args.run=True
     args.config=args.config.expanduser().resolve()
     base=(args.base_dir or args.config.parent.parent).expanduser().resolve()
     args.workdir=(args.workdir or base/'validation').expanduser().resolve()
@@ -62,19 +84,19 @@ def main(argv=None,default_base=None):
             config['delivery']['credentials_file']=str(args.credentials_file.expanduser().resolve())
         if config.get('schema_version') != 1:
             raise ValueError('Unsupported config schema version')
-        if args.product and args.product not in config['products']:
+        if selected_products and any(p not in config['products'] for p in selected_products):
             raise ValueError('Unknown product')
         if config['delivery'].get('manifest')=='validation/deliveries.json':
             config['delivery']['manifest']=str(args.workdir/'deliveries.json')
         if args.run:
             from .operational import preflight
-            client=preflight(config,base,args.product)
+            client=preflight(config,base,products=selected_products)
         from .bootstrap import initialize
         initialize(config,base,args.workdir)
         registry = Registry(args.workdir/'validation.db')
         if args.run:
             from .operational import execute
-            operational_run=execute(registry,config,base,args.workdir,client,args.product,args.as_of,args.max_scenes,
+            operational_run=execute(registry,config,base,args.workdir,client,products=selected_products,as_of=args.as_of,max_scenes=args.max_scenes,
                                     max_deliveries=args.max_deliveries,acquired_from=args.acquired_from,
                                     acquired_before=args.acquired_before)
         if args.landsat or args.landsat_search:
@@ -91,11 +113,11 @@ def main(argv=None,default_base=None):
             download_run = sync_latest(config,base,args.workdir,args.product,args.inventory_only)
             print('Production inventory errors: '+str(len(download_run['errors'])))
         if not args.run and not args.status and not args.report and not args.inventory_only and not args.landsat_search:
-            summary = run(registry,config,base,args.workdir,args.product)
+            summary = run(registry,config,base,args.workdir,products=selected_products)
             print('Run: '+str(summary))
-        print(status(registry,config,args.product))
+        print(status(registry,config,selected_products[0] if len(selected_products or []) == 1 else None))
         if not args.status:
-            report = generate(registry,config,args.workdir,args.product)
+            report = generate(registry,config,args.workdir,selected_products[0] if len(selected_products or []) == 1 else None)
             print(f'Report: {report.resolve()}')
             if args.open_report:
                 webbrowser.open(report.resolve().as_uri())
@@ -109,7 +131,7 @@ def main(argv=None,default_base=None):
             return 2
         if args.landsat and not args.skip_matching_deliveries and any(r['status']!='DOWNLOADED' for r in match_run.get('receipts',[])):
             return 2
-        if not any((args.status,args.report,args.inventory_only,args.landsat_search)) and any(r['status']=='ERROR' for r in registry.rows(args.product)):
+        if not any((args.status,args.report,args.inventory_only,args.landsat_search)) and any(r['status']=='ERROR' and (selected_products is None or r['product'] in selected_products) for r in registry.rows()):
             return 2
         return 0
     except (ValueError,OSError,KeyError,TypeError,ImportError) as exc:

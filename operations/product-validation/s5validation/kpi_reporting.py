@@ -90,7 +90,7 @@ def daily_scores(rows,config,workdir=None):
             elif mm.get('n',0):
                 if value is None:status='UNDEFINED'
                 else:status=evaluate_target(value,target['operator'],target['value']);passed=status=='PASS'
-            out.append({'product':p,'date':row['acquired_at'][:7] if monthly else row['acquired_at'][:10],'area':area,'passes':passed,'evaluated_hours':0,'passing_hours':0,
+            out.append({'product':p,'date':row['acquired_at'][:7] if monthly else row['acquired_at'][:10],'area':area,'passes':passed,'revision':row['revision'],'evaluated_hours':0,'passing_hours':0,
                         'undefined_hours':0,'partial_hours':0,'evaluation_status':status,'processing_status':row['status']})
     return sorted(out,key=lambda r:(r['product'],r['date'],r['area']))
 

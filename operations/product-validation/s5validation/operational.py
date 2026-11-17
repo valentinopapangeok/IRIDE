@@ -11,17 +11,26 @@ from .pipeline import run
 REFERENCE_REFRESHERS = {}
 
 
-def preflight(config,base,product=None,client=None):
+def _products(product=None, products=None):
+    if products is not None:
+        return list(products)
+    if product is None:
+        return None
+    return [product]
+
+
+def preflight(config,base,product=None,client=None,products=None):
     client=client or production_client(config,base)
-    selected=product or next(iter(config['products']))
+    selected=_products(product, products) or [next(iter(config['products']))]
     try:
-        client.list(f'ou-{selected.lower()}-prod',config['delivery'].get('prefix','ar_delivery/'))
+        for name in selected:
+            client.list(f'ou-{name.lower()}-prod',config['delivery'].get('prefix','ar_delivery/'))
     except Exception:
         raise OSError('IRIDE production storage is unreachable. Check VPN, credential files and endpoint availability. No registry changes were made.') from None
     return client
 
 
-def execute(registry,config,base,workdir,client,product=None,as_of=None,max_scenes=None,max_deliveries=None,acquired_from=None,acquired_before=None):
+def execute(registry,config,base,workdir,client,product=None,as_of=None,max_scenes=None,max_deliveries=None,acquired_from=None,acquired_before=None,products=None):
     from .pipeline import parse_time
     if max_deliveries is not None and max_deliveries <= 0:
         raise ValueError('max_deliveries must be positive')
@@ -34,7 +43,9 @@ def execute(registry,config,base,workdir,client,product=None,as_of=None,max_scen
     register(config,base)
     # Preserve legacy campaign inventory counts for lower-only catch-up runs.
     # A closed daily window can safely restrict remote partition traversal.
+    selected_products=_products(product, products)
     found,errors=inventory_campaign(client,config,product,
+                                    products=selected_products,
                                     start_bound=lower if upper is not None else None,end_bound=upper)
     total_found=len(found)
     found=sorted(found,key=lambda item:(item['product'],item['acquired_at'],item['delivery_id']))
@@ -59,7 +70,7 @@ def execute(registry,config,base,workdir,client,product=None,as_of=None,max_scen
     workers=config['delivery'].get('download_workers',4)
     if not isinstance(workers,int) or not 1<=workers<=8:
         raise ValueError('delivery.download_workers must be an integer between 1 and 8')
-    complete={(r['product'],r['delivery_id'],r['revision']) for r in registry.rows(product) if r['status']=='COMPLETE'}
+    complete={(r['product'],r['delivery_id'],r['revision']) for r in registry.rows() if (selected_products is None or r['product'] in selected_products) and r['status']=='COMPLETE'}
     with ThreadPoolExecutor(max_workers=workers) as pool:
         futures={(i['product'],i['delivery_id'],i['revision']):pool.submit(download_item,client,i,workdir)
                  for i in found if (i['product'],i['delivery_id'],i['revision']) not in complete
@@ -116,9 +127,38 @@ def execute(registry,config,base,workdir,client,product=None,as_of=None,max_scen
                 summary.setdefault('reference_providers',{})[name]=result
             except Exception as exc:summary['errors'].append({'stage':name,'reason':f'{type(exc).__name__}: reference refresh failed'})
     # Only current, successfully downloaded deliveries may enter the scientific runner.
-    summary['processing']=run(registry,config,base,workdir,product,identities={(d.product,d.delivery_id,d.revision) for d in queue})
+    summary['processing']=run(registry,config,base,workdir,products=selected_products,identities={(d.product,d.delivery_id,d.revision) for d in queue})
+    # Enabled positional stages are executed only after thematic KPI dates have
+    # been materialised and remain a
+    # separate metric/sample domain: it never changes thematic outcomes or
+    # accepted campaign samples.
+    positional = {}
+    for positional_product, runner_name in (('S5-02-01', 'run_product01_positional'),
+                                             ('S5-02-02', 'run_product02_positional'),
+                                             ('S5-02-03', 'run_product03_positional'),
+                                             ('S5-02-04', 'run_product04_positional'),
+                                             ('S5-02-05', 'run_product05_positional'),
+                                             ('S5-02-06', 'run_product06_positional'),
+                                             ('S5-02-07', 'run_product07_positional'),
+                                             ('S5-02-08', 'run_product08_positional'),
+                                             ('S5-02-09', 'run_product09_positional'),
+                                             ('S5-02-10', 'run_product10_positional'),
+                                             ('S5-02-11', 'run_product11_positional')):
+        if ((selected_products is not None and positional_product not in selected_products)
+                or not config.get('positional_accuracy', {}).get(positional_product, {}).get('enabled', True)):
+            continue
+        try:
+            from . import positional_accuracy
+            positional[positional_product] = getattr(positional_accuracy, runner_name)(registry, config, base, workdir)
+        except Exception as exc:
+            positional[positional_product] = {'status': 'ERROR', 'reason': f'{type(exc).__name__}: {exc}'}
+            summary['errors'].append({'product': positional_product, 'stage': 'positional_accuracy', 'reason': str(exc)})
+    if positional:
+        summary['positional_accuracy'] = positional
     states={}
-    for row in registry.rows(product):
+    for row in registry.rows():
+        if selected_products is not None and row['product'] not in selected_products:
+            continue
         if (row['product'],row['delivery_id'],row['revision']) in active:
             states[row['status']]=states.get(row['status'],0)+1
             if row['status']=='ERROR':summary['errors'].append({'product':row['product'],'stage':'validation','reason':row['reason']})

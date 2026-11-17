@@ -23,7 +23,7 @@ def parse_time(value):
     return date
 
 
-def discover(config, base, product=None):
+def discover(config, base, product=None, products=None):
     delivery = config['delivery']
     if delivery['mode'] != 'manifest':
         raise ValueError('Bucket catalogue discovery will be connected with the first product adapter')
@@ -41,7 +41,8 @@ def discover(config, base, product=None):
         if identity in identities:
             raise ValueError('Manifest must contain one current revision per logical delivery')
         identities.add(identity)
-        if product is None or product == d.product:
+        selected = list(products) if products is not None else ([product] if product else None)
+        if selected is None or d.product in selected:
             result.append(d)
     return result
 
@@ -76,7 +77,7 @@ def check_outcome(outcome, cfg, campaign):
                 raise ValueError('GOSAT month does not meet the coverage requirement')
 
 
-def run(registry, config, base, workdir, product=None, adapters=None, identities=None):
+def run(registry, config, base, workdir, product=None, adapters=None, identities=None, products=None):
     if adapters is None:
         from .adapters import register
         register(config,base)
@@ -84,10 +85,13 @@ def run(registry, config, base, workdir, product=None, adapters=None, identities
         if any(p.get('adapter')=='landsat_l2' for p in config['products'].values()):
             from .thermal import LandsatAdapter
             adapters['landsat_l2']=LandsatAdapter(config,base)
-    discovered = discover(config,base,product)
+    selected = list(products) if products is not None else ([product] if product else None)
+    discovered = discover(config,base,products=selected)
     new = sum(registry.discover(d) for d in discovered)
     processed = 0
-    for row in registry.rows(product):
+    for row in registry.rows():
+        if selected is not None and row['product'] not in selected:
+            continue
         if identities is not None and (row['product'],row['delivery_id'],row['revision']) not in identities:
             continue
         if row['status'] not in RETRYABLE:

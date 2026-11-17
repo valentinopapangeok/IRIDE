@@ -6,6 +6,11 @@ Manually launched scientific validation for IRIDE S5-02 products. The pipeline d
 
 **03 Solar Radiation** now defaults to the user-adopted ERA5 reference-only direct-normal comparisons and CDS downloads; see [ERA5 method and geometry limitation](docs/SOLAR_ERA5.md). CAMS BNI remains an optional supplementary cross-check.
 
+The official post-thematic positional processing-geometry KPI is integrated for
+all eleven products. Products 10 and 11 use all same-day mandatory Sentinel-3
+SL_2_LST/SL_2_WST native geolocation points against their 300 m downscaled
+output-cell footprints; Landsat remains thematic reference data.
+
 Thermal and snow results are currently **DIAGNOSTIC**; operative circular AOD comparisons use **PROCESSED**. Neither status counts as accepted campaign acquisitions or establishes overall compliance. Solar ERA5 uses PROCESSED under the explicitly adopted reference-only method; the constant-DNI within-hour approximation and sensitivity estimates remain recorded. Operational KPI dates and geographic distribution are now reported separately from legacy reference-sample accounting; see [KPI counting](docs/KPI_COUNTING.md). The shipped campaign is **1 October–31 December 2026**. Thermal rRMSE uses the absolute mean paired reference temperature **in Celsius**; this convention is explicit and scale dependent.
 
 ## Quick start
@@ -39,6 +44,17 @@ python main.py
 # Installed equivalent:
 iride-validate --run
 ```
+
+For a bounded autonomous run, the canonical inputs are an inclusive date range
+and one or more products:
+
+```bash
+iride-validate --run --start-date 2026-10-01 --end-date 2026-10-31 --products S5-02-03 S5-02-05
+```
+
+The run discovers and downloads only those products in that date window, then
+executes thematic validation followed by each enabled post-thematic positional
+stage. The legacy singular `--product` and timestamp filters remain supported.
 
 Product 04 uses the integrated targeted regional-gauge adapter; missing reference extracts remain pending. Cloud and monthly GOSAT comparisons are integrated. Solar, snow and AOD run automatically; AOD uses the approved 27.5 km circular method at 550 nm. An operationally successful run does not imply accepted validation samples.
 
@@ -85,6 +101,7 @@ iride-validate --product S5-02-02
 | [Landsat methodology](docs/LANDSAT.md) | Scaling, QA, spatial support, rRMSE and limitations |
 | [Requirements](docs/REQUIREMENTS.md) | Imported workbook targets and sampling requirements |
 | [Testing](docs/TESTING.md) | Offline checks, clean installs and optional integration tests |
+| [Processing geometry](docs/POSITIONAL_GEOMETRY.md) | Separate post-report evidence on processing-induced grid displacement |
 | [Troubleshooting](docs/TROUBLESHOOTING.md) | Installation, credentials, VPN, availability and scientific states |
 | [Contributing](CONTRIBUTING.md) | Development workflow and review expectations |
 

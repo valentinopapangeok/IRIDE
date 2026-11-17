@@ -78,6 +78,8 @@ def generate(registry, config, workdir, product=None):
     from .hourly_reporting import comparison_html as hourly_comparison_html
     from .kpi_reporting import comparison_html as kpi_comparison_html
     evidence = kpi_comparison_html(rows,config,workdir)+hourly_comparison_html(rows,config,workdir)
+    from .positional_reporting import comparison_html as positional_comparison_html
+    evidence += positional_comparison_html(workdir, rows)
     operational_path=workdir/'inventory'/'operational_run.json'
     if operational_path.exists():
         operational=json.loads(operational_path.read_text(encoding='utf-8'))
